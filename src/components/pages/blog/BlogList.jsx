@@ -10,7 +10,7 @@ export default function BlogList(props) {
         justifyContent: "spaceBetween",
     }
     return (
-        <div style={BlogWrapper} class="blog-wrapper">
+        <div style={BlogWrapper} className="blog-wrapper">
             {blogs.map(({name, post}, index) => (
 				<Blog key={index} name={name} post={post} />
 			))}

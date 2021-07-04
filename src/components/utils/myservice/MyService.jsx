@@ -1,6 +1,6 @@
 // import React from 'react'
 import './Myservice.css'
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const Myservice = () => {
     const serviceStyle = {
@@ -17,16 +17,10 @@ const Myservice = () => {
         boxSizing: 'borderBox',
         borderRadius: '20px',
         fontSize: '17px',
-        backgroundColor: '#25293450',
         backgroundColor: '#111',
         color: '#fff',
         margin: '5px',
         
-    }
-    const transitionEffect = {
-        transform: "translate3d(-1140px, 0px, 0px)",
-        transition: "all 1s ease 0s",
-        width: "4560px"
     }
 
     useEffect(() => {
@@ -49,7 +43,7 @@ const Myservice = () => {
             }
             
 
-            if(slideIndex == totalSlides - 3){
+            if(slideIndex === totalSlides - 3){
                 slideIndex = 0;
                 slideEffect(slideIndex)
             } else {
@@ -61,32 +55,32 @@ const Myservice = () => {
     });
 
     return (
-        <div style={serviceStyle} class="service-container">
+        <div style={serviceStyle} className="service-container">
             <div className="singleService fade" style={service}>
-                <i class="fas fa-code"></i>
+                <i className="fas fa-code"></i>
                 <h5>Web Development</h5>
                 <p className="singleService-text">Custom web development using a range of technologies. </p>
             </div>
 
             <div className="singleService fade" style={service}>
-                <i class="fas fa-pen-nib"></i>
+                <i className="fas fa-pen-nib"></i>
                 <h5>Responsive Design</h5>
                 <p className="singleService-text">Responsive design practcies From smartphones to laptops to tablets. </p>
             </div>
 
             <div className="singleService fade" style={service}>
-                <i class="fas fa-rss"></i>
+                <i className="fas fa-rss"></i>
                 <h5>Fast Communication</h5>
                 <p className="singleService-text">Consistent, quick and straight to the point communication. </p>
             </div>
 
             <div className="singleService fade" style={service}>
-                <i class="fas fa-drafting-compass"></i>
+                <i className="fas fa-drafting-compass"></i>
                 <h5>Ui ux Design</h5>
                 <p className="singleService-text">Optimized user experience</p>
             </div>
             <div className="singleService fade" style={service}>
-                <i class="fas fa-drafting-compass"></i>
+                <i className="fas fa-drafting-compass"></i>
                 <h5>Eccomerce Expertise</h5>
                 <p className="singleService-text">Optimizaztion and setting up of eccormerce websites and conversion tracking </p>
             </div>

@@ -11,20 +11,7 @@ class LightDark extends Component {
         const dayNightBtn = document.getElementById('day-night-btn');
         const DayNightMode = dayNightBtn.classList[0];
         const block = document.querySelector('.block')
-        // let LightColor = "#f4f4f4"
         let LightWhite = "#f4f4f4";
-        // const LightColorAlternate = "#f5f5f5";
-        let LightColor = "rgba(189, 195, 199, 1)";
-        // let LightColor = {
-        //   background: "linear-gradient(to right, #eef2f3, #8e9eab) !important"
-        // } 
-        
-        const LightColorAlternate = "rgba(189, 195, 199, 1)";
-        // const LightColorAlternate = "#111111c7"
-        // let DarkColour = "#111111"
-        // let DarkColour = "#111111c7"
-        let DarkColour = "rgba(64, 67, 78, 0.46)"
-        // const DarkColorAlternate = "#0c0c0c"
         const DarkColorAlternate = "#111111c7"
 
         const DayMode = () => {

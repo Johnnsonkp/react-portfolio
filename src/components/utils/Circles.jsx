@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const Circles = () => {
 
@@ -63,7 +63,7 @@ const Circles = () => {
 
         function deactivateClick(input){
             let section = document.querySelectorAll("." + input)
-            let allSection = document.querySelectorAll('.inner-circle')
+            // let allSection = document.querySelectorAll('.inner-circle')
 
             section.forEach((active) => {
                 document.querySelectorAll('.inner-circle').forEach((innerSection) => {
@@ -75,8 +75,8 @@ const Circles = () => {
         }
 
         function handleClick(e){
-            let home = document.querySelectorAll('.home')
-            let about = document.querySelectorAll('.about')
+            // let home = document.querySelectorAll('.home')
+            // let about = document.querySelectorAll('.about')
             let allSection = document.querySelectorAll('.inner-circle')
             
             allSection.forEach((section) => {
@@ -203,7 +203,7 @@ const Circles = () => {
 
     return (
         // <div> 
-            <div class="hideCircles sideNav">
+            <div className="hideCircles sideNav">
                 <a id="home" className="inner-circle home" href="#home-section">
                     <img className="img home" src="./home-img.png" alt="" href="#home-section"/>
                     {/* <span className="home-hover">Home</span> */}

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './blog.css'
 import Circles from '../../utils/Circles'
-import BlogGeneratorForm from '../../utils/blogGenerator/BlogGForm'
+// import BlogGeneratorForm from '../../utils/blogGenerator/BlogGForm'
 import BlogList from './BlogList'
 import Title from '../../common/title'
 
@@ -31,9 +31,9 @@ function Blog() {
 
 	]
 
-    function addBlog(blog) {
-        generateBlogs([blog, ...blogs]) // Spread synthax, attaches the latest blog to the front array of blogs array
-    }
+    // function addBlog(blog) {
+    //     generateBlogs([blog, ...blogs]) // Spread synthax, attaches the latest blog to the front array of blogs array
+    // }
 
     const [blogs, generateBlogs] = useState(initialBlogPost)
 

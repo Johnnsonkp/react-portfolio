@@ -7,7 +7,6 @@ const Home = () => {
     const fadeScroll = () => {
         const checkpoint = 800;
         window.addEventListener("scroll", () => {
-            console.log(window.innerWidth)
             const currentScroll = window.pageYOffset;
             const homeSection = document.getElementById("home-section");
             
@@ -22,7 +21,9 @@ const Home = () => {
         <main id="home-section" onLoad={fadeScroll()}>
             
             <div className="block"></div>
-                <a className="outer-circle" href="#about"><img className="circle" src="profile-pic.jpg"></img></a>
+                <a className="outer-circle" href="#about">
+                    <img className="circle" src="profile-pic.jpg" alt=""></img>
+                </a>
                 {/* <a className="circle" href="#about"></a> */}
                 <div className="content">
                     <div className="text-content">

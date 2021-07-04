@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Portfolio.css'
 import Circles from '../../utils/Circles'
 import Title from '../../common/title'
@@ -92,7 +92,7 @@ const Portfolio = () => {
                 <div className="row">
                     <div className="project-wrapper all design">
                         <a href="https://cozy-tees-app.herokuapp.com/">
-                            <img src="./cozy-tees.png"/>
+                            <img src="./cozy-tees.png" alt=""/>
                             <div className="inner-content">
                                 <h4>Cozy Tees Marketplace</h4>
                                 <a class="btn" href="https://cozy-tees-app.herokuapp.com/">View Project</a>
@@ -102,7 +102,7 @@ const Portfolio = () => {
                     </div>
                     <div className="project-wrapper all design">
                         <a href="https://its-a-vibe.netlify.app/">
-                            <img src="./vibe.png"/>
+                            <img src="./vibe.png" alt=""/>
                             <div className="inner-content">
                                 <h4>It's A Vibe</h4>
                                 <a class="btn" href="https://its-a-vibe.netlify.app/">View Project</a>
@@ -112,7 +112,7 @@ const Portfolio = () => {
                     </div>
                     <div className="project-wrapper all professional design">
                         <a class="link" href="https://flightclubgolf.com/">
-                            <img src="./flight-club.png"/>
+                            <img src="./flight-club.png" alt=""/>
                             <div className="inner-content">
                                 <h4>Flight Golf Club</h4>
                                 <a class="btn" href="https://flightclubgolf.com/">View Project</a>
@@ -123,7 +123,7 @@ const Portfolio = () => {
                 <div className="row">
                     <div className="project-wrapper all design">
                         <a href="https://johnnsonkp-dev.herokuapp.com/">
-                            <img src="./portfolio-v2.png"/>
+                            <img src="./portfolio-v2.png" alt=""/>
                             <div className="inner-content">
                                 <h4>Portfolio v2</h4>
                                 <a class="btn" href="https://johnnsonkp-dev.herokuapp.com/">View Project</a>
@@ -133,7 +133,7 @@ const Portfolio = () => {
                     </div>
                     <div className="project-wrapper all professional design">
                         <a href="https://bookgrocer.com/">
-                            <img src="./book-grocer.png"/>
+                            <img src="./book-grocer.png" alt=""/>
                             <div className="inner-content">
                                 <h4>The Book Grocer</h4>
                                 <a class="btn" href="https://bookgrocer.com/">View Project</a>
@@ -142,7 +142,7 @@ const Portfolio = () => {
                     </div>
                     <div className="project-wrapper all design">
                         <a class="link" href="https://rails-moviedb.herokuapp.com/">
-                            <img src="./bitflix.png"/>
+                            <img src="./bitflix.png" alt=""/>
                             <div className="inner-content">
                                 <h4>Bitflix</h4>
                                 <a class="btn" href="https://rails-moviedb.herokuapp.com/">View Project</a>
