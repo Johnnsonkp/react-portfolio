@@ -1,0 +1,14 @@
+[
+    {
+      "name": "The future of eCommerce",
+      "post": "A React version of the popular logic game"
+    },
+    {
+      "name": "How CMS technology is taking over developer roles",
+      "post": "A full stack app to track chores completed and money earned"
+    },
+    {
+      "name": "The rise of the Headless CMS",
+      "post": "A full stack app using AWS lambda for serverless backend that showcases the photography of a client"
+    }
+  ]

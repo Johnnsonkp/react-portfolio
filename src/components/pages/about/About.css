@@ -1,0 +1,437 @@
+
+#about{
+    height: 140vh;
+    height: 800px;
+    width: 100%;
+    background-color: #40434e75;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-size: 20px;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    /* opacity: 0.3; */
+    transition: opacity 0.3s;
+}
+#about .container{
+    padding-top: 10px;
+    width: 90%;
+    margin: auto;
+}
+#about .container h1{
+    text-align: center;
+    font-size: 40px;
+}
+#about .container .about-hr{
+    width: 15%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 20px;
+}
+#about .main-content{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 11%;
+
+}
+.about-pic{
+    background-image: url('https://johnnsonkp-dev.herokuapp.com/images/pic2.png');
+    /* background-image: url('profile-pic-crop.png'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: auto;
+    max-width: 1100px;
+    height: 16vw;
+    border-radius: 200px;
+    border: 3px solid #6957af;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#about .about-me-container{
+    /* border-radius: 15px; */
+    border: 1px solid red;
+    border: 1px solid #25293450;
+    background-color: #25293450;
+    background-color: #111;
+    color: #fff;
+    border: 0.2px solid rgba(236, 240, 241, 0.2);
+    width: 38%;
+    margin-right: 3%;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 0px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19%;
+    height: 100vh;
+    margin: auto;
+}
+#about .resume-button{
+    border: solid 1px #f6004c; 
+    background: transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    border-radius: 18px;
+    width: 80%;
+    width: 92%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 8px 0px;
+}
+#about .resume-button:hover{
+    background: #f6004c;
+}
+#about .container .mini-header{
+    font-size: 17px;
+    margin-top: 0px;
+}
+.tech-stack hr{
+    margin-bottom: 20px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
+}
+#about .container p{
+    font-size: 16px;
+    font-size: 1.2vw;
+    line-height: 1.7rem;
+    font-weight: 600;
+}
+#about .container .dev-tools h5{
+    font-size: 11px;
+    font-size: 0.6rem;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+.about-hr{
+    margin-bottom: 20px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.right{
+    margin-left: 25%;
+    width: 80%;
+}
+.right .serviceHeader{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.dev-tools{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 1vw;
+}
+.tech i{
+    border-radius: 25px;
+    padding: 8px 10px;
+    padding: 0.8vw;
+    margin-top: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.3rem;
+    background: #252934;
+    color: #f6004c;
+}
+.tech-stack{
+    padding: 20px 15px;
+    padding: 5% 6%;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #eeeeee26;
+
+}
+.tech {
+    height: 5vw;
+    width: 4vw;
+}
+.tech .fa-html5{
+    color: rgb(254 94 5) !important;
+}
+.tech .fa-css3{
+    color: rgb(97 97 238) !important;
+}
+.tech .fa-js{
+    color: rgb(215 215 1) !important;
+}
+.tech .fa-gem{
+    color: rgb(170 29 29) !important;
+}
+.tech .fa-react{
+    color: rgb(138 213 238) !important;
+}
+.tech .fa-shopify{
+    color: rgb(96 199 96) !important;
+}
+.tech .fa-wordpress{
+    color: #256b91 !important;
+}
+.tech .fa-php{ 
+    color: rgb(118, 83, 247);
+}
+@media only screen and (min-width: 1500px){
+    #about{
+        width: 100vw;
+        height: 1400px;
+    }
+    #about .right{
+        width: 55% !important;
+        margin: auto;
+        margin-right: 15%;
+    }
+    #about .right p{
+        line-height: 40px;
+    }
+    #about .titleBig{
+        left: 0%;
+    }
+    #about .circles{
+        height: 290px !important;
+        top: 10%;
+        left: 78% !important;
+    }
+    #about .about-me-container{
+        width: 18%;
+    }
+    #about .about-me-container .about-pic{
+        width: 80%;
+        height: 14vw;
+        border-radius: 350px;
+    }
+    #about .singleService{
+        height: 18vh !important;
+        width: 30% !important;
+        padding-bottom: 20% ;
+    }
+    #about .singleService p{
+        font-size: 1.1rem !important;
+        line-height: 29px !important;
+    }
+    #about .tech-stack {
+        padding: 10px 10px;
+        padding: 5% 6%;
+        border-radius: 10px;
+        width: 68%;
+        margin: 20px auto;
+        border: 1px solid #eeeeee26;
+    }
+    #about .resume-button{
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px){
+    #about .titleBig{
+        font-size: 110px;
+        font-size: 7.5rem;
+        color: rgba(255, 255, 255, 0.07);
+        margin-top: 0px;
+        position: relative;
+        left: -5%;
+        margin-bottom: 0px;
+    }
+    #about .titleSmall{
+        font-size: 56px;
+        font-size: 3.5rem;
+        position: absolute;
+        top: 85px;
+        left: 31.5%;
+        margin-bottom: 0px;
+    }
+    #about .about-me-container{
+        display: none;
+    }
+    #about .container{
+        width: 100%;
+        margin: auto;
+    }
+    #about .right{ 
+        margin-left: 0%;
+        margin: auto;
+    }
+    #about .container p{
+        font-size: 16px;
+        font-size: 1.5vw;
+        line-height: 1.7rem;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width: 900px){
+    #about{
+        width: 110%;
+    }
+    #about .right{
+        width: 90%;
+        margin-right: 20%;
+    }
+    #about .circles {
+        position: absolute;
+        top: 10% !important;
+        left: 83% !important;
+    }
+    #about .container .right p{
+        font-size: 1rem !important;
+        line-height: 30px;
+    }
+    #about .singleService{
+        height: 22vh !important;
+        width: 30% !important;
+        padding-bottom: 2%;
+    }
+    #about .my-service-container{
+        width: 120%;
+    }
+    #about .my-service-container .singleService p{
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width: 800px){
+    #about{
+        width: 130%;
+        margin-top: 0px !important;
+    }
+    #about .container{
+        width: 80%;
+    }
+    #about .circles{
+        height: 280px !important;
+        /* left: 78% !important; */
+        left: 70% !important;
+        top: 20% !important;
+    }
+    #about .circles img{
+        width: 20px;
+    }
+    #about .container p{
+        font-size: 1.6vw;
+    }
+    /* .showCircles{
+        height: 200px !important;
+    } */
+}
+@media only screen and (max-width: 700px){
+    #about{
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #about{
+        width: 130%;
+        height: 950px;
+    }
+    #about .container{
+        width: 98%;
+        margin-left: 5% !important;
+    }
+    #about .titleSmall{
+        font-size: 3.5rem;
+        left: 18%;
+    }
+    #about .titleBig{
+        font-size: 8rem;
+        left: -25%;
+    }
+    #about .container p{
+        font-size: 21px;
+        line-height: 35px;
+        width: 80%;
+        
+    }
+    #about{
+        position: relative;
+        margin-top: 400px;
+    }
+    #about .circles{
+        height: 370px !important;
+        left: 63% !important;
+    }
+    /* #about .circles img{
+        width: 30px;
+    } */
+    #about .body-hr{
+        width: 40%;
+    }
+    #about .circles{
+        height: 350px;
+    }
+    #about .circles img{
+        width: 30px !important;
+    }
+    #about .my-service-container {
+        width: 100vw;
+    }
+    #about .singleService{
+        width: 80% !important;
+        font-size: 30px !important;
+        padding-bottom: 70px !important; 
+    }
+    #about .singleService p{
+        font-size: 25px !important;
+        line-height: 35px !important;
+    }
+    #about .singleService:nth-of-type(2){
+        display: none !important;
+    }
+    #about .singleService:nth-of-type(3){
+        display: none !important;
+    }
+    #about .singleService:nth-of-type(5){
+        display: none !important;
+    }
+    #about .singleService:nth-of-type(6){
+        display: none !important;
+    }
+    #about .serviceHeader{
+        margin-top: 40px;
+        font-size: 25px;
+    }
+    
+}
+@media only screen and (max-width: 500px){
+    #about{
+        width: 60rem;
+        height: 180vh;
+    }
+    #about .titleSmall{
+        left: 14%;
+    }
+    #about .container{
+        width: 85%;
+        margin-right: 15%;
+    }
+    #about .singleService p{
+        font-size: 20px !important;
+        line-height: 35px !important;
+    }
+    #about .circles{
+        height: 370px !important;
+        left: 75% !important;
+    }
+    #about .singleService{
+        /* width: 100% !important; */
+        width: 200vw !important;
+        margin: auto !important;
+        font-size: 30px !important;
+        padding-bottom: 140px !important; 
+    }
+    #about .circles{
+        height: 370px !important;
+        left: 58% !important;
+    }
+
+}

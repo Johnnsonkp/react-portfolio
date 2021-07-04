@@ -1,0 +1,192 @@
+#blogSection{
+    height: 120vh;
+    height: 800px;
+    width: 100%;
+    /* background-color: rgb(33 35 41 / 80%); */
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 20px;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    transition: opacity 0.3s;
+    padding-top: 50px;
+    overflow: hidden;
+}
+#blogSection .container{
+    padding-top: 30px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+    /* border: 1px solid red; */
+}
+#blogSection .header{
+    text-align: center;
+    padding-top: 65px;
+}
+#blogSection .header hr{
+    width: 15%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+#blogSection .blog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    transition: scaleX 3s;
+}
+#blogSection .image-container{
+    max-width: 85%;
+    height: 200px;
+    background-color: lightgray;
+    overflow: hidden;
+}
+#blogSection .text-content{
+    max-width: 85%;
+    min-height: 150px;
+    max-height: 150px;
+    background-color: darkgray;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 0px;
+    border-top: 5px solid #6957af;
+}
+#blogSection .text-content p{
+    font-size: 13px;
+    font-weight: lighter;
+}
+#blogSection .text-content h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+#blogSection .text-content button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+}
+#blogSection .date{
+    background-color: #6957af;
+    display: flex;
+    width: 60px;
+    font-size: 16px;
+    justify-content: center;
+    padding: 5px 5px;
+    position: relative;
+    top: -90%;
+    left: 70%;
+    font-size: 12px;
+}
+#blogSection .blog-pic{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.blogs .titleSmall{
+    font-size: 50px;
+    position: absolute;
+    top: 45px;
+    left: 40% !important;
+    margin-bottom: 0px;
+}
+.blogs .titleBig{
+    font-size: 110px;
+    color: rgba(255, 255, 255, 0.07);
+    margin-top: 0px;
+    position: relative;
+    top: 0;
+    left: 32%;
+    margin-bottom: 0px;
+}
+#blogSection .block{
+    z-index: 1;
+    height: 980px;
+    width: 450px;
+    background-color: #111111;
+    transform: rotate(345deg);
+    position: absolute;
+    top: -70px;
+    left: -100px;    
+}
+#blogSection .content{
+    z-index: 1;
+    position: relative;
+}
+@media only screen and (min-width: 1500px){
+    #blogSection .content{
+        max-width: 1440px;
+        margin: auto;
+    }
+    #blogSection .circles{
+        top: 14% !important;
+        left: 83%;
+    }
+}
+@media only screen and (max-width: 900px){
+    #blogSection{
+        width: 110vw;
+    }
+    #blogSection .content{
+        width: 100%;
+    }
+    #blogSection .circles{
+        top: 28% !important;
+        left: 90%;
+    }
+}
+@media only screen and (max-width: 800px){
+    #blogSection{
+        width: 130vw;
+    }
+    #blogSection .content{
+        width: 80%;
+    }
+    #blogSection .circles{
+        top: 28% !important;
+        left: 78%;
+        height: 300px;
+    }
+    .circles .img{
+        width: 20px;
+    }
+    #blogSection .block{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px){
+    #blogSection .content{
+        width: 90%;
+    }
+    #blogSection{
+        position: relative;
+    }
+}
+@media only screen and (max-width: 600px){
+    #blogSection{
+        width: 155vw;
+    }
+}
+@media only screen and (max-width: 500px){
+    #blogSection{
+        width: 210vw;
+    }
+    #blogSection .circles{
+        top: 28% !important;
+        left: 85%;
+        height: 300px;
+    }
+    #blogSection .container{
+        display: flex;
+        justify-content: row;
+    }
+}
+@media only screen and (max-width: 400px){
+    #blogSection{
+        width: 260vw;
+    }
+}

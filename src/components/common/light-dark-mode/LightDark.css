@@ -1,0 +1,54 @@
+ /* Day and night button */
+.light{
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    z-index: 1;
+    height: 10px;
+    width: 10px; 
+    /* // background-image: url('sun.png'); */
+    background-image: url('http://rainbowit.net/themes/trydo/wp-content/themes/trydo/assets/images/icons/sun-01.svg');
+    background-position: center center;
+    background-size: cover;
+  
+    background-color: #191919;
+    border: 8px solid #191919;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 8000;
+  }
+  
+  .dark{
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    z-index: 8000;
+    height: 10px;
+    width: 10px; 
+    /* // background-image: url('sun.png'); */
+    background-image: url('http://rainbowit.net/themes/trydo/wp-content/themes/trydo/assets/images/icons/vector.svg');
+    background-position: center center;
+    background-size: cover;
+  
+    background-color: #fff;
+    border: 8px solid #fff;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+  } 
+
+  /* Media query */
+@media only screen and (max-width: 500px) {
+  .light{
+    position: fixed;
+    top: 55%;
+    left: 10px;
+  }
+  .dark{
+    position: fixed;
+    top: 55%;
+    left: 10px;
+  }
+}
+

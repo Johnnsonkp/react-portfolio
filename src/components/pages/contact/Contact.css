@@ -1,0 +1,99 @@
+#contact {
+    height: 150vh;
+    height: 800px;
+    width: 100%;
+    background-color: #11141b;
+    background-color: #11141b ;
+    background-image: url('http://www.webtechnologybd.com/html/Lavina/assets/img/contact-bg.png');
+    font-size: 20px;
+    z-index: 1;
+    position: relative;
+}
+#contact .container{
+    padding-top: 65px;
+    width: 90%;
+    margin: auto;
+}
+#contact .header{
+    text-align: center;
+    color: #fff !important;
+    margin-top: 5%;
+}
+#contact .header hr{
+    width: 15%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)) !important;
+}
+
+@media only screen and (min-width: 1500px){
+    #contact .container{
+        max-width: 1400px;
+    }
+}
+@media only screen and (max-width: 900px){
+    #contact{
+        width: 110vw;
+    }
+    #contact .container{
+        width: 100%;
+    }
+    #contact .circles{
+        top: 20% !important;
+        left: 90%;
+    }
+}
+@media only screen and (max-width: 900px){
+    #contact{
+        width: 120vw;
+    }
+    #contact .container{
+        width: 130vw;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 900px){
+    #contact{
+        width: 130vw;
+    }
+    #home-footer{
+        width: 130vw;
+    }
+}
+@media only screen and (max-width: 700px){
+    #contact{
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #contact{
+        width: 155vw;
+    }
+    #home-footer{
+        width: 155vw;
+    }
+    #contact .container{
+        width: 160vw;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    iframe{
+        display: none;
+    }
+    #contact{
+        width: 210vw;
+    }
+    #home-footer{
+        width: 210vw;
+    }
+}
+@media only screen and (max-width: 400px){
+    #contact{
+        width: 260vw;
+    }
+    #home-footer{
+        width: 260vw;
+    }
+}

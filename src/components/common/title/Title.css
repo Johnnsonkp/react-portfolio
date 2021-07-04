@@ -1,0 +1,22 @@
+.accentHighlight{
+    color: #6957af;
+}
+.titleBig{
+    font-size: 110px;
+    color: rgba(255, 255, 255, 0.07);
+    margin-top: 0px;
+    position: relative;
+    left: 6%;
+    margin-bottom: 0px;
+}
+.titleSmall{
+    font-size: 56px;
+    position: absolute;
+    top: 85px;
+    left: 45%;
+    margin-bottom: 0px;
+}
+.h1{
+    margin-bottom: 0px;
+}
+
