@@ -135,12 +135,15 @@ body, head {
   z-index: 1;
   cursor: pointer;
 }
+#home-section .outer-circle{
+  background-color: #111;
+}
 #home-section .outer-circle img{
   height: 350px;
   width: 350px;
 
 }
-#home-section img:hover{
+#home-section .outer-circle img:hover{
   // background-image: url('https://johnnsonkp-dev.herokuapp.com/images/pic2.png');
   background-color: rgba(105, 87, 175, 0.2);
   border: 3px solid #6957af;
@@ -584,7 +587,7 @@ body, head {
     justify-content: space-between;
   }
   #home-section .circle{
-    left: 5%;
+    left: 10%;
   }
   
 }

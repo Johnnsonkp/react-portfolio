@@ -21,7 +21,7 @@
 }
 .my-service-container{
     width: 790px;
-    width: 100%;
+    /* width: 150%; */
     margin: auto;
     overflow: hidden;
     /* border: 1px solid red; */
@@ -32,7 +32,7 @@
 .singleService{
     border: 1px solid rgba(236, 240, 241, 1);
     border: 0.2px solid rgba(236, 240, 241, 0.2);
-    height: 150px;
+    height: 170px;
     /* padding-left: 50px !important;
     padding-right: 50px !important;
     position: relative; */
