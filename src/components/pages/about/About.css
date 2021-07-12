@@ -3,6 +3,7 @@
     height: 140vh;
     height: 800px;
     width: 100%;
+    max-width: 100vw;
     background-color: #40434e75;
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
@@ -14,6 +15,7 @@
     top: 0px;
     /* opacity: 0.3; */
     transition: opacity 0.3s;
+    overflow: hidden !important;
 }
 #about .container{
     padding-top: 10px;
@@ -233,8 +235,12 @@
     }
     
 }
-
 @media only screen and (max-width: 1000px){
+    #about .about-me-container{
+        display: none;
+    }
+}
+/* @media only screen and (max-width: 1000px){
     #about .titleBig{
         font-size: 110px;
         font-size: 7.5rem;
@@ -298,8 +304,8 @@
     #about .my-service-container .singleService p{
         font-size: 12px !important;
     }
-}
-@media only screen and (max-width: 800px){
+} */
+/* @media only screen and (max-width: 800px){
     #about{
         width: 130%;
         margin-top: 0px !important;
@@ -308,9 +314,9 @@
         width: 80%;
     }
     #about .circles{
-        height: 280px !important;
+        height: 280px !important; */
         /* left: 78% !important; */
-        left: 70% !important;
+        /* left: 70% !important;
         top: 20% !important;
     }
     #about .circles img{
@@ -318,120 +324,119 @@
     }
     #about .container p{
         font-size: 1.6vw;
-    }
+    } */
     /* .showCircles{
         height: 200px !important;
     } */
-}
+/* }
 @media only screen and (max-width: 700px){
     #about{
         position: relative;
     }
+}*/
+@media only screen and (max-width: 1400px) and (min-width: 1001px){
+    #about{
+        
+        height: 900px !important;
+        width: 100%;
+        max-width: 3000px;
+        overflow: hidden !important;
+        /* border: 1px solid red; */
+    }
+    .my-service-container{
+        overflow: visible !important;
+        height: 33%;
+    }
+    .singleService{  
+        padding: 0px !important;
+        padding-top: 10px !important;
+    }
+    .service{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 601px){
+    #about{
+        position: relative !important;
+        height: 900px !important;
+        width: 100%;
+        max-width: 1000px;
+        overflow: hidden !important;
+        /* border: 1px solid red; */
+    }
+    #about .container{
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    #about .main-content{
+        width: 100%;
+        margin: auto;
+    }
+    #about .container p{
+        font-size: 1rem;
+    }
+    #about .right{
+        margin-left: 0% !important;
+        width: 85%;
+    }
+    #about .circles{
+        top: 15%;
+        left: 88%;
+        height: 300px;
+    }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) and (min-width: 401px){
     #about{
-        width: 130%;
-        height: 950px;
+        height: 900px !important;
+        width: 98%;
+        max-width: 500px;
+        overflow: hidden !important;
+        /* border: 1px solid red; */
+    } 
+    #about .main-content{
+        width: 100%;
+        margin: auto;
+    }
+    #about .container p{
+        font-size: 1rem;
     }
     #about .container{
         width: 98%;
-        margin-left: 5% !important;
+        /* border: 1px solid yellow; */
     }
-    #about .titleSmall{
-        font-size: 3.5rem;
-        left: 18%;
+    #about .container .text{
+        width: 90%;
+        margin: auto;
     }
-    #about .titleBig{
-        font-size: 8rem;
-        left: -25%;
-    }
-    #about .container p{
-        font-size: 21px;
-        line-height: 35px;
-        width: 80%;
-        
-    }
+}
+
+@media only screen and (max-width: 400px){
     #about{
         position: relative;
-        margin-top: 400px;
+        height: 900px !important;
+        width: 100%;
+        max-width: 400px;
+        overflow: hidden !important;
+        /* border: 1px solid red; */
     }
-    #about .circles{
-        height: 370px !important;
-        left: 63% !important;
-    }
-    /* #about .circles img{
-        width: 30px;
-    } */
-    #about .body-hr{
-        width: 40%;
-    }
-    #about .circles{
-        height: 350px;
-    }
-    #about .circles img{
-        width: 30px !important;
-    }
-    #about .my-service-container {
-        width: 100vw;
-    }
-    #about .singleService{
-        width: 80% !important;
-        font-size: 30px !important;
-        padding-bottom: 70px !important; 
-    }
-    #about .singleService p{
-        font-size: 25px !important;
-        line-height: 35px !important;
-    }
-    #about .singleService:nth-of-type(2){
-        display: none !important;
-    }
-    #about .singleService:nth-of-type(3){
-        display: none !important;
-    }
-    #about .singleService:nth-of-type(5){
-        display: none !important;
-    }
-    #about .singleService:nth-of-type(6){
-        display: none !important;
-    }
-    #about .serviceHeader{
-        margin-top: 40px;
-        font-size: 25px;
-    }
-    
-}
-@media only screen and (max-width: 500px){
-    #about{
-        width: 60rem;
-        height: 180vh;
-    }
-    #about .titleSmall{
-        left: 14%;
+    #about .main-content{
+        width: 100%;
     }
     #about .container{
-        width: 85%;
-        margin-right: 15%;
+        width: 98%;
+        /* border: 1px solid yellow; */
     }
-    #about .singleService p{
-        font-size: 20px !important;
-        line-height: 35px !important;
+    #about .container p{
+        font-size: 1rem;
     }
-    #about .circles{
-        height: 370px !important;
-        left: 75% !important;
+    #about .container .text{
+        width: 95%;
+        margin: auto;
+        /* border: 1px solid green; */
     }
-    #about .singleService{
-        /* width: 100% !important; */
-        width: 200vw !important;
-        margin: auto !important;
-        font-size: 30px !important;
-        padding-bottom: 140px !important; 
-    }
-    #about .circles{
-        height: 370px !important;
-        left: 58% !important;
-    }
+    
+    
 
 }

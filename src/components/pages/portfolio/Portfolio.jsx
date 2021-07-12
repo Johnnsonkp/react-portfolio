@@ -12,7 +12,7 @@ const Portfolio = () => {
             const currentScroll = window.pageYOffset;
             const currentSection = document.getElementById("portfolio")
 
-            if(currentScroll > 2100 && window.innerWidth > 700){
+            if(currentScroll > 2100 && window.innerWidth > 1000){
                 currentSection.classList.add('blur')
             }else{
                 currentSection.classList.remove('blur')

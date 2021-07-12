@@ -2,8 +2,24 @@ import React from 'react';
 import './Navbar.css'
 
 const Navbar = () => {
+
+    const onScroll = () => {
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+
+            if(currentScroll > 80){
+                document.getElementById("home-header").classList.add('onScrollNav')
+                console.log("working")
+            }
+            if(currentScroll < 80){
+                document.getElementById("home-header").classList.remove('onScrollNav')
+                console.log("working")
+            }
+        });
+    }
+
     return (
-        <header id="home-header">
+        <header onScroll={onScroll()} id="home-header">
             <nav className="header-nav">
                 <a className="hero-text left" href="https://johnnsonkp-dev.herokuapp.com/">Johnnsonkp</a>
                 <ul className="right" id="mainMenu">

@@ -20,7 +20,6 @@ const Myservice = () => {
         backgroundColor: '#111',
         color: '#fff',
         margin: '5px',
-        
     }
 
     useEffect(() => {

@@ -47,7 +47,7 @@
 }
 .project-selectors{
     border: 1px solid rgba(255, 255, 255, 0.75);
-    border: 1px solid #f6004c;
+    border: 1px solid #252934;
     box-sizing: border-box;
     border-radius: 5px;
     background: #252934;
@@ -155,7 +155,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.porfolio .titleSmall{
+/* .porfolio .titleSmall{
     font-size: 50px;
     position: absolute;
     top: 75px;
@@ -170,7 +170,7 @@
     top: 0;
     left: 0%;
     margin-bottom: 0px;
-}
+} */
 @media only screen and (min-width: 1900px){
     #portfolio .circles{
         top: 200px !important;
@@ -189,9 +189,9 @@
     #portfolio .container{
         max-width: 1400px;
     }
-    .porfolio .titleSmall{
+    /* .porfolio .titleSmall{
         left: 41% !important;
-    } 
+    }  */
     #portfolio .circles{
         top: 200px !important;
         /* left: 78% !important;
@@ -202,16 +202,12 @@
         margin: auto;
     } */
 }   
-@media only screen and (max-width: 1200px){
-    .porfolio .titleSmall{
-        left: 27% !important;
-    }
+/* @media only screen and (max-width: 1200px){
+   
 }
 @media only screen and (max-width: 1000px){
-    .porfolio .titleSmall{
-        left: 25% !important;
-    }
-}
+    
+} */
 @media only screen and (max-width: 900px){
     #portfolio{
         width: 110vw;
@@ -221,38 +217,14 @@
         left: 90% !important;
     }
 }
-@media only screen and (max-width: 800px){
-    .porfolio .titleSmall{
-        left: 18% !important;
-    }
-    .porfolio .titleBig{
-        left: -8% !important;
-    }
+@media only screen and (max-width: 1000px) and (min-width: 801px){
     #portfolio{
-        width: 130vw;
-    }
-    #portfolio .projects-container{
-        width: 75%;
-    }
-    #portfolio .circles{
-        height: 280px !important;
-        left: 78% !important;
-    }
-    #portfolio .circles img{
-        width: 20px;
-    }
-    .project-selectors{
-        position: relative;
-        left: -10%;
-    }
-    #portfolio .container{
+        position: relative !important;
+        height: 900px !important;
         width: 100%;
-        margin: auto;
-    }
-}
-@media only screen and (max-width: 700px){
-    #portfolio{
-        position: relative;
+        max-width: 1000px;
+        position: relative !important;
+        overflow: visible;
     }
     #portfolio .projects-container{
         width: 85%;
@@ -261,57 +233,85 @@
         height: 280px !important;
         left: 90% !important;
     }
+    #portfolio .circles img{
+        width: 20px;
+    }
+    #portfolio .container{
+        width: 100%;
+        margin: auto;
+    }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px) and (min-width: 601px){
     #portfolio{
-        width: 155vw;
+        position: relative !important;
+        height: 900px !important;
+        width: 100%;
+        max-width: 800px;
+        position: relative !important;
+        overflow: visible;
     }
-}
-@media only screen and (max-width: 500px){
-    .porfolio .titleSmall{
-        left: 10% !important;
+    #portfolio .projects-container{
+        width: 85%;
     }
-    .porfolio .titleBig{
-        font-size: 7rem;
+    #portfolio .circles{
+        height: 280px !important;
+        left: 90% !important;
     }
     #portfolio .project-selectors{
-        width: 400px;
-        max-width: 50%;
+        width: 100% !important;
+        max-width: 400px;
     }
+}
+
+@media only screen and (max-width: 600px){
     #portfolio{
-        width: 165vw;
-        height: 800vh;
-        height: 2200px;
+        position: relative !important;
+        height: 2500px;
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 0px;
+        /* border: 1px solid red; */
+    }
+    #portfolio .circles{
+        display: none;
+    }
+    #portfolio .container{
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .project-wrapper{
+        width: 100%;
+        height: 350px;
+    }
+    #portfolio .project-selectors{
+        width: 100% !important;
+        max-width: 250px;
+        font-size: 0.5rem !important;
+        margin: auto;
+        margin-top: 15px;
+        /* max-width: 350px; */
+        /* border: 1px solid red; */
+    }
+    .project-wrapper img{
+        height: 300px;
+        width: 97%;
+        margin: auto;
+    }
+    .project-wrapper{
+        width: 100%;
+    }
+    #portfolio .projects-container{
+        width: 95% !important;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .project-selectors button{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.6rem;
     }
     #portfolio .projects-container .row{
         display: flex;
         flex-direction: column;
-    }
-    .project-wrapper{
-        width: 100%;
-        height: 300px;
-    }
-    .project-wrapper img{
-        height: 300px;
-    }
-}
-@media only screen and (max-width: 450px){
-    .project-selectors{
-        position: relative;
-        left: -15%;
-    }
-    .porfolio .titleBig{
-        left: -15% !important;
-    }
-    #portfolio{
-        width: 250vw;
-    }
-    .project-wrapper{
-        width: 80%;
-        height: 300px;
-    }
-    #portfolio .circles{
-        height: 280px !important;
-        left: 75% !important;
     }
 }

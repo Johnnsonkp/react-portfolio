@@ -14,7 +14,7 @@ function Blog() {
             const currentScroll = window.pageYOffset;
             const currentSection = document.getElementById("blogSection")
 
-            if(currentScroll > 3000 && window.innerWidth > 700){
+            if(currentScroll > 3000 && window.innerWidth > 1000){
                 currentSection.classList.add('blur')
             } else{
                 currentSection.classList.remove('blur')

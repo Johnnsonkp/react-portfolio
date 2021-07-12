@@ -19,4 +19,163 @@
 .h1{
     margin-bottom: 0px;
 }
+@media only screen and (min-width: 1201px){
+    #portfolio .titleBig{
+        font-size: 5.5rem;
+        left: 0% !important;
+        text-align: center !important;
+    }
+    #blogSection .titleBig{
+        font-size: 6.5rem;
+        left: 34% !important;
+        text-align: center !important;
+    }
+    #portfolio .titleSmall{
+        font-size: 3rem;
+        top: 7.5%;
+        left: 35% !important; 
+        text-align: center !important;
+    }
+    #blogSection .titleSmall{
+        font-size: 3.5rem;
+        top: 8.5%;
+        left: 41% !important; 
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 801px){
+    .titleBig{
+        font-size: 5rem;
+        left: 0% !important;
+        text-align: center !important;
+    }
+    #portfolio .titleBig{
+        font-size: 4rem;
+        left: 0% !important;
+        text-align: center !important;
+    }
+    #blogSection .titleBig{
+        font-size: 6rem;
+        left: 30% !important;
+        text-align: center !important;
+    }
+    .titleSmall{
+        font-size: 3rem;
+        top: 7.5%;
+        left: 30% !important; 
+        text-align: center !important;
+    }
+    #portfolio .titleSmall{
+        font-size: 2rem;
+        top: 5.8%;
+        left: 32% !important; 
+        text-align: center !important;
+    }
+    #blogSection .titleSmall{
+        font-size: 3.5rem;
+        top: 5%;
+        left: 38% !important; 
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 601px){
+    .titleBig{
+        font-size: 5rem;
+        left: 0% !important;
+        text-align: center !important;
+    }
+    #portfolio .titleBig{
+        font-size: 4rem;
+        left: 0% !important;
+        text-align: center !important;
+    }
+    #blogSection .titleBig{
+        font-size: 5rem;
+        left: 22% !important;
+        text-align: center !important;
+    }
+    .titleSmall{
+        font-size: 3rem;
+        top: 7.5%;
+        left: 35% !important; 
+        text-align: center !important;
+    }
+    #portfolio .titleSmall{
+        font-size: 2rem;
+        top: 5.8%;
+        left: 25% !important; 
+        text-align: center !important;
+    }
+    #blogSection .titleSmall{
+        font-size: 3rem;
+        top: 3%;
+        left: 35% !important; 
+        text-align: center !important;
+    }
+}
+@media only screen and (max-width: 600px) and (min-width: 401px){
+    .titleBig{
+        font-size: 3.5rem;
+        left: 0% !important;
+        text-align: center !important;
+    }
+    #portfolio .titleBig{
+        font-size: 3.5rem;
+        left: 0% !important;
+        text-align: center !important;
+    }
+    #blogSection .titleBig{
+        font-size: 5.5rem;
+        left: 12% !important;
+        text-align: center !important;
+    }
+    .titleSmall{
+        font-size: 2rem;
+        top: 6.8%;
+        left: 30% !important; 
+        text-align: center !important;
+    }
+    #portfolio .titleSmall{
+        font-size: 2rem;
+        top: 2.2%;
+        left: 17.5% !important; 
+        text-align: center !important;
+    }
+    #blogSection .titleSmall{
+        font-size: 3rem;
+        top: 3.8%;
+        left: 28% !important; 
+        text-align: center !important;
+    }
+}
 
+@media only screen and (max-width: 400px){
+    .titleBig{
+        font-size: 3.5rem;
+        left: 0% !important;
+    }
+    #portfolio .titleBig{
+        font-size: 3.3rem;
+        left: 0% !important;
+
+    }
+    #blogSection .titleBig{
+        font-size: 4rem;
+        left: 10% !important;
+    }
+    .titleSmall{
+        font-size: 2rem;
+        top: 6.8%;
+        left: 25% !important;
+    }
+    #portfolio .titleSmall{
+        font-size: 1.5rem;
+        top: 2%;
+        left: 14% !important;
+    }
+    #blogSection .titleSmall{
+        font-size: 2rem;
+        top: 3.5%;
+        left: 30% !important;
+    }
+}

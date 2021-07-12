@@ -52,3 +52,16 @@
   }
 }
 
+@media only screen and (max-width: 400px){
+  .light{
+    position: fixed;
+    top: 10%;
+    left: 10px;
+  }
+  .dark{
+    position: fixed;
+    top: 10%;
+    left: 10px;
+  }
+}
+

@@ -10,13 +10,20 @@ const Home = () => {
             const currentScroll = window.pageYOffset;
             const homeSection = document.getElementById("home-section");
             
-            currentScroll > 250 ? homeSection.classList.add('blur') : homeSection.classList.remove('blur')
+            // currentScroll > 250 ? homeSection.classList.add('blur') : homeSection.classList.remove('blur')
+
+            if(currentScroll > 250 && window.innerWidth > 1000){
+                homeSection.classList.add('blur')
+            } else{
+                homeSection.classList.remove('blur')
+            }
             
             currentScroll <= checkpoint ? homeSection.style.opacity = 1.5 - currentScroll / checkpoint :
                                           homeSection.style.opacity = 0;
                               
         });
     }
+
     return (
         <main id="home-section" onLoad={fadeScroll()}>
             

@@ -6,6 +6,7 @@
     border-radius: 8px;
     transform: rotate(45deg);
     color: #f6004c;
+    
 }
 
 .hide-slide{
@@ -27,6 +28,7 @@
     /* border: 1px solid red; */
     border-radius: 10px;
     /* border: 1px solid rgba(236, 240, 241, 1); */
+    
 }
 
 .singleService{
@@ -44,3 +46,15 @@
     border-top: 1px solid #eeeeee26;
 }
 
+@media only screen and (max-width: 800px){
+    .my-service-container{
+        width: 93.5%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .my-service-container{
+        width: 90%;
+        overflow: hidden;
+    }
+}

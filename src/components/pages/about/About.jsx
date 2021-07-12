@@ -13,7 +13,7 @@ const About = () => {
             const currentScroll = window.pageYOffset;
             const aboutSection = document.getElementById("about")
 
-            if(currentScroll > 1050 && window.innerWidth > 700){
+            if(currentScroll > 1050 && window.innerWidth > 1000){
                 aboutSection.classList.add('blur')
             } else{
                 aboutSection.classList.remove('blur')
