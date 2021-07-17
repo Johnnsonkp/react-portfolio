@@ -8,6 +8,8 @@
     width: 10px; 
     /* // background-image: url('sun.png'); */
     background-image: url('http://rainbowit.net/themes/trydo/wp-content/themes/trydo/assets/images/icons/sun-01.svg');
+    /* background-image: url('/sun.svg'); */
+    /* background-image: url('/profile-pic.jpg'); */
     background-position: center center;
     background-size: cover;
   

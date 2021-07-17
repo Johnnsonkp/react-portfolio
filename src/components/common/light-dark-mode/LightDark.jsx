@@ -19,6 +19,7 @@ class LightDark extends Component {
           dayNightBtn.classList.remove('light')
           dayNightBtn.classList.add('dark')
           dayNightBtn.classList.add('pulseDayNight')
+          dayNightBtn.style.backgroundImage = "/public/sun.svg"
           // document.getElementById('home-section').style.backgroundColor = LightWhite
           // document.body.style.backgroundColor = "#40434e75"
           document.body.classList.add('LightColor')
@@ -47,6 +48,8 @@ class LightDark extends Component {
           dayNightBtn.classList.add('light')
           dayNightBtn.classList.remove('dark')
           dayNightBtn.classList.remove('pulseDayNight')
+
+          dayNightBtn.style.backgroundImage = "/public/moon-pic.svg"
 
           // body background color & text color
           document.body.classList.remove('LightColor')

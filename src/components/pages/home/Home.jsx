@@ -12,7 +12,7 @@ const Home = () => {
             
             // currentScroll > 250 ? homeSection.classList.add('blur') : homeSection.classList.remove('blur')
 
-            if(currentScroll > 250 && window.innerWidth > 1000){
+            if(currentScroll > 350 && window.innerWidth > 1000){
                 homeSection.classList.add('blur')
             } else{
                 homeSection.classList.remove('blur')
