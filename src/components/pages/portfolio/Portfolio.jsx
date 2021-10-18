@@ -8,7 +8,6 @@ const Portfolio = () => {
         const checkpoint = 5250;
 
         window.addEventListener("scroll", () => {
-            
             const currentScroll = window.pageYOffset;
             const currentSection = document.getElementById("portfolio")
 
@@ -17,9 +16,6 @@ const Portfolio = () => {
             }else{
                 currentSection.classList.remove('blur')
             }
-
-            // currentScroll > 2100 && window.width > 700 ? currentSection.classList.add('blur') : currentSection.classList.remove('blur')
-
             currentScroll <= checkpoint ? currentSection.style.opacity = 1.8 - currentScroll / checkpoint : currentSection.style.opacity = 0;
             
         });
@@ -77,7 +73,7 @@ const Portfolio = () => {
     return (
         <section id="portfolio" onLoad={fadeScroll()}>
             <div className="overlay-hidden">
-            <div class="container"> 
+            <div className="container"> 
             {/* <h1>Recent Portfolio<hr></hr></h1> */}
             
             <div className="porfolio">
@@ -89,15 +85,15 @@ const Portfolio = () => {
                 <button onClick={handleClick} className="portfolioBtn fade" id="professionalProjects">Professional Project Contributions</button>
                 <button onClick={handleClick} className="portfolioBtn fade" id="designProjects">Personal Projects</button>
             </div>
-            <div class="projects-container">
+            <div className="projects-container">
                 <div className="row">
                     <div className="project-wrapper all design">
                         <a href="https://cozy-tees-app.herokuapp.com/">
                             <img src="./cozy-tees.png" alt=""/>
                             <div className="inner-content">
                                 <h4>Cozy Tees Marketplace</h4>
-                                <a class="btn" href="https://cozy-tees-app.herokuapp.com/">View Project</a>
-                                <a class="btn" href="https://github.com/Johnnsonkp/cozy_tees">Source Code</a>
+                                <a className="btn" href="https://cozy-tees-app.herokuapp.com/">View Project</a>
+                                <a className="btn" href="https://github.com/Johnnsonkp/cozy_tees">Source Code</a>
                             </div>
                         </a>
                     </div>
@@ -106,17 +102,17 @@ const Portfolio = () => {
                             <img src="./vibe.png" alt=""/>
                             <div className="inner-content">
                                 <h4>It's A Vibe</h4>
-                                <a class="btn" href="https://its-a-vibe.netlify.app/">View Project</a>
-                                <a class="btn" href="https://github.com/its-a-vibe/vibe">Source Code</a>
+                                <a className="btn" href="https://its-a-vibe.netlify.app/">View Project</a>
+                                <a className="btn" href="https://github.com/its-a-vibe/vibe">Source Code</a>
                             </div>
                         </a>
                     </div>
                     <div className="project-wrapper all professional design">
-                        <a class="link" href="https://flightclubgolf.com/">
+                        <a className="link" href="https://flightclubgolf.com/">
                             <img src="./flight-club.png" alt=""/>
                             <div className="inner-content">
                                 <h4>Flight Golf Club</h4>
-                                <a class="btn" href="https://flightclubgolf.com/">View Project</a>
+                                <a className="btn" href="https://flightclubgolf.com/">View Project</a>
                             </div>
                         </a>
                     </div> 
@@ -127,8 +123,8 @@ const Portfolio = () => {
                             <img src="./portfolio-v2.png" alt=""/>
                             <div className="inner-content">
                                 <h4>Portfolio v2</h4>
-                                <a class="btn" href="https://johnnsonkp-dev.herokuapp.com/">View Project</a>
-                                <a class="btn" href="https://github.com/Johnnsonkp/johnnsonkp-dev">Source Code</a>
+                                <a className="btn" href="https://johnnsonkp-dev.herokuapp.com/">View Project</a>
+                                <a className="btn" href="https://github.com/Johnnsonkp/johnnsonkp-dev">Source Code</a>
                             </div>
                         </a>
                     </div>
@@ -137,17 +133,17 @@ const Portfolio = () => {
                             <img src="./book-grocer.png" alt=""/>
                             <div className="inner-content">
                                 <h4>The Book Grocer</h4>
-                                <a class="btn" href="https://bookgrocer.com/">View Project</a>
+                                <a className="btn" href="https://bookgrocer.com/">View Project</a>
                             </div>
                         </a>
                     </div>
                     <div className="project-wrapper all design">
-                        <a class="link" href="https://rails-moviedb.herokuapp.com/">
+                        <a className="link" href="https://rails-moviedb.herokuapp.com/">
                             <img src="./bitflix.png" alt=""/>
                             <div className="inner-content">
                                 <h4>Bitflix</h4>
-                                <a class="btn" href="https://rails-moviedb.herokuapp.com/">View Project</a>
-                                <a class="btn" href="https://github.com/Johnnsonkp/ROR-movies">Source Code</a>
+                                <a className="btn" href="https://rails-moviedb.herokuapp.com/">View Project</a>
+                                <a className="btn" href="https://github.com/Johnnsonkp/ROR-movies">Source Code</a>
                             </div>
                         </a>
                     </div>

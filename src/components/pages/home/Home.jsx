@@ -25,16 +25,11 @@ const Home = () => {
 
     return (
         <main id="home-section" onLoad={fadeScroll()}>
-            
             <div className="overlay-hidden">
-
-            
                 <div className="block"></div>
                     <a className="outer-circle" href="#about">
-                        {/* <img className="circle" src="profile-pic.jpg" alt=""></img> */}
                         <img className="profile-pic circle" src={pic} alt=""></img>
                     </a>
-                    {/* <a className="circle" href="#about"></a> */}
                     <div className="content">
                         <div className="text-content">
                             <h4>HI THERE !</h4>
@@ -49,10 +44,7 @@ const Home = () => {
                     <div className="circles">
                         <NavControl />
                     </div>
-
             </div>
-
-            
         </main>
    )
 }

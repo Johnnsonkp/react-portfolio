@@ -64,26 +64,16 @@ class LightDark extends Component {
           // Portfolio section dark mode
           document.getElementById('portfolio').classList.remove("LightColor")
           document.getElementById('portfolio').style.backgroundColor = DarkColorAlternate
-
-
-          // document.body.style.backgroundColor = "#40434e75"
-          // document.getElementById('about').style.backgroundColor = DarkColour
-
           document.getElementById('blogSection').classList.remove("LightColor")
-          // document.getElementById('blogSection').style.backgroundColor = DarkColour
           document.getElementById('blogSection').classList.add('darkColor')
-
-
           document.querySelectorAll('.titleBig').forEach((title) => {
             title.style.filter = "none"
           })
           document.querySelectorAll('hr').forEach((singleHr) => {
             singleHr.style.filter = "none"
           })
-          // document.querySelector('hr').style.backgroundColor = LightColor
           console.log("light")
         }
-
         DayNightMode === "light" ? DayMode() : NightMode()  
     }
     render() {

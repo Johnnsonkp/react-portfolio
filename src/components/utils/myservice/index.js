@@ -1,4 +1,3 @@
-import Myservice from './MyService'
+import Component from "./MyService";
 
-
-export default Myservice
+export default Component;

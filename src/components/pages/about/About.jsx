@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import NavControl from '../../utils/NavControl'
-import Myservice from '../../utils/myservice'
+import Component from '../../utils/myservice'
 import Title from '../../common/title'
 
 
@@ -24,13 +24,9 @@ const About = () => {
     const displayNone = {
         display: "none"
     }
-    
     return (
-        
         <section id="about" onLoad={fadeScroll()}>
-
             <div className="overlay-hidden">
-
                 <div className="container">
                     <Title title1="ABOUT" title2="ME" titleBackground="RESUME"/>
                     <div className="main-content">
@@ -87,10 +83,8 @@ const About = () => {
                             </p>
                             <br></br>
                             <hr className="body-hr"></hr>
-                            <h5 className="serviceHeader">My Service</h5>
-                            <br/>
                             <div className="my-service-container">
-                                <Myservice />
+                                <Component />
                             </div>
                         </div>
                     </div>

@@ -344,8 +344,8 @@
         /* border: 1px solid red; */
     }
     .my-service-container{
-        overflow: visible !important;
-        height: 33%;
+        /* overflow: visible !important;
+        height: 33%; */
     }
     .singleService{  
         padding: 0px !important;
