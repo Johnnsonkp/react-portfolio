@@ -1,25 +1,23 @@
 import React, { useEffect } from 'react';
+import '../../App.css'
 
 const NavControl = () => {
 
     useEffect(() => {
         let sideNav = document.querySelectorAll('.sideNav')
         let sections = document.querySelectorAll('.inner-circle')
-
         homeHighlight()
         function homeHighlight(){
             setTimeout(() => {
                 sections[0].classList.add('activeClick')
             }, 3000);
         }
-
         setTimeout(() => {     
             for(let i = 0; i < sideNav.length; i++){
                 sideNav[i].classList.add('showCircles')
                 sideNav[i].classList.remove('hideCircles')
             }
         }, 1500)
-        // setTimeout(activeClick(), 3000)
         fadeIn();
         handleClick()
         onScroll()
@@ -75,25 +73,13 @@ const NavControl = () => {
             })
         }
         function clicked(){
-            document.getElementById('home-section').classList.add('clickBlur')
-                document.getElementById('about').classList.add('clickBlur')
-                document.getElementById('portfolio').classList.add('clickBlur')
-                document.getElementById('blogSection').classList.add('clickBlur')
-                document.getElementById('contact').classList.add('clickBlur')
-                
-                
-
+                document.body.classList.add('bodyInactive')
                 setTimeout(() => {
-                    document.getElementById('home-section').classList.remove('clickBlur')
-                    document.getElementById('about').classList.remove('clickBlur')
-                    document.getElementById('portfolio').classList.remove('clickBlur')
-                    document.getElementById('blogSection').classList.remove('clickBlur')
-                    document.getElementById('contact').classList.remove('clickBlur')
-                }, 1200)
+                    document.body.classList.remove('bodyInactive')
+                    document.body.classList.add('bodyActive')
+                }, 500)
         }
         function handleClick(e){
-            // let home = document.querySelectorAll('.home')
-            // let about = document.querySelectorAll('.about')
             let allSection = document.querySelectorAll('.inner-circle')
             
             allSection.forEach((section) => {
@@ -101,32 +87,22 @@ const NavControl = () => {
 
                 section.addEventListener('click', (e) => {
                     clicked()
-
                     section.classList.add('accent-color')
                     const pageSection = e.target.classList[1]
 
                     if(pageSection === "home"){
                         activeClick("home")
                        
-
                         if(window.pageYOffset > 620){
                             e.preventDefault();
-                            setTimeout(() => {
                                 window.scrollTo(0, 0)
-                            }, 700)
-                            
                         }
                     }
                     if(pageSection === "about"){
                         activeClick("about")
-                        
-
                         if(window.pageYOffset > 1000){
                             e.preventDefault();
-                            
-                            setTimeout(() => {
                                 window.scrollTo(0, 1000)
-                            }, 700)
                         }
                     }
                     if(pageSection === "portfolio"){
@@ -134,7 +110,7 @@ const NavControl = () => {
 
                         if(window.pageYOffset > 1800){
                             e.preventDefault();
-                            window.scrollTo(0, 1800)
+                                window.scrollTo(0, 1800)
                         }
                     }
                     if(pageSection === "blog"){
@@ -142,7 +118,7 @@ const NavControl = () => {
 
                         if(window.pageYOffset > 2800){
                             e.preventDefault();
-                            window.scrollTo(0, 2800)
+                                window.scrollTo(0, 2800)
                         }
                     }
                     if(pageSection === "contact"){
@@ -226,29 +202,24 @@ const NavControl = () => {
             
         }
     })
-
-
     return (
-        // <div> 
-            <div className="hideCircles sideNav">
-                <a id="home" className="inner-circle home" href="#home-section">
-                    <img className="img home" src="./home-img.png" alt="" href="#home-section"/>
-                    {/* <span className="home-hover">Home</span> */}
-                </a> 
-                <a id="home" className="inner-circle about" href="#about">
-                    <img className="img about" src="./me-2.png" alt="" href="#about"/>
-                </a> 
-                <a id="home" className="inner-circle portfolio" href="#portfolio">
-                    <img className="img portfolio" src="./portfolio.png" alt="" href="#portfolio"/>
-                </a>
-                <a id="home" className="inner-circle blog" href="#blogSection">
-                    <img className="img blog" src="./blog.png" alt="" href="#blogSection"/>
-                </a>
-                <a id="home" className="inner-circle contact" href="#contact">
-                    <img className="img contact" src="./contact.png" alt="" href="#contact"/>
-                </a>
-            </div>
-        // </div>
+        <div className="hideCircles sideNav">
+            <a id="home" className="inner-circle home" href="#home-section">
+                <img className="img home" src="./home-img.png" alt="" href="#home-section"/>
+            </a> 
+            <a id="home" className="inner-circle about" href="#about">
+                <img className="img about" src="./me-2.png" alt="" href="#about"/>
+            </a> 
+            <a id="home" className="inner-circle portfolio" href="#portfolio">
+                <img className="img portfolio" src="./portfolio.png" alt="" href="#portfolio"/>
+            </a>
+            <a id="home" className="inner-circle blog" href="#blogSection">
+                <img className="img blog" src="./blog.png" alt="" href="#blogSection"/>
+            </a>
+            <a id="home" className="inner-circle contact" href="#contact">
+                <img className="img contact" src="./contact.png" alt="" href="#contact"/>
+            </a>
+        </div>
     )
 } 
 export default NavControl
