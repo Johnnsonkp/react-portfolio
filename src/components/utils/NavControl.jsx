@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import '../../App.css'
 
 const NavControl = () => {
-
     useEffect(() => {
         let sideNav = document.querySelectorAll('.sideNav')
         let sections = document.querySelectorAll('.inner-circle')
@@ -21,11 +20,9 @@ const NavControl = () => {
         fadeIn();
         handleClick()
         onScroll()
-
         function onScroll(){
             window.addEventListener("scroll", () => {
                 const currentScroll = window.pageYOffset
-
                 if(currentScroll > 100) {
                     let section = "home"
                     activeClick(section)
@@ -46,24 +43,17 @@ const NavControl = () => {
                     let section = "contact"
                     activeClick(section)
                 }
-
             })
         }
-
         function activeClick(input){
             deactivateClick(input)
-
             let section = document.querySelectorAll("." + input)
             section.forEach((active) => {
                 active.classList.add('activeClick')
-
             }) 
         }
-
         function deactivateClick(input){
             let section = document.querySelectorAll("." + input)
-            // let allSection = document.querySelectorAll('.inner-circle')
-
             section.forEach((active) => {
                 document.querySelectorAll('.inner-circle').forEach((innerSection) => {
                     if(active !== innerSection){
@@ -81,18 +71,14 @@ const NavControl = () => {
         }
         function handleClick(e){
             let allSection = document.querySelectorAll('.inner-circle')
-            
             allSection.forEach((section) => {
                 section.classList.remove('activeClick')
-
                 section.addEventListener('click', (e) => {
                     clicked()
                     section.classList.add('accent-color')
                     const pageSection = e.target.classList[1]
-
                     if(pageSection === "home"){
                         activeClick("home")
-                       
                         if(window.pageYOffset > 620){
                             e.preventDefault();
                                 window.scrollTo(0, 0)
@@ -107,7 +93,6 @@ const NavControl = () => {
                     }
                     if(pageSection === "portfolio"){
                         activeClick("portfolio")
-
                         if(window.pageYOffset > 1800){
                             e.preventDefault();
                                 window.scrollTo(0, 1800)
@@ -115,7 +100,6 @@ const NavControl = () => {
                     }
                     if(pageSection === "blog"){
                         activeClick("blog")
-
                         if(window.pageYOffset > 2800){
                             e.preventDefault();
                                 window.scrollTo(0, 2800)
@@ -128,14 +112,11 @@ const NavControl = () => {
             })
 
         }
-
         function fadeIn(){
             let checkpoints = [230, 620, 1180, 1400, 2258, 2630, 3140, 3347]
             let sideNav = document.querySelectorAll('.sideNav')
-
             window.addEventListener("scroll", () => {
                 const currentScroll = window.pageYOffset
-
                 if(currentScroll < checkpoints[0]) {
                     for(let i = 0; i < sideNav.length; i++){
                         sideNav[i].classList.add('showCircles')
@@ -199,7 +180,6 @@ const NavControl = () => {
                     }
                 }
             })
-            
         }
     })
     return (

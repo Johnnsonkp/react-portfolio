@@ -14,7 +14,6 @@ export default function Blog(props) {
 					<p>{post}</p>
 					{/* <button>Read Story</button> */}
 				</div>
-				
 			</a>
 		</>
 	)
