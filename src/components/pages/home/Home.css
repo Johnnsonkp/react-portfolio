@@ -34,8 +34,6 @@ body {
 body {
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Open Sans', sans-serif;
   color: #fff;
   z-index: 0;
 }
@@ -205,10 +203,16 @@ body a, head a {
 }
 
 #home-section .content p {
-  font-weight: 600;
+  /* font-weight: normal; */
   font-size: 18px;
   line-height: 33px;
   width: 100%;
+  /* line-height: 2.3rem;
+    font-weight: 600; */
+
+    font-size: 1.2vw;
+    line-height: 2rem;
+    font-weight: 600;
 }
 
 #home-section .content .title-flrkr {

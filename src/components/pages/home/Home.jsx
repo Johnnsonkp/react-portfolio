@@ -42,7 +42,7 @@ const Home = () => {
                                 <div className="text-wrap">I'm </div>
                                 <JobTitle/><div className="divider">|</div>
                             </div>
-                            <p>I'm a Melbourne based Full stack developer & designer, with a passion for code and a love for technology. I specialise on the front-end and love turning design into code. </p>
+                            <p>I'm a Melbourne-based full-stack developer, with a passion for code and a love for technology. I specialise on the front-end and love turning design into code. </p>
                             <a className="view-my-work-btn" href="#portfolio">View My Work</a>
                         </div>
                     </div>
