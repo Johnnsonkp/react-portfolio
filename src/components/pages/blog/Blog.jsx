@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './blog.css'
-import Circles from '../../utils/Circles'
-// import BlogGeneratorForm from '../../utils/blogGenerator/BlogGForm'
+import NavControl from '../../utils/NavControl'
 import BlogList from './BlogList'
 import Title from '../../common/title'
 
@@ -10,7 +9,6 @@ function Blog() {
         const checkpoint = 7500;
 
         window.addEventListener("scroll", () => {
-            
             const currentScroll = window.pageYOffset;
             const currentSection = document.getElementById("blogSection")
 
@@ -19,9 +17,6 @@ function Blog() {
             } else{
                 currentSection.classList.remove('blur')
             }
-
-            // currentScroll > 3000 ? currentSection.classList.add('blur') : currentSection.classList.remove('blur')
-
             currentScroll <= checkpoint ? currentSection.style.opacity = 1.2 - currentScroll / checkpoint : currentSection.style.opacity = 0;
             
         });
@@ -30,10 +25,6 @@ function Blog() {
     const initialBlogPost = [
 
 	]
-
-    // function addBlog(blog) {
-    //     generateBlogs([blog, ...blogs]) // Spread synthax, attaches the latest blog to the front array of blogs array
-    // }
 
     const [blogs, generateBlogs] = useState(initialBlogPost)
 
@@ -51,6 +42,9 @@ function Blog() {
 
     return (
         <section id="blogSection" onLoad={fadeScroll()}>
+
+            <div className="overlay-hidden">
+
             <div className="block"></div>
             
             <div className="content">
@@ -63,7 +57,9 @@ function Blog() {
             </div>
             
             <div className="circles">
-                <Circles />
+                <NavControl />
+            </div>
+
             </div>
 
         </section>

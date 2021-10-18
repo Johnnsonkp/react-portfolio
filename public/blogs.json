@@ -1,14 +1,21 @@
 [
     {
-      "name": "The future of eCommerce",
-      "post": "A React version of the popular logic game"
+      "name": "Student spotlight coding starters",
+      "post": "Student spotlight: Chinonso John Nkpolukwu Coder Academy",
+      "url": "http://www.coderacademy.edu.au/blog/student-spotlight-chinonso-john-nkpolukwu-coder-academy-melbourne",
+      "img": "./CA-blog.png",
+      "date": "04 Sep 21"
     },
     {
-      "name": "How CMS technology is taking over developer roles",
-      "post": "A full stack app to track chores completed and money earned"
+      "name": "The future of eCommerce",
+      "post": "A full stack app to track chores completed and money earned",
+      "img": "./CA-blog.png",
+      "date": "04 Sep 21"
     },
     {
       "name": "The rise of the Headless CMS",
-      "post": "A full stack app using AWS lambda for serverless backend that showcases the photography of a client"
+      "post": "A full stack app using AWS lambda for serverless backend that showcases the photography of a client",
+      "img": "./CA-blog.png",
+      "date": "04 Sep 21"
     }
   ]

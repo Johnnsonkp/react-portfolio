@@ -662,9 +662,9 @@ body a, head a {
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1001px) {
-  * {
+  /* * {
     overflow-x: hidden;
-  }
+  } */
   #home-section {
     max-width: 1600px;
     width: 98%;
@@ -929,5 +929,26 @@ body a, head a {
   #home-header {
     overflow-x: visible !important;
   }
+}
+
+.clickBlur {
+  -webkit-transition: -webkit-filter 0.3s ease-in-out !important;
+  transition: -webkit-filter 0.3s ease-in-out !important;
+  transition: filter 0.3s ease-in-out !important;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out !important;
+  -webkit-filter: grayscale(1) blur(100px) brightness(1.2) !important;
+          filter: grayscale(1) blur(100px) brightness(1.2) !important;
+  transition: filter 0.3s ease-in-out !important;
+  z-index: 9000 !important;
+}
+
+.clickBlur .overlay-hidden {
+  display: none;
+  -webkit-transition: -webkit-filter 0.3s ease-in-out !important;
+  transition: -webkit-filter 0.3s ease-in-out !important;
+  transition: filter 0.3s ease-in-out !important;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out !important;
+  -webkit-filter: grayscale(1) blur(200px) brightness(0.2) !important;
+          filter: grayscale(1) blur(200px) brightness(0.2) !important;
 }
 /*# sourceMappingURL=Home.css.map */

@@ -1,72 +1,3 @@
-// @mixin dots($count) {
-//     $text-shadow: ();
-//     @for $i from 0 through $count {
-//       $text-shadow: $text-shadow,
-//                    (-.5+(random()) * 3) + em
-//                    (-.5+(random()) * 3) + em
-//                    7px
-//                    rgba(random() * 105, 87, 175, 1);
-//     }
-//     text-shadow: $text-shadow;
-
-// }
-  
-//   body{
-//     background: #111111;
-//     width: 100%;
-//     min-width: 830px;
-//     overflow-x: hidden;
-//   }
-//   #home-section, head {
-//     display: block;
-//     font-size: 52px;
-//   }
-  
-//   head::before, head::after,
-//   #home-section::before, #home-section::after {
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     width: 3em;
-//     height: 3em;
-//     content: '.';
-//     mix-blend-mode: screen;
-//     animation: 44s -27s move infinite ease-in-out alternate;
-//   }
-//   #home-section::before {
-//     @include dots(40);
-//     animation-duration: 44s;
-//     animation-delay: -27s;
-//   }
-  
-//   #home-section::after {
-//     @include dots(40);
-//     animation-duration: 43s;
-//     animation-delay: -32s;
-//   }
-  
-//   head::before {
-//     @include dots(40);
-//     animation-duration: 42s;
-//     animation-delay: -23s;
-//   }
-  
-//   head::after {
-//     @include dots(40);
-//     animation-duration: 41s;
-//     animation-delay: -19s;
-//   }
-  
-  
-//   @keyframes move {
-//     from {
-//       transform: rotate(0deg) scale(12) translateX(-20px);
-//     }
-//     to {
-//       transform: rotate(360deg) scale(18) translateX(20px);
-//     }
-//   }
-
 body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background: linear-gradient(-45deg, #928DAB, #1F1C2C,#434343, #302b63);
@@ -889,4 +820,21 @@ body, head {
   #home-header{
     overflow-x: visible !important;
   }
+}
+
+.clickBlur{
+  transition: filter 0.3s ease-in-out !important;
+  // filter: blur(0px) !important;
+  filter: grayscale(1) blur(100px) brightness(1.2) !important;
+  // background-color: #f4f4f4 !important;
+  transition: filter 0.3s ease-in-out !important;
+  z-index: 9000 !important;
+
+  .overlay-hidden{
+    display: none;
+    // background-color: #f4f4f4 !important;
+    transition: filter 0.3s ease-in-out !important;
+    filter: grayscale(1) blur(200px) brightness(0.2) !important;
+  }
+  
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const Circles = () => {
+const NavControl = () => {
 
     useEffect(() => {
         let sideNav = document.querySelectorAll('.sideNav')
@@ -58,6 +58,7 @@ const Circles = () => {
             let section = document.querySelectorAll("." + input)
             section.forEach((active) => {
                 active.classList.add('activeClick')
+
             }) 
         }
 
@@ -73,7 +74,23 @@ const Circles = () => {
                 })
             })
         }
+        function clicked(){
+            document.getElementById('home-section').classList.add('clickBlur')
+                document.getElementById('about').classList.add('clickBlur')
+                document.getElementById('portfolio').classList.add('clickBlur')
+                document.getElementById('blogSection').classList.add('clickBlur')
+                document.getElementById('contact').classList.add('clickBlur')
+                
+                
 
+                setTimeout(() => {
+                    document.getElementById('home-section').classList.remove('clickBlur')
+                    document.getElementById('about').classList.remove('clickBlur')
+                    document.getElementById('portfolio').classList.remove('clickBlur')
+                    document.getElementById('blogSection').classList.remove('clickBlur')
+                    document.getElementById('contact').classList.remove('clickBlur')
+                }, 1200)
+        }
         function handleClick(e){
             // let home = document.querySelectorAll('.home')
             // let about = document.querySelectorAll('.about')
@@ -83,23 +100,33 @@ const Circles = () => {
                 section.classList.remove('activeClick')
 
                 section.addEventListener('click', (e) => {
+                    clicked()
+
                     section.classList.add('accent-color')
                     const pageSection = e.target.classList[1]
 
                     if(pageSection === "home"){
                         activeClick("home")
+                       
 
                         if(window.pageYOffset > 620){
                             e.preventDefault();
-                            window.scrollTo(0, 0)
+                            setTimeout(() => {
+                                window.scrollTo(0, 0)
+                            }, 700)
+                            
                         }
                     }
                     if(pageSection === "about"){
                         activeClick("about")
+                        
 
                         if(window.pageYOffset > 1000){
                             e.preventDefault();
-                            window.scrollTo(0, 1000)
+                            
+                            setTimeout(() => {
+                                window.scrollTo(0, 1000)
+                            }, 700)
                         }
                     }
                     if(pageSection === "portfolio"){
@@ -224,4 +251,4 @@ const Circles = () => {
         // </div>
     )
 } 
-export default Circles
+export default NavControl

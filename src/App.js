@@ -1,7 +1,15 @@
-import React from 'react';
-import './App.css';
-import { Navbar, Footer, Home, LightDark, About, Contact, Blog, Portfolio } from './components/index'
-
+import React from "react";
+import "./App.css";
+import {
+  Navbar,
+  Footer,
+  Home,
+  LightDark,
+  About,
+  Contact,
+  Blog,
+  Portfolio,
+} from "./components/index";
 
 function App() {
   return (
@@ -19,4 +27,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Portfolio.css'
-import Circles from '../../utils/Circles'
+import NavControl from '../../utils/NavControl'
 import Title from '../../common/title'
 
 const Portfolio = () => {
@@ -76,6 +76,7 @@ const Portfolio = () => {
     
     return (
         <section id="portfolio" onLoad={fadeScroll()}>
+            <div className="overlay-hidden">
             <div class="container"> 
             {/* <h1>Recent Portfolio<hr></hr></h1> */}
             
@@ -85,8 +86,8 @@ const Portfolio = () => {
             
             <div className="project-selectors">
                 <button onClick={handleClick} className="portfolioBtn allProjects fade" id="allProjects">All</button>
-                <button onClick={handleClick} className="portfolioBtn fade" id="professionalProjects">Professional Projects</button>
-                <button onClick={handleClick} className="portfolioBtn fade" id="designProjects">Design</button>
+                <button onClick={handleClick} className="portfolioBtn fade" id="professionalProjects">Professional Project Contributions</button>
+                <button onClick={handleClick} className="portfolioBtn fade" id="designProjects">Personal Projects</button>
             </div>
             <div class="projects-container">
                 <div className="row">
@@ -154,7 +155,9 @@ const Portfolio = () => {
             </div>
             </div>
             <div className="circles">
-                 <Circles />
+                 <NavControl />
+            </div>
+            
             </div>
         </section>
     )
