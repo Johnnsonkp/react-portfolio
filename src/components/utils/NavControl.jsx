@@ -62,19 +62,19 @@ const NavControl = () => {
                 })
             })
         }
-        function clicked(){
-                document.body.classList.add('bodyInactive')
-                setTimeout(() => {
-                    document.body.classList.remove('bodyInactive')
-                    document.body.classList.add('bodyActive')
-                }, 500)
-        }
+        // function clicked(){
+        //         document.body.classList.add('bodyInactive')
+        //         setTimeout(() => {
+        //             document.body.classList.remove('bodyInactive')
+        //             document.body.classList.add('bodyActive')
+        //         }, 200)
+        // }
         function handleClick(e){
             let allSection = document.querySelectorAll('.inner-circle')
             allSection.forEach((section) => {
                 section.classList.remove('activeClick')
                 section.addEventListener('click', (e) => {
-                    clicked()
+                    // clicked()
                     section.classList.add('accent-color')
                     const pageSection = e.target.classList[1]
                     if(pageSection === "home"){
