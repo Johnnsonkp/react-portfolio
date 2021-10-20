@@ -263,14 +263,15 @@
 @media only screen and (max-width: 400px){
     #about-section .titleBig{
         left: 0%; 
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     #about-section .titleSmall{
         left: 0%;
-        font-size: 2.5rem;
+        font-size: 2rem;
         top: 60px;
     }
 }
+
 
 @media only screen and (max-width: 1400px) and (min-width: 1001px){
     #about{

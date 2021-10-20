@@ -10,6 +10,7 @@
     z-index: 1;
     position: sticky;
     top: 0px;
+    opacity: 1 !important;
     transition: opacity 0.3s;
     padding-top: 50px;
     overflow: hidden !important;
@@ -87,7 +88,7 @@
     position: relative;
 }
 
-.blogs .titleSmall{
+/* .blogs .titleSmall{
     font-size: 50px;
     position: absolute;
     top: 45px;
@@ -102,7 +103,7 @@
     top: 0;
     left: 32%;
     margin-bottom: 0px;
-}
+} */
 #blogSection .block{
     z-index: 1;
     height: 980px;
@@ -117,6 +118,47 @@
     z-index: 1;
     position: relative;
 }
+
+/* Title positioning */
+#blogSection .title-div-container{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+}
+#blog-section .titleBig{
+    /* left: 6%;  */
+}
+#blog-section .titleSmall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+} 
+
+
+/* Media queries  */
+@media only screen and (max-width: 800px){
+    #blog-section .titleBig{
+        font-size: 4.5rem;
+    }
+    #blog-section .titleSmall{
+        font-size: 2.5rem;
+        top: 45px;
+    }
+}
+@media only screen and (max-width: 400px){
+    #blog-section .titleBig{
+        font-size: 3.5rem;
+    }
+    #blog-section .titleSmall{
+        font-size: 2rem;
+        top: 45px;
+    }
+}
+
 @media only screen and (min-width: 1500px){
     #blogSection .content{
         max-width: 1440px;

@@ -49,7 +49,7 @@ function Blog() {
             
             <div className="content">
                 <div className="blogs">
-                <Title title1="MY" title2="BLOG" titleBackground="ARTICLE"/>
+                <Title section="blog-section" title1="MY" title2="BLOG" titleBackground="ARTICLE"/>
                 </div>
                 <div className="container">
                     <BlogList blogs={blogs} />

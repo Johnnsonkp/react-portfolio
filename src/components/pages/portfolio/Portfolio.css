@@ -180,11 +180,11 @@
 }
 @media only screen and (max-width: 400px){
     #portfolio-section .titleBig{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     #portfolio-section .titleSmall{
         font-size: 1.5rem;
-        top: 45px;
+        top: 55px;
     }
 }
 @media only screen and (min-width: 1900px){
