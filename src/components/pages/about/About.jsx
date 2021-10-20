@@ -32,7 +32,7 @@ const About = () => {
                     <div className="main-content">
                         <div className="about-me-container">
                             <div className="about-pic"></div>
-                            <hr style={displayNone} class="body-hr"></hr>
+                            <hr style={displayNone} className="body-hr"></hr>
                             <div className="tech-stack">
                                 <h3 className="mini-header">Tech Stack</h3>
                                 <div className="dev-tools">             

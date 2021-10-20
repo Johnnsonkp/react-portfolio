@@ -1,6 +1,6 @@
 // import React from 'react'
 import './Myservice.css'
-import React, { useEffect, Component} from 'react'
+import React, { Component} from 'react'
 import Slider from "react-slick";
 
 export default class MultipleItems extends Component {
