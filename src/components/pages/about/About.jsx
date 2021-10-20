@@ -28,7 +28,7 @@ const About = () => {
         <section id="about" onLoad={fadeScroll()}>
             <div className="overlay-hidden">
                 <div className="container">
-                    <Title title1="ABOUT" title2="ME" titleBackground="RESUME"/>
+                    <Title section="about-section" title1="ABOUT" title2="ME" titleBackground="RESUME"/>
                     <div className="main-content">
                         <div className="about-me-container">
                             <div className="about-pic"></div>

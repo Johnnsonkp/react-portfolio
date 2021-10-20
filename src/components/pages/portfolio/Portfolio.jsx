@@ -77,7 +77,7 @@ const Portfolio = () => {
             {/* <h1>Recent Portfolio<hr></hr></h1> */}
             
             <div className="porfolio">
-                 <Title title1="RECENT" title2="PORTFOLIO" titleBackground="PORTFOLIO"/>
+                 <Title section="portfolio-section" title1="RECENT" title2="PORTFOLIO" titleBackground="PORTFOLIO"/>
             </div>
             
             <div className="project-selectors">

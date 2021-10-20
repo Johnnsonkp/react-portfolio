@@ -235,105 +235,43 @@
     }
     
 }
+/* Title positioning */
+#about-section .titleBig{
+    position: relative;
+    left: 6%; 
+}
+#about-section .titleSmall{
+    top: 75px;
+    left: 12%;
+}
+
+
+/* Media queries  */
 @media only screen and (max-width: 1000px){
     #about .about-me-container{
         display: none;
     }
-}
-/* @media only screen and (max-width: 1000px){
-    #about .titleBig{
-        font-size: 110px;
-        font-size: 7.5rem;
-        color: rgba(255, 255, 255, 0.07);
-        margin-top: 0px;
-        position: relative;
-        left: -5%;
-        margin-bottom: 0px;
+    #about-section .titleBig{
+        left: 0%; 
+        font-size: 5rem;
     }
-    #about .titleSmall{
-        font-size: 56px;
-        font-size: 3.5rem;
-        position: absolute;
-        top: 85px;
-        left: 31.5%;
-        margin-bottom: 0px;
-    }
-    #about .about-me-container{
-        display: none;
-    }
-    #about .container{
-        width: 100%;
-        margin: auto;
-    }
-    #about .right{ 
-        margin-left: 0%;
-        margin: auto;
-    }
-    #about .container p{
-        font-size: 16px;
-        font-size: 1.5vw;
-        line-height: 1.7rem;
-        font-weight: 600;
+    #about-section .titleSmall{
+        left: 0%;
+        font-size: 2.5rem;
     }
 }
-@media only screen and (max-width: 900px){
-    #about{
-        width: 110%;
+@media only screen and (max-width: 400px){
+    #about-section .titleBig{
+        left: 0%; 
+        font-size: 4rem;
     }
-    #about .right{
-        width: 90%;
-        margin-right: 20%;
+    #about-section .titleSmall{
+        left: 0%;
+        font-size: 2.5rem;
+        top: 60px;
     }
-    #about .circles {
-        position: absolute;
-        top: 10% !important;
-        left: 83% !important;
-    }
-    #about .container .right p{
-        font-size: 1rem !important;
-        line-height: 30px;
-    }
-    #about .singleService{
-        height: 22vh !important;
-        width: 30% !important;
-        padding-bottom: 2%;
-    }
-    #about .my-service-container{
-        width: 120%;
-    }
-    #about .my-service-container .singleService p{
-        font-size: 12px !important;
-    }
-} */
-/* @media only screen and (max-width: 800px){
-    #about{
-        width: 130%;
-        margin-top: 0px !important;
-    }
-    #about .container{
-        width: 80%;
-    }
-    #about .circles{
-        height: 280px !important; */
-        /* left: 78% !important; */
-        /* left: 70% !important;
-        top: 20% !important;
-    }
-    #about .circles img{
-        width: 20px;
-    }
-    #about .container p{
-        font-size: 1.6vw;
-    } */
-    /* .showCircles{
-        height: 200px !important;
-    } */
-/* }
-@media only screen and (max-width: 700px){
-    #about{
-        position: relative;
-    }
-}*/
+}
+
 @media only screen and (max-width: 1400px) and (min-width: 1001px){
     #about{
         

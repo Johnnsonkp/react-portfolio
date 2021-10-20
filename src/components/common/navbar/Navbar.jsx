@@ -9,11 +9,9 @@ const Navbar = () => {
 
             if(currentScroll > 80){
                 document.getElementById("home-header").classList.add('onScrollNav')
-                console.log("working")
             }
             if(currentScroll < 80){
                 document.getElementById("home-header").classList.remove('onScrollNav')
-                console.log("working")
             }
         });
     }

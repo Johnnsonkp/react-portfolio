@@ -3,23 +3,44 @@
 }
 .titleBig{
     font-size: 110px;
+    font-size: 6.5rem;
     color: rgba(255, 255, 255, 0.07);
     margin-top: 0px;
-    position: relative;
-    left: 6%;
+    /* position: relative;
+    left: 6%; */
     margin-bottom: 0px;
+    width: 100%;
+    margin: auto;
 }
 .titleSmall{
     font-size: 56px;
-    position: absolute;
+    font-size: 3.25rem;
+    /* position: absolute; 
     top: 85px;
-    left: 45%;
-    margin-bottom: 0px;
+    left: 45%; */
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10vh;
+    margin: auto;
 }
 .h1{
     margin-bottom: 0px;
 }
-@media only screen and (min-width: 1201px){
+.title-div-container{
+    width: 100%;
+    margin: auto;
+    border: 1px solid red;
+}
+/* .center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+} */
+
+/* @media only screen and (min-width: 1201px){
     #portfolio .titleBig{
         font-size: 5.5rem;
         left: 0% !important;
@@ -182,4 +203,4 @@
         top: 1.5%;
         left: 30% !important;
     }
-}
+} */

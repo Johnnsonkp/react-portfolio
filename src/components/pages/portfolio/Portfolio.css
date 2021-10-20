@@ -155,22 +155,38 @@
     flex-direction: row;
     justify-content: space-between;
 }
-/* .porfolio .titleSmall{
-    font-size: 50px;
-    position: absolute;
-    top: 75px;
-    left: 33% !important;
-    margin-bottom: 0px;
+
+/* Media queries  */
+@media only screen and (max-width: 1000px){
+    #portfolio-section .titleBig{
+        /* left: 0%;  */
+        font-size: 5rem;
+    }
+    #portfolio-section .titleSmall{
+        /* left: 0%; */
+        font-size: 2.5rem;
+    }
 }
-.porfolio .titleBig{
-    font-size: 110px;
-    color: rgba(255, 255, 255, 0.07);
-    margin-top: 0px;
-    position: relative;
-    top: 0;
-    left: 0%;
-    margin-bottom: 0px;
-} */
+@media only screen and (max-width: 500px){
+    #portfolio-section .titleBig{
+        /* left: 0%;  */
+        font-size: 4rem;
+    }
+    #portfolio-section .titleSmall{
+        /* left: 0%; */
+        font-size: 2rem;
+        top: 55px;
+    }
+}
+@media only screen and (max-width: 400px){
+    #portfolio-section .titleBig{
+        font-size: 3rem;
+    }
+    #portfolio-section .titleSmall{
+        font-size: 1.5rem;
+        top: 45px;
+    }
+}
 @media only screen and (min-width: 1900px){
     #portfolio .circles{
         top: 200px !important;
