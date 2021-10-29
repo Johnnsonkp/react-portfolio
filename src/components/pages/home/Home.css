@@ -663,6 +663,9 @@ body a, head a {
   .hidden {
     width: 4rem !important;
   }
+  .content p {
+    font-size: 1.6vw !important;
+  }
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1001px) {
@@ -681,12 +684,12 @@ body a, head a {
             justify-content: space-between;
     overflow: visible !important;
   }
-  #home-section .circle {
+  /* #home-section .circle {
     left: 4%;
-  }
-  #home-section .circles {
+  } */
+  /* #home-section .circles {
     left: 88% !important;
-  }
+  } */
   #home-section .block {
     top: -70px;
   }
@@ -770,6 +773,7 @@ body a, head a {
   }
   #home-section .content p {
     background-color: #111;
+    font-size: 2vw;
   }
   #home-section .circles {
     top: 5% !important;

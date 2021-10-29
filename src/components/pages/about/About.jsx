@@ -13,7 +13,7 @@ const About = () => {
             const currentScroll = window.pageYOffset;
             const aboutSection = document.getElementById("about")
 
-            if(currentScroll > 1050 && window.innerWidth > 1000){
+            if(currentScroll > 1350 && window.innerWidth > 1000){
                 aboutSection.classList.add('blur')
             } else{
                 aboutSection.classList.remove('blur')
@@ -75,7 +75,7 @@ const About = () => {
                                     </div>        
                                 </div>
                             </div>
-                            <a href="developer-resume-march.pdf" className="resume-button">Download CV</a>
+                            <a href="resume-oct-2021(portfolio).pdf" className="resume-button">Download CV</a>
                         </div>
                         
                         <div className="text right">

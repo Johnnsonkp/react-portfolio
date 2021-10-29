@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../App.css'
+import LightDark from "../common/light-dark-mode";
 
 const NavControl = () => {
     useEffect(() => {
@@ -199,6 +200,9 @@ const NavControl = () => {
             <a id="home" className="inner-circle contact" href="#contact">
                 <img className="img contact" src="./contact.png" alt="" href="#contact"/>
             </a>
+            
+                <LightDark />
+            
         </div>
     )
 } 

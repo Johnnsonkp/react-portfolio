@@ -7,7 +7,7 @@ const Footer = () => {
             <footer id="main-footer">
                 <div className="footer-container">
                     <div className="linked">
-                        <a href="https://www.linkedin.com/in/chinonso-john-nkpolukwu-521201138/"><i className="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/john-nkpolukwu-521201138/"><i className="fab fa-linkedin-in fa-2x"></i></a>
                     </div>
                     <div className="insta">
                         <a href="https://www.instagram.com/johnnsonkp/"><i className="fab fa-instagram fa-2x"></i></a>
