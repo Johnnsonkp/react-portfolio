@@ -27,7 +27,7 @@ const Navbar = () => {
                         <a className="social-links" href="https://github.com/Johnnsonkp"><i className="fab fa-github fa-1x"></i></a>
                 </ul> 
 
-                <a href="resume-oct-2021(portfolio).pdf" className="resume-button">Resume</a>
+                <a href="Resume-oct-2021(final border).pdf" className="resume-button">Resume</a>
             </nav>
         </header>
     )

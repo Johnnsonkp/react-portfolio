@@ -96,14 +96,16 @@ body a, head a {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: 13%;
-  left: 12%;
+  top: 12%;
+  /* top: 13%;
+  left: 12%; */
   z-index: 1;
   cursor: pointer;
 }
 
 #home-section .outer-circle {
   background-color: #111;
+  margin-left: 11%
 }
 
 #home-section .outer-circle img {
@@ -655,7 +657,12 @@ body a, head a {
     left: -850px;
   }
 }
-
+/* @media only screen and (max-width: 1280px) and (min-width: 1000px){
+  #home-section .circle{
+    left: %;
+    margin-right: 20% !important;
+  }
+} */
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
   .transition-title {
     font-size: 2.5rem !important;

@@ -63,7 +63,7 @@ export default class MultipleItems extends Component {
 
       return ( 
         <div style={serviceStyle} className="service-container">
-        <h4>My Services</h4>
+        <h4>My Skills</h4>
         <Slider {...settings}>
             <div className="singleService fade" style={service}>
                 <i className="fas fa-code"></i>

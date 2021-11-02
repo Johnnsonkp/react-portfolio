@@ -75,12 +75,13 @@ const About = () => {
                                     </div>        
                                 </div>
                             </div>
-                            <a href="resume-oct-2021(portfolio).pdf" className="resume-button">Download CV</a>
+                            <a href="Resume-oct-2021(final border).pdf" className="resume-button">Download CV</a>
                         </div>
                         
                         <div className="text right">
-                            <p>My name is Chinonso John Nkpolukwu, I'm a Melbourne-based Full stack developer and recent Bootcamp graduate, with a passion for code and a love for everything technology. Currently employed as a front-end developer at a digital marketing agency, I'm a well-versed front-end developer and specialist on the e-commerce platforms Shopify and WordPress.
-                            </p>
+                            {/* <p>My name is John Nkpolukwu, I'm a Melbourne-based Software developer and recent Bootcamp graduate, with a passion for code and a love for everything technology. Currently employed as a front-end developer, I'm a well-versed front-end developer and specialist on the e-commerce platforms Shopify and WordPress.
+                            </p> */}
+                            <p>I’m a Melbourne based software engineer and bootcamp graduate with a love for technology and a passion for optimisation. Currently employed as a front-end developer, I specialise on the front-end, and I'm well-versed with ReactJs and other front-end technologies.</p>
                             <br></br>
                             <hr className="body-hr"></hr>
                             <div className="my-service-container">

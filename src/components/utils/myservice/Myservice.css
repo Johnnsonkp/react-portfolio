@@ -26,16 +26,9 @@
 .my-service-container{
     width: 790px;
     width: 100%;
-    /* width: 150%; */
     margin: auto;
-    /* overflow: hidden; */
-    /* border: 1px solid red; */
     height: 50%;
     border-radius: 10px;
-    /* border: 1px solid rgba(236, 240, 241, 1); */
-    /* float: left !important;
-    display: flex;
-    justify-content: center; */
 }
 .transitionEffect{
     transform: translate3d(-1140px, 0px, 0px);
@@ -47,13 +40,13 @@
 .singleService{
     border: 1px solid rgba(236, 240, 241, 1);
     border: 0.2px solid rgba(236, 240, 241, 0.2);
-    height: 180px;
+    height: 190px;
     width: 90% !important;
     text-align: center;
     color: #fff !important;
     border-radius: 20px;
     background-color: #111;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
