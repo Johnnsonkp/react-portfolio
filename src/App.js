@@ -1,30 +1,41 @@
-import React from "react";
 import "./App.css";
+
 import {
-  Navbar,
+  About,
+  Blog,
+  Contact,
   Footer,
   Home,
   LightDark,
-  About,
-  Contact,
-  Blog,
+  Navbar,
   Portfolio,
 } from "./components/index";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Route, Routes, useNavigate } from "react-router-dom";
+
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+// import "antd/dist/antd.css";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
-      <LightDark />
-      <About />
-      <Portfolio />
-      <Blog />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        {/* <Home />
+        <LightDark />
+        <About />
+        <Portfolio />
+        <Blog />
+        <Contact />
+        <Footer /> */}
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

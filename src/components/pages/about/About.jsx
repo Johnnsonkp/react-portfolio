@@ -1,9 +1,9 @@
-import React from 'react'
 import './About.css'
-import NavControl from '../../utils/NavControl'
-import Component from '../../utils/myservice'
-import Title from '../../common/title'
 
+// import Component from '../../utils/myservice'
+import NavControl from '../../utils/NavControl'
+import React from 'react'
+import Title from '../../common/title'
 
 const About = () => {
     const fadeScroll = () => {
@@ -84,9 +84,9 @@ const About = () => {
                             <p>I’m a Melbourne based software engineer and bootcamp graduate with a love for technology and a passion for optimisation. Currently employed as a front-end developer, I specialise on the front-end, and I'm well-versed with ReactJs and other front-end technologies.</p>
                             <br></br>
                             <hr className="body-hr"></hr>
-                            <div className="my-service-container">
+                            {/* <div className="my-service-container">
                                 <Component />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

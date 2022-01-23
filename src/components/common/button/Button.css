@@ -1,0 +1,154 @@
+.pulse-effect {
+    /* -webkit-animation: pulse 2s infinite; */
+          animation: pulse-custom  2s infinite;
+}
+
+@-webkit-keyframes pulse-custom  {
+    0% {
+        transform: scale(1);
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+                border-radius:0;
+      }
+      70% {
+        transform:scale(1.2,1.8);
+        -webkit-box-shadow: 0 0 0 .75em rgba(255, 255, 255, 0);
+                box-shadow: 0 0 0 .75em rgba(255, 255, 255, 0);
+                border-radius:1px;
+      }
+      100% {
+        transform:scale(1.5);
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+                border-radius:1em;
+      }
+}
+
+@keyframes pulse-custom {
+  0% {
+    /* transform: scale(1.1); */
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            border-radius:0;
+  }
+  70% {
+    transform:scale(1.02,1.08);
+    /* transform: scale(1.8); */
+    -webkit-box-shadow: 0 0 0 .65em #f6004e15;
+            box-shadow: 0 0 0 .65em #f6004e15;
+            border-radius:1px;
+  }
+  100% {
+    transform:scale(1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            /* border-radius:1em; */
+  }
+}
+
+
+
+/* Hamburger Menu toggler */
+button.menu-toggler {
+	box-sizing: border-box;
+	border-radius: 50%;
+	outline: none !important;
+	margin: 0px;
+	font-family: inherit;
+	font-size: 15px;
+	line-height: inherit;
+	text-transform: none;
+	appearance: button;
+	cursor: pointer !important;
+	width: 30px;
+	height: 60px;
+	position: relative;
+	padding: 0px;
+    background: #fff;
+	border: none;
+}
+.menu-toggler  span:first-child {
+    top: -17px;
+}
+.menu-toggler span:nth-child(2) {
+    top: 2px;
+}
+.menu-toggler span:nth-child(3) {
+    top: auto;
+    bottom: 19px;
+}
+.active-span{
+    display: block;
+}
+.active{
+    display: block;
+    transition: all .35s ease;
+}
+.menu-toggler span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 35px;
+    height: 3px;
+    margin: auto;
+    background: #111;
+    color: #fff;
+    color: #111;
+}
+.menu-toggler span {
+    transition: .3s;
+}
+.menu-toggler div .active-span:first-child {
+    top: 0;
+    -webkit-transform: rotate( 45deg);
+    transform: rotate( 45deg);
+}
+.menu-toggler div .active-span:nth-child(2) {
+    left: 50%;
+    width: 0;
+}
+.menu-toggler div .active-span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* Hamburger Drawer  */
+.drawer-border{
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1.125rem;
+    padding: 0.5rem 1rem;
+    margin: 0px;
+    height: auto;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    appearance: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    border-radius: 0px;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    transition-property: box-shadow;
+    box-shadow: none;
+    outline: none;
+    border-color: transparent;
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid rgb(231, 238, 242);
+    width: 100%;
+    color: #111;
+}
+.drawer-border:hover{
+    text-decoration: none;
+    color: rgb(0, 113, 153);
+}
+    

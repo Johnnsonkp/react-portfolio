@@ -1,7 +1,9 @@
 // import React from 'react'
 import './Myservice.css'
-import React, { Component} from 'react'
-import Slider from "react-slick";
+
+import React, { Component } from 'react'
+
+// import Slider from "react-slick";
 
 export default class MultipleItems extends Component {
     render() {
@@ -64,7 +66,7 @@ export default class MultipleItems extends Component {
       return ( 
         <div style={serviceStyle} className="service-container">
         <h4>My Skills</h4>
-        <Slider {...settings}>
+        {/* <Slider {...settings}>
             <div className="singleService fade" style={service}>
                 <i className="fas fa-code"></i>
                 <h5>Web Development</h5>
@@ -90,7 +92,7 @@ export default class MultipleItems extends Component {
                  <h5>Eccomerce Expertise</h5>
                  <p className="singleService-text">Optimizaztion and setting up of eccormerce websites and conversion tracking </p>
              </div>
-        </Slider>
+        </Slider> */}
       </div>
 
       )
