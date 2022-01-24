@@ -1,7 +1,15 @@
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background: linear-gradient(-45deg, #928DAB, #1F1C2C, #434343, #302b63);
   background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite; */
+}
+
+.gradientBanner {
+  background: linear-gradient(-45deg, #a960ee, #ff333d,#90e0ff, #ffcb57);
+  background: linear-gradient(-45deg, #a960ee, #23d5ab,#90e0ff, #ffcb57);
+  background-size: 300% 300%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
 }
@@ -29,6 +37,7 @@ body {
     background-position: 0% 50%;
   }
 }
+
 
 /* ----------------------------------------------------- */
 body {
@@ -88,7 +97,7 @@ body a, head a {
   left: -115px;
 }
 
-#home-section .circle {
+/* #home-section .circle {
   border-radius: 180px;
   border: 3px solid #6957af;
   background-color: #fff;
@@ -97,8 +106,6 @@ body a, head a {
   background-size: cover;
   position: absolute;
   top: 12%;
-  /* top: 13%;
-  left: 12%; */
   z-index: 1;
   cursor: pointer;
 }
@@ -156,7 +163,7 @@ body a, head a {
 .pulseDayNight {
   -webkit-animation: pulse 2s infinite;
           animation: pulse 2s infinite;
-}
+} */
 
 #home-section .content {
   position: absolute;
@@ -175,6 +182,9 @@ body a, head a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
+  top: 0%;
+  color: #111;
 }
 
 .main-header {

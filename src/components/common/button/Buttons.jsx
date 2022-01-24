@@ -16,7 +16,7 @@ export const PrimaryButton = (props) => {
             color: '#fff',
             fontWeight: 700,
             fontSize: '0.9rem',
-            boxShadow: '10px 10px 12px 0 rgb(0 0 0 / 22%)',
+            boxShadow: props.boxShadow ?'10px 10px 12px 0 rgb(0 0 0 / 22%)' : null,
             letterSpacing: '.5px',
             textTransform: 'uppercase',
             transition: '250ms ease-out',
@@ -26,11 +26,10 @@ export const PrimaryButton = (props) => {
             lineHeight: '1.6',
             minWidth: '180px',
             margin: 'auto',
-            transition: 'all 250ms ease-out 0s'
+            transition: 'all 250ms ease-out 0s',
+            float: props.position
         }
     }
-
-
     return (
         <button 
             style={styles.button}
