@@ -91,6 +91,14 @@
   a.social-links:hover{
     color: #f6004c;
   }
+.ant-switch-handle{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+
+}
+  
+
 
 @media screen and (max-width: 800px){
   ul#mainMenu{

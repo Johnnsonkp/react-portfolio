@@ -7,11 +7,19 @@ body {
 }
 
 .gradientBanner {
-  background: linear-gradient(-45deg, #a960ee, #ff333d,#90e0ff, #ffcb57);
+  /* background: linear-gradient(-45deg, #a960ee, #ff333d,#90e0ff, #ffcb57);
   background: linear-gradient(-45deg, #a960ee, #23d5ab,#90e0ff, #ffcb57);
-  background-size: 300% 300%;
-  -webkit-animation: gradient 15s ease infinite;
+    background-size: 300% 300%; */
+    -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
+
+  background: linear-gradient(
+            45deg
+            , #4CBFC7 0%, #787DFF 100%);
+                background-size: 512px, cover;
+                background-position: center, 0% 0%;
+                background-repeat: repeat, repeat;
+                background-size: 130% 130%;
 }
 
 @-webkit-keyframes gradient {
@@ -63,16 +71,17 @@ body a, head a {
 }
 
 #home-section {
-  width: 100vw;
-  height: 100vh;
-  height: 800px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  /* height: 800px; */
+  /* position: -webkit-sticky;
+  position: sticky; */
+  /* top: 0px; */
   z-index: 1;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  overflow: hidden !important;
+  margin-bottom: 20px;
 }
 
 .blur {
@@ -686,27 +695,18 @@ body a, head a {
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1001px) {
-  /* * {
-    overflow-x: hidden;
-  } */
   #home-section {
-    max-width: 1600px;
-    width: 98%;
+    max-width: 100%;
+    width: 100%;
     margin: auto;
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: space-between; */
     overflow: visible !important;
   }
-  /* #home-section .circle {
-    left: 4%;
-  } */
-  /* #home-section .circles {
-    left: 88% !important;
-  } */
   #home-section .block {
     top: -70px;
   }
@@ -718,12 +718,10 @@ body a, head a {
   }
   #home-section .circle {
     position: absolute;
-    top: 5%;
-    left: 20%;
-    height: 260px;
-    height: 18vh;
-    width: 250px;
-    width: 25vw;
+    top: 15%;
+    left: 3%;
+    height: 330px;
+    width: 330px;
     border-radius: 50%;
   }
   #home-section .circles {
@@ -761,12 +759,27 @@ body a, head a {
     padding-top: 5%;
   }
 }
-
+@media only screen and (max-width: 700px) {
+  #home-section .circle{
+    margin: auto;
+    position: absolute;
+    top: 50; left: 0; bottom: 50; right: 0;
+    opacity: 0.4;
+    height: 300px !important;
+    width: 300px !important;;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 700px){
+  #home-section .circle {
+    height: 250px !important;
+    width: 250px !important;
+  }
+}
 @media only screen and (max-width: 800px) and (min-width: 601px) {
   #home-section {
-    height: 900px !important;
-    width: 98%;
-    max-width: 800px;
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
     position: relative !important;
     overflow: visible;
   }
@@ -776,10 +789,9 @@ body a, head a {
   #home-section .circle {
     position: absolute;
     top: 5%;
-    left: 8%;
-    height: 38% !important;
-    height: 300px !important;
-    width: 300px !important;
+    left: 2%;
+    /* height: 250px !important;
+    width: 250px !important; */
     border-radius: 290px;
   }
   #home-section .content {
@@ -810,8 +822,8 @@ body a, head a {
 
 @media only screen and (max-width: 600px) and (min-width: 401px) {
   #home-section {
-    position: relative !important;
-    height: 800px !important;
+    /* position: relative !important; */
+    height: 100%;
     width: 98% !important;
     max-width: 600px;
     overflow: hidden !important;
@@ -889,7 +901,7 @@ body a, head a {
 
 @media only screen and (max-width: 400px) {
   #home-section {
-    height: 750px !important;
+    height: 100%;
     width: 98%;
     max-width: 400px;
     overflow: hidden !important;

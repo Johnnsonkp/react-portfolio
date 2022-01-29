@@ -15,7 +15,7 @@ export const PrimaryButton = (props) => {
             padding: '0.6rem calc(5px + 1.6vw)',
             color: '#fff',
             fontWeight: 700,
-            fontSize: '0.9rem',
+            fontSize: '0.75rem',
             boxShadow: props.boxShadow ?'10px 10px 12px 0 rgb(0 0 0 / 22%)' : null,
             letterSpacing: '.5px',
             textTransform: 'uppercase',
@@ -24,7 +24,7 @@ export const PrimaryButton = (props) => {
             border: 'none',
             cursor: 'pointer',
             lineHeight: '1.6',
-            minWidth: '180px',
+            minWidth: '160px',
             margin: 'auto',
             transition: 'all 250ms ease-out 0s',
             float: props.position
@@ -33,10 +33,12 @@ export const PrimaryButton = (props) => {
     return (
         <button 
             style={styles.button}
-            href={props.link}
             className={props.pulse? 'pulse-effect' : null}
-        >
-            <Link to="/contact">{props.title}</Link> 
+        >   
+            {props.href ?
+                <a href={props.link}>{props.title}</a> :
+                <Link to={props.link}>{props.title}</Link> 
+            }
         </button>
     )
 }

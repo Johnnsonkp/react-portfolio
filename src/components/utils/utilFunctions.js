@@ -20,6 +20,9 @@ export function useWindowSize() {
   }, []); // Empty array ensures that effect is only run on mount
   return windowSize;
 }
+export function Size() {
+  return useWindowSize();
+}
 
 export const onScrollEffect = (event, checkpoint, toggleEffectClassName) => {
   window.addEventListener("scroll", () => {
@@ -30,5 +33,23 @@ export const onScrollEffect = (event, checkpoint, toggleEffectClassName) => {
     if (currentScroll < checkpoint) {
       event.target.value.classList.remove(toggleEffectClassName);
     }
+  });
+};
+
+export const fadeScrollHome = () => {
+  const checkpoint = 800;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    const homeSection = document.getElementById("home-section");
+
+    if (currentScroll > 350 && window.innerWidth > 1000) {
+      homeSection.classList.add("blur");
+    } else {
+      homeSection.classList.remove("blur");
+    }
+
+    currentScroll <= checkpoint
+      ? (homeSection.style.opacity = 1.5 - currentScroll / checkpoint)
+      : (homeSection.style.opacity = 0);
   });
 };

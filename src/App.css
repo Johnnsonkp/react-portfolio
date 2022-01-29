@@ -6,6 +6,7 @@ body {
   font-family: 'Montserrat', sans-serif !important;
   color: #fff;
 }
+/* const LIGHT_COLOR = process.env.REACT_APP_LIGHT_MODE_COLOR; */
 .bodyActive{
   transition: all 0.5s ease-in-out;
   opacity: 1;
