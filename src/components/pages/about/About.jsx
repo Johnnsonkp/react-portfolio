@@ -6,26 +6,26 @@ import React from 'react'
 import Title from '../../common/title'
 
 const About = () => {
-    const fadeScroll = () => {
-        const checkpoint = 3050;
+    // const fadeScroll = () => {
+    //     const checkpoint = 3050;
 
-        window.addEventListener("scroll", () => {
-            const currentScroll = window.pageYOffset;
-            const aboutSection = document.getElementById("about")
+    //     window.addEventListener("scroll", () => {
+    //         const currentScroll = window.pageYOffset;
+    //         const aboutSection = document.getElementById("about")
 
-            if(currentScroll > 1350 && window.innerWidth > 1000){
-                aboutSection.classList.add('blur')
-            } else{
-                aboutSection.classList.remove('blur')
-            }
-            currentScroll <= checkpoint ? aboutSection.style.opacity = 1.2 - currentScroll / checkpoint : aboutSection.style.opacity = 0;
-        });
-    }
+    //         if(currentScroll > 1350 && window.innerWidth > 1000){
+    //             aboutSection.classList.add('blur')
+    //         } else{
+    //             aboutSection.classList.remove('blur')
+    //         }
+    //         currentScroll <= checkpoint ? aboutSection.style.opacity = 1.2 - currentScroll / checkpoint : aboutSection.style.opacity = 0;
+    //     });
+    // }
     const displayNone = {
         display: "none"
     }
     return (
-        <section id="about" onLoad={fadeScroll()}>
+        <section id="about" >
             <div className="overlay-hidden">
                 <div className="container">
                     <Title section="about-section" title1="ABOUT" title2="ME" titleBackground="RESUME"/>
