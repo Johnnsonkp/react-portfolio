@@ -53,3 +53,7 @@ export const fadeScrollHome = () => {
       : (homeSection.style.opacity = 0);
   });
 };
+
+export const gradientCapsule = (color1, color2) => {
+  return `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
+};

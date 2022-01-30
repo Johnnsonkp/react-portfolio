@@ -32,9 +32,9 @@ function App() {
         <Navbar {...data} />
         <Home {...data} />
         {/* <LightDark /> */}
-        <About />
+        <About {...data} />
         {/* <Portfolio /> */}
-        <Blog />
+        {/* <Blog /> */}
         {/* <Contact /> */}
         <Footer />
         {/* <Routes>

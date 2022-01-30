@@ -1,3 +1,6 @@
+import { Size } from "../utilFunctions";
+import { useWindowSize } from "../utilFunctions";
+
 export const CodeIcon = (props) => (
   <svg
     viewBox="64 64 896 896"
@@ -102,3 +105,57 @@ export const Pixel = () => (
     ></path>
   </svg>
 );
+
+export const TechStackContainer = () => {
+  const size = useWindowSize();
+  return (
+    <>
+      <div
+        style={{
+          marginTop: "35px",
+          marginBottom: "auto",
+          width: "90%",
+          marginLeft: "auto",
+          marginRight: "auto",
+          boxShadow: "0 0 20px #78787820",
+          display: size.width > 700 ? null : "none",
+          // border: "1px solid red",
+        }}
+        className="dev-tools"
+      >
+        <div className="html tech">
+          <i className="fab fa-html5 fa-1x"></i>
+          <h6>HTML</h6>
+        </div>
+        <div className="css tech">
+          <i className="fab fa-css3 fa-1x"></i>
+          <h6>CSS</h6>
+        </div>
+        <div className="Sass tech">
+          <i className="fab fa-sass fa-1x"></i>
+          <h6>SASS</h6>
+        </div>
+        <div className="javascript tech">
+          <i className="fab fa-js fa-1x"></i>
+          <h6>Javascript</h6>
+        </div>
+        <div className="ruby tech">
+          <i className="fas fa-gem fa-1x"></i>
+          <h6>Ruby</h6>
+        </div>
+        <div className="react tech">
+          <i className="fab fa-react fa-1x"></i>
+          <h6>React</h6>
+        </div>
+        <div className="shopify tech">
+          <i className="fab fa-shopify fa-1x"></i>
+          <h6>Shopify</h6>
+        </div>
+        <div className="shopify tech">
+          <i className="fab fa-wordpress fa-1x"></i>
+          <h6>Wordpress</h6>
+        </div>
+      </div>
+    </>
+  );
+};

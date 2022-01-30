@@ -902,7 +902,7 @@ body a, head a {
 @media only screen and (max-width: 400px) {
   #home-section {
     height: 100%;
-    width: 98%;
+    width: 100%;
     max-width: 400px;
     overflow: hidden !important;
   }

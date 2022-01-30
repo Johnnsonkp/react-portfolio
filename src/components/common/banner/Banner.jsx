@@ -2,6 +2,7 @@ import { AllPartnerIconComponent } from "../../partnerIcons/partnerIcons"
 import { DisplayCircle } from "../frame/Frame"
 import JobTitle from "../../utils/JobTitle"
 import { PrimaryButton } from "../button/Buttons"
+import { gradientCapsule } from "../../utils/utilFunctions";
 import pic from "../../../../src/pic-edit.png";
 import { useWindowSize } from "../../utils/utilFunctions";
 
@@ -31,8 +32,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
             <div 
                 className="gradientBanner"
                 style={{ 
-                    height: '400px', 
-                    border: `1px solid ${darkColor}`,
+                    height: '420px', 
                     borderBottom: mode? `5px solid ${darkColor}` : `5px solid ${lightColor}`,
                     paddingLeft: '50px',
                     paddingRight: '50px',
@@ -109,7 +109,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                     title={'VIEW MY WORK' } 
                     link={'#portfolio'} 
                     position={'left'}
-                    boxShadow={false}
+                    boxShadow={true}
                     href={true}
                 />
             </div>          

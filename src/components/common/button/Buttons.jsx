@@ -2,17 +2,20 @@ import './Button.css'
 
 import { Button, Drawer, Radio, Space } from 'antd';
 
+import {ArrowRightOutlined} from "@ant-design/icons"
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
 
 export const PrimaryButton = (props) => {
+    const gradient = process.env.REACT_APP_PRIMARY_LINEAR_GRADIENT_COLOR;
     const styles = {
         button:{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             background: '#f6004c',
-            padding: '0.6rem calc(5px + 1.6vw)',
+            background: 'linear-gradient(90deg, #E80A89 0%, #F15B2A 100%)',
+            padding: '0.8rem calc(5px + 1.7vw)',
             color: '#fff',
             fontWeight: 700,
             fontSize: '0.75rem',
@@ -102,3 +105,15 @@ export const HamburgerMenu = () => {
       
     );
 };
+
+export const NakedButtonLink = (props) => {
+    const [toggle, setToggle] = useState(false)
+    return (
+        <div 
+            onMouseOver={() => setToggle(true)}
+            onMouseOut={() => setToggle(false)}
+            style={{transition: '3s easeOut', color: 'red', fontSize: '16px', fontWeight: '600', marginLeft: toggle? '10px' : '0px'}}>
+            <a style={{color: 'red', marginRight: '10px'}} href={props.link}>{props.title}</a><ArrowRightOutlined />
+        </div>
+    )
+}

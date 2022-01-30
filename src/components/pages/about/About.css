@@ -1,14 +1,9 @@
 
 #about{
-    height: 140vh;
+    height: 100%;
     height: 800px;
     width: 100%;
     max-width: 100vw;
-    background-color: #40434e75;
-    background: #232526;  
-    background: -webkit-linear-gradient(to right, #414345, #232526);  
-    background: linear-gradient(to right, #414345, #232526); 
-
     font-size: 20px;
     z-index: 1;
     position: sticky;
@@ -16,6 +11,9 @@
     /* opacity: 0.3; */
     transition: opacity 0.3s;
     overflow: hidden !important;
+    /* background: linear-gradient( 
+        180deg
+        , rgba(117,135,153,0.5) 0%, rgba(117,135,153,0) 90% ) */
 }
 #about .container{
     padding-top: 10px;
@@ -41,18 +39,17 @@
 }
 .about-pic{
     background-image: url('https://johnnsonkp-dev.herokuapp.com/images/pic2.png');
-    /* background-image: url('profile-pic-crop.png'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 90%;
     margin: auto;
-    max-width: 1100px;
-    height: 16vw;
+    max-width: 160px;
+    height: 160px;
     border-radius: 200px;
     border: 3px solid #6957af;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 #about .about-me-container{
     /* border-radius: 15px; */
@@ -60,7 +57,7 @@
     border: 1px solid #25293450;
     background-color: #25293450;
     background-color: #111;
-    color: #fff;
+    /* color: #fff; */
     border: 0.2px solid rgba(236, 240, 241, 0.2);
     width: 38%;
     margin-right: 3%;
@@ -183,6 +180,16 @@
 }
 .tech .fa-php{ 
     color: rgb(118, 83, 247);
+}
+#processes .ant-card-head-title {
+    color: rgb(24, 144, 255);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 800px){
+    #processes .ant-card-head-title {
+        font-size: 1rem;
+    }
 }
 @media only screen and (min-width: 1500px){
     #about{
