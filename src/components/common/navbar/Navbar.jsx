@@ -9,14 +9,16 @@ import {Link} from 'react-router-dom'
 import { PrimaryButton } from '../button/Buttons';
 import { Switch } from 'antd';
 import { gradientCapsule } from '../../utils/utilFunctions';
+import { propData } from '../../utils/utilFunctions';
 
 const Navbar = ({mode, setMode, lightColor, darkColor}) => {
     const size = useWindowSize();
+    const dataProps = propData({mode, setMode, lightColor, darkColor})
     const ButtonContainer = () => {
         return (
             <div>
                 {
-                    size.width <= 768 ? (<HamburgerMenu />) : 
+                    size.width <= 768 ? (<HamburgerMenu {...dataProps}/>) : 
                     (<PrimaryButton 
                         title="GET IN TOUCH" 
                         link="Resume-oct-2021(final border).pdf"

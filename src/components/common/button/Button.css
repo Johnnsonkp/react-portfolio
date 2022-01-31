@@ -64,7 +64,7 @@ button.menu-toggler {
 	height: 60px;
 	position: relative;
 	padding: 0px;
-    background: #fff;
+    background: transparent;
 	border: none;
 }
 .menu-toggler  span:first-child {
@@ -93,9 +93,9 @@ button.menu-toggler {
     width: 35px;
     height: 3px;
     margin: auto;
-    background: #111;
-    color: #fff;
-    color: #111;
+    /* background: #111; */
+    /* color: #fff;
+    color: #111; */
 }
 .menu-toggler span {
     transition: .3s;

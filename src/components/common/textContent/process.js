@@ -17,14 +17,19 @@ export const Processes = (props) => {
       }}
     >
       <Card
-        style={{ marginLeft: "10px", marginRight: "10px" }}
+        style={{
+          marginLeft: "10px",
+          marginRight: "10px",
+          marginTop: size.width < 630 ? "10px" : null,
+          marginBottom: size.width < 630 ? "10px" : null,
+        }}
         title={"01. Research"}
       >
         <p
           style={{
             fontWeight: "300",
             opacity: "0.7",
-            fontSize: size.width > 1350 ? null : "0.8em",
+            fontSize: size.width > 1350 ? null : "0.9em",
           }}
         >
           Understand the client’s subject matter completely and build on the
@@ -34,7 +39,12 @@ export const Processes = (props) => {
         </p>
       </Card>
       <Card
-        style={{ marginLeft: "10px", marginRight: "10px" }}
+        style={{
+          marginLeft: "10px",
+          marginRight: "10px",
+          marginTop: size.width < 630 ? "10px" : null,
+          marginBottom: size.width < 630 ? "10px" : null,
+        }}
         title={"02. Design"}
       >
         <p
@@ -42,7 +52,7 @@ export const Processes = (props) => {
             fontWeight: "300",
             opacity: "0.7",
             fontSize: "1em",
-            fontSize: size.width > 1350 ? null : "0.8em",
+            fontSize: size.width > 1350 ? null : "0.9em",
           }}
         >
           Misleadingly thought of as the superficial appearance of a product,
@@ -52,7 +62,12 @@ export const Processes = (props) => {
         </p>
       </Card>
       <Card
-        style={{ marginLeft: "10px", marginRight: "10px" }}
+        style={{
+          marginLeft: "10px",
+          marginRight: "10px",
+          marginTop: size.width < 630 ? "10px" : null,
+          marginBottom: size.width < 630 ? "10px" : null,
+        }}
         title={"03. Develop"}
       >
         <p
@@ -60,7 +75,7 @@ export const Processes = (props) => {
             fontWeight: "300",
             opacity: "0.7",
             fontSize: "1em",
-            fontSize: size.width > 1350 ? null : "0.8em",
+            fontSize: size.width > 1350 ? null : "0.9em",
           }}
         >
           Findings from the research and design phases are utilized for the

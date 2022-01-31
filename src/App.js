@@ -36,7 +36,7 @@ function App() {
         {/* <Portfolio /> */}
         {/* <Blog /> */}
         {/* <Contact /> */}
-        <Footer />
+        {/* <Footer /> */}
         {/* <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

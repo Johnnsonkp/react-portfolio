@@ -34,7 +34,7 @@ const Home = ({mode, setMode, lightColor, darkColor}) => {
                         </p>
                     </div>
                 </div>
-                <Container content={<FlexedContainer content={<TrustBar />}/>}/>
+                <Container content={<FlexedContainer content={<TrustBar mode={mode} lightColor={lightColor} darkColor={darkColor}/>}/>}/>
             </div>
         </main>
    )

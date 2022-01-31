@@ -1,19 +1,14 @@
 
 #about{
     height: 100%;
-    height: 800px;
     width: 100%;
     max-width: 100vw;
     font-size: 20px;
     z-index: 1;
-    position: sticky;
-    top: 0px;
-    /* opacity: 0.3; */
     transition: opacity 0.3s;
-    overflow: hidden !important;
-    /* background: linear-gradient( 
-        180deg
-        , rgba(117,135,153,0.5) 0%, rgba(117,135,153,0) 90% ) */
+    padding-top: 60px;
+    padding-bottom: 20px;
+
 }
 #about .container{
     padding-top: 10px;
@@ -335,10 +330,12 @@
 
 @media only screen and (max-width: 600px) and (min-width: 401px){
     #about{
-        height: 900px !important;
-        width: 98%;
-        max-width: 500px;
-        overflow: hidden !important;
+        /* height: 900px !important; */
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        /* max-width: 500px; */
+        /* overflow: hidden !important; */
         /* border: 1px solid red; */
     } 
     #about .main-content{
@@ -361,10 +358,9 @@
 @media only screen and (max-width: 400px){
     #about{
         position: relative;
-        height: 900px !important;
+        height: 100%;
         width: 100%;
         max-width: 400px;
-        overflow: hidden !important;
         /* border: 1px solid red; */
     }
     #about .main-content{

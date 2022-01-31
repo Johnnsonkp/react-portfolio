@@ -57,3 +57,12 @@ export const fadeScrollHome = () => {
 export const gradientCapsule = (color1, color2) => {
   return `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
 };
+
+export const propData = (props) => {
+  let data = {};
+  for (const [key, value] of Object.entries(props)) {
+    data[key] = value;
+  }
+
+  return data;
+};

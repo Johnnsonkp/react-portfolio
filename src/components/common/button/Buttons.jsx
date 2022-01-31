@@ -46,7 +46,7 @@ export const PrimaryButton = (props) => {
     )
 }
 
-export const HamburgerMenu = () => {
+export const HamburgerMenu = (props) => {
     const [ visible, setVisible ] = useState(false)
     const placement = 'top'
 
@@ -95,9 +95,9 @@ export const HamburgerMenu = () => {
             style={{ cursor: "none" }}
         >
             <div >
-                <span className="span-tags"></span>
-                <span className="span-tags"></span>
-                <span className="span-tags"></span>
+                <span style={{backgroundColor: props.mode? props.darkColor : props.lightColor}} className="span-tags"></span>
+                <span style={{backgroundColor: props.mode? props.darkColor : props.lightColor}} className="span-tags"></span>
+                <span style={{backgroundColor: props.mode? props.darkColor : props.lightColor}} className="span-tags"></span>
             </div>
         </button>
         <DropDown />

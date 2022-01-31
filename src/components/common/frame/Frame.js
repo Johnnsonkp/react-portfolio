@@ -35,6 +35,11 @@ export const DisplayCircle = (props) => {
 
 export const TrustBar = (props) => {
   const { Meta } = Card;
+  const propData = {
+    lightColor: props.lightColor,
+    darkColor: props.darkColor,
+    mode: props.mode,
+  };
 
   const initialQuizItem = [
     {
@@ -74,18 +79,29 @@ export const TrustBar = (props) => {
           fontWeight: "bold",
           color: "#111",
           padding: "20px",
-          border: "1px solid #f9f9f9",
-          border: "1px solid #eee",
-          background: "#f9f9f9",
-          backgroundImage: "url(std-banner.svg)",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
           margin: "10px",
         }}
         key={props.key}
       >
-        <props.Icon />
-        <div style={{ marginTop: "25px" }}>World-Class Development</div>
+        <props.Icon
+          style={{
+            border: "3px solid #1890ff",
+            background: "#f9f9f9",
+            backgroundImage: "url(std-banner.svg)",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            padding: "25px",
+            borderRadius: "50px",
+          }}
+        />
+        <div
+          style={{
+            marginTop: "25px",
+            color: props.mode ? props.darkColor : props.lightColor,
+          }}
+        >
+          World-Class Development
+        </div>
       </div>
     );
   };
@@ -101,7 +117,7 @@ export const TrustBar = (props) => {
   const trustIcons = [CodeIconVar, CustomiseVar, WithLove, PixelPerfect];
   let trustIconsList = trustIcons.map((Item, index) => {
     console.log("index, Item:", index, Item);
-    return <CardContainers Icon={Item} key={index} />;
+    return <CardContainers Icon={Item} key={index} {...propData} />;
   });
 
   // let trustIconsList = Object.entries(trustIcons).forEach(([key, Value]) => {
@@ -117,16 +133,18 @@ export const DisplayBox = (props) => {
   const darkColor = process.env.REACT_APP_DARK_COLOR;
   const styles = {
     box: {
-      marginTop: "70px",
+      marginBottom: "70px",
       boxSizing: "inherit",
       maxWidth: "1550px",
-      height: size.width > 1100 ? "600px" : size.width < 630 ? "1000" : "700px",
+      height:
+        size.width > 1100 ? "600px" : size.width < 630 ? "1000px" : "100%",
+      maxHeight: "1000px",
       paddingLeft: "5vw",
       paddingRight: "5vw",
       marginLeft: "auto",
       marginRight: "auto",
       display: "flex",
-      padding: "50px",
+      padding: size.width < 630 ? (size.width < 400 ? "0px" : "20px") : "50px",
       borderTopLeftRadius: "30px",
       background: "#f9f9f9",
       color: darkColor,
@@ -135,6 +153,7 @@ export const DisplayBox = (props) => {
       backgroundImage: "url(std-banner.svg)",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
+      width: size.width < 400 ? "100%" : null,
     },
     pictureBox: {
       boxSizing: "border-box",
@@ -156,8 +175,12 @@ export const DisplayBox = (props) => {
 
   return (
     <div style={styles.box}>
-      <div style={{ width: props.width || "55%", marginRight: "30px" }}>
-        {/* <h1 style={{ fontSize: props.titleFontSize || null, props.titleStyle }}> */}
+      <div
+        style={{
+          width: props.width || "55%",
+          marginRight: size.width > 600 ? "30px" : "0px",
+        }}
+      >
         <h1 style={props.titleStyle}>{props.title !== false && props.title}</h1>
         {props.component1}
         {props.component2}
@@ -167,11 +190,11 @@ export const DisplayBox = (props) => {
         <div style={{ width: "90%", margin: "auto" }}>
           <h2>John Nkpolukwu</h2>
           <p style={{ fontSize: size.width < 1230 ? "0.8em" : "12px" }}>
-            Greek. Amateur F1 driver. Technology enthusiast. Single parent.
-            Liar. Founder of Stochastic Technologies, a software development
-            agency, and creator of various products which you can find in the
+            Australian. Nigerian. Fitness obsessed. Technology enthusiast.
+            traveler. Owner of the web guy services, a web design and
+            development agency, and creator of various projects which you can
+            find here.
           </p>
-          {/* {ButtonIcon} */}
           {props.ButtonIcon}
         </div>
       </div>
