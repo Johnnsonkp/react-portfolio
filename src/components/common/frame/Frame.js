@@ -1,6 +1,7 @@
 import "./Frame.css";
 
 import { CodeIcon, Customise, Love, Pixel } from "../../utils/icons/icons";
+import { Container, FlexedContainer } from "../containers/container";
 import React, { useEffect, useState } from "react";
 
 import { Card } from "antd";
@@ -136,24 +137,45 @@ export const DisplayBox = (props) => {
       marginBottom: "70px",
       boxSizing: "inherit",
       maxWidth: "1550px",
-      height:
-        size.width > 1100 ? "600px" : size.width < 630 ? "1000px" : "100%",
+      height: props.backgroundHeight
+        ? props.backgroundHeight
+        : size.width > 1100
+        ? "600px"
+        : size.width < 630
+        ? "1000px"
+        : "100%",
       maxHeight: "1000px",
       paddingLeft: "5vw",
       paddingRight: "5vw",
       marginLeft: "auto",
       marginRight: "auto",
       display: "flex",
-      padding: size.width < 630 ? (size.width < 400 ? "0px" : "20px") : "50px",
+      padding:
+        props.boxPadding !== false
+          ? size.width < 630
+            ? size.width < 400
+              ? "0px"
+              : "20px"
+            : "50px"
+          : "0px",
+      // padding: "0px",
       borderTopLeftRadius: "30px",
       background: "#f9f9f9",
       color: darkColor,
       display: "flex",
       justifyContent: "space-between",
-      backgroundImage: "url(std-banner.svg)",
+      backgroundImage: props.backgroundImage
+        ? props.backgroundImage
+        : props.backgroundImage !== false
+        ? "url(std-banner.svg)"
+        : null,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      width: size.width < 400 ? "100%" : null,
+      width: props.backgroundWidth
+        ? props.backgroundWidth
+        : size.width < 400
+        ? "100%"
+        : null,
     },
     pictureBox: {
       boxSizing: "border-box",
@@ -178,26 +200,53 @@ export const DisplayBox = (props) => {
       <div
         style={{
           width: props.width || "55%",
-          marginRight: size.width > 600 ? "30px" : "0px",
+          marginRight:
+            props.marginAuto !== true
+              ? size.width > 600
+                ? "30px"
+                : "0px"
+              : "auto",
+          marginLeft: props.marginAuto !== true ? null : "auto",
         }}
       >
         <h1 style={props.titleStyle}>{props.title !== false && props.title}</h1>
         {props.component1}
         {props.component2}
       </div>
-      <div style={styles.pictureBox}>
-        <div className="about-pic"></div>
-        <div style={{ width: "90%", margin: "auto" }}>
-          <h2>John Nkpolukwu</h2>
-          <p style={{ fontSize: size.width < 1230 ? "0.8em" : "12px" }}>
-            Australian. Nigerian. Fitness obsessed. Technology enthusiast.
-            traveler. Owner of the web guy services, a web design and
-            development agency, and creator of various projects which you can
-            find here.
-          </p>
-          {props.ButtonIcon}
+      {props.innerCard ? (
+        <div style={styles.pictureBox}>
+          <div className="about-pic"></div>
+          <div style={{ width: "90%", margin: "auto" }}>
+            <h2>John Nkpolukwu</h2>
+            <p style={{ fontSize: size.width < 1230 ? "0.8em" : "12px" }}>
+              Australian. Nigerian. Fitness obsessed. Technology enthusiast.
+              traveler. Owner of the web guy services, a web design and
+              development agency, and creator of various projects which you can
+              find here.
+            </p>
+            {props.ButtonIcon}
+          </div>
         </div>
-      </div>
+      ) : null}
+    </div>
+  );
+};
+
+export const TechStackFullWidthContainer = () => {
+  const styles = {
+    fullWidthContainer: {
+      // border: "1px solid red",
+      width: "100%",
+      // marginTop: "50px",
+      // marginBottom: "50px",
+      height: "150px",
+      marginTop: "auto",
+      marginDown: "auto",
+    },
+  };
+  return (
+    <div className="gradientBanner" style={styles.fullWidthContainer}>
+      <FlexedContainer content={<TechStackContainer />} />
     </div>
   );
 };

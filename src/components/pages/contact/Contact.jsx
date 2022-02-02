@@ -6,9 +6,6 @@ import React from 'react';
 
 // class Contact extends React.Component {
 const Contact = () => {
-
-
-    const section = "#contact"
     
     const IframeStyle = {
         marginTop: "80px",
@@ -36,6 +33,8 @@ const Contact = () => {
 
             </div> 
         </section>
+
+        // <h1>Hello</h1>
         
     )
 

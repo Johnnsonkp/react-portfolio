@@ -112,7 +112,7 @@ export const NakedButtonLink = (props) => {
         <div 
             onMouseOver={() => setToggle(true)}
             onMouseOut={() => setToggle(false)}
-            style={{transition: '3s easeOut', color: 'red', fontSize: '16px', fontWeight: '600', marginLeft: toggle? '10px' : '0px'}}>
+            style={{transition: '3s easeOut', color: 'red', fontSize: '14px', fontWeight: '600', marginLeft: toggle? '10px' : '0px'}}>
             <a style={{color: 'red', marginRight: '10px'}} href={props.link}>{props.title}</a><ArrowRightOutlined />
         </div>
     )

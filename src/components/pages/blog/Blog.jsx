@@ -1,27 +1,18 @@
-import React, {useState, useEffect} from 'react'
 import './blog.css'
-import NavControl from '../../utils/NavControl'
+
+import React, {useEffect, useState} from 'react'
+
 import BlogList from './BlogList'
+import { Container } from '../../common/containers/container'
+import { DisplayBox } from '../../common/frame/Frame'
+import { NakedButtonLink } from '../../common/button/Buttons'
+import NavControl from '../../utils/NavControl'
+import { TechStackFullWidthContainer } from '../../common/frame/Frame'
 import Title from '../../common/title'
+import { useWindowSize } from "../../utils/utilFunctions";
 
-function Blog() {
-    const fadeScroll = () => {
-        const checkpoint = 7500;
-
-        window.addEventListener("scroll", () => {
-            const currentScroll = window.pageYOffset;
-            const currentSection = document.getElementById("blogSection")
-
-            if(currentScroll > 3000 && window.innerWidth > 1000){
-                currentSection.classList.add('blur')
-            } else{
-                currentSection.classList.remove('blur')
-            }
-            currentScroll <= checkpoint ? currentSection.style.opacity = 1.2 - currentScroll / checkpoint : currentSection.style.opacity = 0;
-            
-        });
-    }
-
+function Blog({mode, setMode, lightColor, darkColor}) {
+    const size = useWindowSize()
     const initialBlogPost = [
 
 	]
@@ -41,11 +32,9 @@ function Blog() {
     },[])
 
     return (
-        <section id="blogSection" onLoad={fadeScroll()}>
+        <section id="blogSection" style={{backgroundColor: mode? lightColor : darkColor}}>
 
-            <div className="overlay-hidden">
-
-            <div className="block"></div>
+            {/* <div className="overlay-hidden">
             
             <div className="content">
                 <div className="blogs">
@@ -56,11 +45,30 @@ function Blog() {
                 </div>
             </div>
             
-            <div className="circles">
-                <NavControl />
-            </div>
-
-            </div>
+            </div> */}
+            <TechStackFullWidthContainer />
+            <Container 
+                content={
+                    <DisplayBox
+                     innerCard={false} 
+                     component1={<BlogList blogs={blogs} />}
+                     width={size.width > 1150? '90%' : '90%'}
+                     backgroundWidth={'90%'}
+                     backgroundHeight={'90%'}
+                     boxPadding={false}
+                     marginAuto={true}
+                     title={''}
+                     titleStyle={{
+                         marginLeft: '15px', 
+                         marginBottom: '40px', 
+                         fontSize: size.width > 1350? null : size.width > 1200? '1.7rem' : '1.4rem',
+                         display: 'none'
+                    }}
+                     ButtonIcon={
+                        <NakedButtonLink 
+                        link={'Resume-oct-2021(final border).pdf'} 
+                        title={'More About Me'}/>} 
+            />} />
 
         </section>
     )

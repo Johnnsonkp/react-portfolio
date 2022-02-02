@@ -1,25 +1,26 @@
-import React from 'react';
 import './Portfolio.css'
+
 import NavControl from '../../utils/NavControl'
+import React from 'react';
 import Title from '../../common/title'
 
-const Portfolio = () => {
-    const fadeScroll = () => {
-        const checkpoint = 5250;
+const Portfolio = ({mode, setMode, lightColor, darkColor}) => {
+    // const fadeScroll = () => {
+    //     const checkpoint = 5250;
 
-        window.addEventListener("scroll", () => {
-            const currentScroll = window.pageYOffset;
-            const currentSection = document.getElementById("portfolio")
+    //     window.addEventListener("scroll", () => {
+    //         const currentScroll = window.pageYOffset;
+    //         const currentSection = document.getElementById("portfolio")
 
-            if(currentScroll > 2100 && window.innerWidth > 1000){
-                currentSection.classList.add('blur')
-            }else{
-                currentSection.classList.remove('blur')
-            }
-            currentScroll <= checkpoint ? currentSection.style.opacity = 1.8 - currentScroll / checkpoint : currentSection.style.opacity = 0;
+    //         if(currentScroll > 2100 && window.innerWidth > 1000){
+    //             currentSection.classList.add('blur')
+    //         }else{
+    //             currentSection.classList.remove('blur')
+    //         }
+    //         currentScroll <= checkpoint ? currentSection.style.opacity = 1.8 - currentScroll / checkpoint : currentSection.style.opacity = 0;
             
-        });
-    }
+    //     });
+    // }
     const handleClick = (e) => {
         const allButtons = document.querySelectorAll('.portfolioBtn')
         const allProjects = document.querySelectorAll('.project-wrapper')
@@ -71,14 +72,16 @@ const Portfolio = () => {
     }
     
     return (
-        <section id="portfolio" onLoad={fadeScroll()}>
+        <section 
+            style={{background: mode? lightColor : darkColor}}
+            id="portfolio">
             <div className="overlay-hidden">
             <div className="container"> 
             {/* <h1>Recent Portfolio<hr></hr></h1> */}
             
-            <div className="porfolio">
+            {/* <div className="porfolio">
                  <Title section="portfolio-section" title1="RECENT" title2="PORTFOLIO" titleBackground="PORTFOLIO"/>
-            </div>
+            </div> */}
             
             <div className="project-selectors">
                 <button onClick={handleClick} className="portfolioBtn allProjects fade" id="allProjects">All</button>
@@ -150,9 +153,9 @@ const Portfolio = () => {
                 </div>
             </div>
             </div>
-            <div className="circles">
+            {/* <div className="circles">
                  <NavControl />
-            </div>
+            </div> */}
             
             </div>
         </section>

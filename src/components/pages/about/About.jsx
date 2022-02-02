@@ -18,6 +18,7 @@ const About = ({mode, setMode, lightColor, darkColor}) => {
             <Container 
                 content={
                     <DisplayBox 
+                     innerCard={true}
                      component1={<Processes />}
                      component2={<TechStackContainer />}
                      width={size.width > 1150? '94%' : '100%'}

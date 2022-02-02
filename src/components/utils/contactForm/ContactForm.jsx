@@ -132,7 +132,8 @@ class ContactForm extends React.Component {
                         value="Submit"
                         title="Send"  
                         pulse={false}
-                        href={false}
+                        href={true}
+                        link={'#contact'}
                         float={'left'}
                     />
                 </form>

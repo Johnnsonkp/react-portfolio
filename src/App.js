@@ -33,10 +33,10 @@ function App() {
         <Home {...data} />
         {/* <LightDark /> */}
         <About {...data} />
-        {/* <Portfolio /> */}
-        {/* <Blog /> */}
-        {/* <Contact /> */}
-        {/* <Footer /> */}
+        <Portfolio {...data} />
+        <Blog {...data} />
+        <Contact />
+        <Footer />
         {/* <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
