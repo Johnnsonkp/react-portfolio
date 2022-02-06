@@ -1,5 +1,6 @@
-import React from 'react';
 import './Footer.css';
+
+import React from 'react';
 
 const Footer = () => {
     return (
@@ -19,7 +20,7 @@ const Footer = () => {
                         <a href="https://github.com/Johnnsonkp"><i className="fab fa-github fa-2x"></i></a>
                     </div>
                 </div>
-                <h5><span className="highlight">Johnnsonkp</span> &copy;2021 </h5>
+                <h5><span className="highlight">Johnnsonkp</span> &copy;2022 </h5>
             </footer>
         </section>
     )

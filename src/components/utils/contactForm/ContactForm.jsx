@@ -126,16 +126,20 @@ class ContactForm extends React.Component {
                     <input type="text" name="message" id="message" value={message} onChange={this.onInputChange}/>
 
                     {/* <input type="submit" id="submit-btn" value="Submit"/> */}
-                    <PrimaryButton 
-                        type="submit"
-                        id="submit-btn"
-                        value="Submit"
-                        title="Send"  
-                        pulse={false}
-                        href={true}
-                        link={'#contact'}
-                        float={'left'}
-                    />
+                    <div style={{marginTop: '35px'}}>
+                        <PrimaryButton 
+                            type="submit"
+                            id="submit-btn"
+                            value="Submit"
+                            title="Send"  
+                            pulse={false}
+                            href={true}
+                            link={'#contact'}
+                            position={'left'}
+                            marginTop={'150px'}
+                            minWidth={'200px'}
+                        />
+                    </div>
                 </form>
             </>
         )

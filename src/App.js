@@ -15,15 +15,14 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import { TechStackFullWidthContainer } from "./components/common/frame/Frame";
+import { useWindowSize } from "./components/utils/utilFunctions";
 
 function App() {
   const LIGHT_COLOR = process.env.REACT_APP_LIGHT_COLOR;
   const DARK_COLOR = process.env.REACT_APP_DARK_COLOR;
   const DARK_FONT_COLOR = process.env.REACT_APP_DARK_FONT_COLOR;
   const [mode, setMode] = useState(true);
-
-  // const [textColor, setTextColor] = useState(DARK_FONT_COLOR);
-  // const [backgroundColor, setBackgrouncColor] = useState(LIGHT_COLOR);
+  const size = useWindowSize();
 
   const data = {
     mode: mode,
@@ -41,7 +40,7 @@ function App() {
         {/* <LightDark /> */}
         <About {...data} />
         <Portfolio {...data} />
-        <TechStackFullWidthContainer />
+        <TechStackFullWidthContainer size={size} />
         <Blog {...data} />
         <Contact {...data} />
         <Footer {...data} />

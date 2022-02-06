@@ -23,11 +23,11 @@ export const PrimaryButton = (props) => {
             letterSpacing: '.5px',
             textTransform: 'uppercase',
             transition: '250ms ease-out',
-            marginTop: '20px',
+            marginTop: props.marginTop || '20px',
             border: 'none',
             cursor: 'pointer',
             lineHeight: '1.6',
-            minWidth: '160px',
+            minWidth: props.minWidth || '160px',
             margin: 'auto',
             transition: 'all 250ms ease-out 0s',
             float: props.position

@@ -33,11 +33,18 @@ function Blog({mode, setMode, lightColor, darkColor}) {
     },[])
 
     return (
-        <section id="blogSection" style={{backgroundColor: mode? lightColor : darkColor}}>
+        <section 
+            id="blogSection" 
+            style={{
+                backgroundColor: mode? lightColor : darkColor,
+                paddingTop: size.width < 1000 && size.width > 900? '25rem' : null,
+                height: size.width < 1000 && '1000px'
+            }}>
 
             <div 
                 style={{
                     marginTop: '25px', 
+                    // height: size.width < 1000 && '2000px',
                     padding: '20px', 
                     marginLeft: 'auto', 
                     marginRight: 'auto', 

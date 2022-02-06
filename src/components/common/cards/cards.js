@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import { NakedButtonLink } from "../button/Buttons";
 import { SecondaryButton } from "../button/Buttons";
+import { useWindowSize } from "../../utils/utilFunctions";
 
 export const ProjectCard = (props) => {
   const { Meta } = Card;
@@ -55,11 +56,12 @@ export const ProjectCard = (props) => {
             display: "flex",
             justifyContent: "space-between",
             marginTop: "18px",
+            marginBottom: "0px",
+            position: "relative",
+            left: "-50px",
+            alignItems: "center",
           }}
         >
-          {/* <button>
-            <a href={props.source_code}>Source Code</a>
-          </button> */}
           <SecondaryButton
             pulse={false}
             link={props.source_code}
@@ -74,12 +76,16 @@ export const ProjectCard = (props) => {
 };
 
 export const ProjectCardContainer = (props) => {
+  const size = useWindowSize();
   return (
     <div className="site-card-wrapper">
       <Row gutter={16}>
         {props.projects.map(
           ({ title, href, alt, img, description, source_code }, index) => (
-            <Col span={8} style={{ marginTop: 16 }}>
+            <Col
+              span={size.width > 900 ? 8 : size.width < 600 ? 14 : 12}
+              style={{ marginTop: 16, width: 100 }}
+            >
               <ProjectCard
                 key={index}
                 title={title}

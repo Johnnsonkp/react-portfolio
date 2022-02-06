@@ -131,6 +131,11 @@
 
 
 /* Media queries  */
+/* @media only screen and (max-width: 1000px){
+    #blog-section{
+        height: 1500px !important;
+    }
+} */
 @media only screen and (max-width: 800px){
     #blog-section .titleBig{
         font-size: 4.5rem;
@@ -167,9 +172,9 @@
         max-width: 900px;
         height: 800px;
     }
-    #blogSection{
+    /* #blogSection{
         width: 110vw;
-    }
+    } */
     #blogSection .content{
         width: 100%;
     }

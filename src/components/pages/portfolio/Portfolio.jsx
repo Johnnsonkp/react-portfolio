@@ -156,10 +156,6 @@ const Portfolio = ({mode, setMode, lightColor, darkColor, darkFontColor}) => {
                         tab3={<ProjectCardContainer projects={professional}/>}
                         tab3Name={"Professional"}/> }
             />
-
-            {/* <TechStackFullWidthContainer 
-               
-            />  */}
         </section>
     )
 }

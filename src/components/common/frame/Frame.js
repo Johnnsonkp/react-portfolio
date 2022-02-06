@@ -235,6 +235,7 @@ export const TechStackFullWidthContainer = (props) => {
       marginLeft: "auto",
       marginRight: "auto",
       padding: "40px",
+      display: props.size.width < 1000 ? "none" : null,
     },
   };
   return (
