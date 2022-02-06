@@ -6,10 +6,7 @@ export const CodeIcon = (props) => (
     viewBox="64 64 896 896"
     focusable="false"
     data-icon="code"
-    // width="55px"
-    // height="55px"
-    // width="10em"
-    height="3.5em"
+    height="3em"
     fill="currentColor"
     aria-hidden="true"
   >
@@ -33,10 +30,8 @@ export const Love = (props) => (
     viewBox="64 64 896 896"
     focusable="false"
     data-icon="heart"
-    // width="55px"
-    // height="55px"
-    width="3.5em"
-    height="3.5em"
+    width="3em"
+    height="3em"
     fill="currentColor"
     aria-hidden="true"
   >
@@ -58,8 +53,8 @@ export const Customise = () => (
     data-icon="highlight"
     // width="55px"
     // height="55px"
-    width="3.5em"
-    height="3.5em"
+    width="3em"
+    height="3em"
     fill="currentColor"
     aria-hidden="true"
   >
@@ -81,8 +76,8 @@ export const Pixel = () => (
     data-icon="picture"
     // width="55px"
     // height="55px"
-    width="3.5em"
-    height="3.5em"
+    width="3em"
+    height="3em"
     fill="currentColor"
     aria-hidden="true"
   >
@@ -112,7 +107,7 @@ export const TechStackContainer = () => {
     <>
       <div
         style={{
-          marginTop: "35px",
+          // marginTop: "35px",
           marginBottom: "auto",
           width: "90%",
           marginLeft: "auto",

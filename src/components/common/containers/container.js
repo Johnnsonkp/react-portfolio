@@ -1,7 +1,20 @@
 import { useWindowSize } from "../../utils/utilFunctions";
 
 export const Container = (props) => {
-  return <div style={{ width: "90%", margin: "auto" }}>{props.content}</div>;
+  return (
+    <div
+      style={{
+        width: props.width || "90%",
+        marginLeft: "auto",
+        marginRight: "auto",
+        color: props.color,
+        marginTop: props.marginTop,
+        marginBottom: props.marginBottom,
+      }}
+    >
+      {props.content}
+    </div>
+  );
 };
 export const FlexedContainer = (props) => {
   const size = useWindowSize();
@@ -17,6 +30,28 @@ export const FlexedContainer = (props) => {
       }}
     >
       {props.content}
+    </div>
+  );
+};
+
+export const TextBoxContainer = (props) => {
+  const styles = {
+    setStyles: {
+      fontSize: props.size.width > 475 ? "1rem" : "0.9rem",
+      marginTop: "25px",
+      color: props.mode ? props.darkFontColor : props.lightColor,
+      width: "90%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      lineHeight: "2",
+      textAlign: "center",
+      marginBottom: "35px",
+    },
+  };
+
+  return (
+    <div>
+      <p style={styles.setStyles}>{props.children || props.content}</p>
     </div>
   );
 };

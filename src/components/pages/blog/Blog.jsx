@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react'
 
 import BlogList from './BlogList'
 import { Container } from '../../common/containers/container'
+import { CustomTitle } from '../../common/headers/headers'
 import { DisplayBox } from '../../common/frame/Frame'
 import { NakedButtonLink } from '../../common/button/Buttons'
 import NavControl from '../../utils/NavControl'
@@ -34,19 +35,24 @@ function Blog({mode, setMode, lightColor, darkColor}) {
     return (
         <section id="blogSection" style={{backgroundColor: mode? lightColor : darkColor}}>
 
-            {/* <div className="overlay-hidden">
-            
-            <div className="content">
-                <div className="blogs">
-                <Title section="blog-section" title1="MY" title2="BLOG" titleBackground="ARTICLE"/>
-                </div>
-                <div className="container">
-                    <BlogList blogs={blogs} />
-                </div>
+            <div 
+                style={{
+                    marginTop: '25px', 
+                    padding: '20px', 
+                    marginLeft: 'auto', 
+                    marginRight: 'auto', 
+                    width: size.width > 960? '70%' : '100%', 
+                    textAlign: 'center'   
+                }}
+            >
+                <CustomTitle 
+                    size={size} 
+                    mode={mode} 
+                    lightColor={lightColor}
+                    content={'Articles'}
+                /> 
             </div>
             
-            </div> */}
-            <TechStackFullWidthContainer />
             <Container 
                 content={
                     <DisplayBox
@@ -64,10 +70,6 @@ function Blog({mode, setMode, lightColor, darkColor}) {
                          fontSize: size.width > 1350? null : size.width > 1200? '1.7rem' : '1.4rem',
                          display: 'none'
                     }}
-                     ButtonIcon={
-                        <NakedButtonLink 
-                        link={'Resume-oct-2021(final border).pdf'} 
-                        title={'More About Me'}/>} 
             />} />
 
         </section>

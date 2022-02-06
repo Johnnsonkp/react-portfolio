@@ -1,15 +1,11 @@
 #portfolio{
-    height: 130vh;
-    height: 800px;
-    margin-bottom: 100px;
+    height: 1300px;
     width: 100%;
-    background-color: #111111c7;
+    /* background-color: #111111c7; */
     font-size: 20px;
-    /* z-index: 1;
-    position: sticky;
-    top: 0px;
-    opacity: 1.5 !important;
-    transition: opacity 0.3s; */
+    /* padding-top: 100px; */
+    padding-top: 3rem;
+    border: '1px solid red';
 }
 #portfolio .container{
     padding-top: 30px;

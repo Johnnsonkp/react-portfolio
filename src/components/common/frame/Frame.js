@@ -9,7 +9,6 @@ import Icon from "@ant-design/icons";
 import LightDark from "../light-dark-mode";
 import { Processes } from "../textContent/process";
 import { TechStackContainer } from "../../utils/icons/icons";
-// import bannerBackgroundImage from "public/std-banner.svg";
 import { useWindowSize } from "../../utils/utilFunctions";
 
 export const DisplayCircle = (props) => {
@@ -50,14 +49,14 @@ export const TrustBar = (props) => {
     },
   ];
 
-  const [data, setData] = useState(initialQuizItem);
+  const [data, setData] = useState(null);
   const CodeIconVar = (props) => <Icon component={CodeIcon} {...props} />;
   const CustomiseVar = (props) => <Icon component={Customise} {...props} />;
   const WithLove = (props) => <Icon component={Love} {...props} />;
   const PixelPerfect = (props) => <Icon component={Pixel} {...props} />;
 
-  useEffect(() => {
-    fetch("home.json", {
+  useEffect(async () => {
+    await fetch("home.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -69,7 +68,6 @@ export const TrustBar = (props) => {
 
   const CardContainers = (props) => {
     let size = useWindowSize();
-    console.log("props:", props);
     return (
       <div
         style={{
@@ -91,44 +89,37 @@ export const TrustBar = (props) => {
             backgroundImage: "url(std-banner.svg)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            padding: "25px",
+            padding: "15px",
             borderRadius: "50px",
           }}
         />
         <div
           style={{
-            marginTop: "25px",
+            marginTop: "10px",
             color: props.mode ? props.darkColor : props.lightColor,
           }}
         >
-          World-Class Development
+          {props.titles || null}
         </div>
       </div>
     );
   };
 
-  // const trustIcons = [CodeIconVar, CustomiseVar, WithLove, PixelPerfect];
-  // const trustIcons = {
-  //   "World-Class Development": CodeIconVar,
-  //   "Tailored To Your Needs": CustomiseVar,
-  //   "Pixel-Perfect Code": WithLove,
-  //   "Built With Love": PixelPerfect,
-  // };
-
-  const trustIcons = [CodeIconVar, CustomiseVar, WithLove, PixelPerfect];
+  const trustIcons = [CodeIconVar, CustomiseVar, PixelPerfect, WithLove];
   let trustIconsList = trustIcons.map((Item, index) => {
     console.log("index, Item:", index, Item);
-    return <CardContainers Icon={Item} key={index} {...propData} />;
+    return (
+      <CardContainers
+        Icon={Item}
+        key={index}
+        titles={data !== null && data[0].trustbar_titles[index]}
+        {...propData}
+      />
+    );
   });
-
-  // let trustIconsList = Object.entries(trustIcons).forEach(([key, Value]) => {
-  //   console.log(`key: ${key} value: ${Value}`);
-  //   return <CardContainers Icon={Value} title={key} />;
-  // });
-
   return <>{trustIconsList}</>;
 };
-// data[0].trustbar_titles.forEach((title) => console.log("title:", title));
+
 export const DisplayBox = (props) => {
   const size = useWindowSize();
   const darkColor = process.env.REACT_APP_DARK_COLOR;
@@ -232,20 +223,25 @@ export const DisplayBox = (props) => {
   );
 };
 
-export const TechStackFullWidthContainer = () => {
+export const TechStackFullWidthContainer = (props) => {
   const styles = {
     fullWidthContainer: {
-      // border: "1px solid red",
       width: "100%",
-      // marginTop: "50px",
-      // marginBottom: "50px",
-      height: "150px",
-      marginTop: "auto",
-      marginDown: "auto",
+      // height: "180px",
+      // paddingTop: "50px",
+      // paddingBottom: "50px",
+      // marginTop: props.marginTop ? props.marginTop : "auto",
+      // marginBottom: props.marginBottom ? props.marginBottom : "auto",
+      marginLeft: "auto",
+      marginRight: "auto",
+      padding: "40px",
     },
   };
   return (
-    <div className="gradientBanner" style={styles.fullWidthContainer}>
+    <div
+      className="gradientBanner fullWidthBanner"
+      style={styles.fullWidthContainer}
+    >
       <FlexedContainer content={<TechStackContainer />} />
     </div>
   );

@@ -4,23 +4,40 @@ body {
   font-family: 'Open Sans', sans-serif;
   /* font-family: 'Lato', sans-serif;  */
   font-family: 'Montserrat', sans-serif !important;
-  color: #fff;
+  /* color: #fff; */
 }
-/* const LIGHT_COLOR = process.env.REACT_APP_LIGHT_MODE_COLOR; */
-.bodyActive{
-  transition: all 0.5s ease-in-out;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  -webkit-transition-delay: 0.5s;
-  -moz-transition-delay: 0.5s;
-  -o-transition-delay: 0.5s;
-  transition-delay: 0.5s;
+body a {
+  color: '#fff' !important;
 }
-.bodyInactive{
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  -o-transition-delay: 0s;
-  transition-delay: 0s;
+.fullWidthBanner .tech i {
+  border-radius: 50px;
+  /* padding: 8px 10px; */
+  padding: 8px !important;
+  margin-top: 0px;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  background: #252934;
+  /* background-color: #f4f4f4; */
+  color: #f6004c;
+  /* border: 1px solid red; */
+  box-shadow: 12px 12px 2px 1px rgb(0 0 0 / 8%);
+}
+.fullWidthBanner  .fa-1x {
+  font-size: 3.5em !important;
+}
+.fullWidthBanner .tech h6{
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+}
+.fullWidthBanner .dev-tools {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

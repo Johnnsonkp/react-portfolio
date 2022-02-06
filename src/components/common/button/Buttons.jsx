@@ -45,6 +45,45 @@ export const PrimaryButton = (props) => {
         </button>
     )
 }
+export const SecondaryButton = (props) => {
+    const gradient = process.env.REACT_APP_PRIMARY_LINEAR_GRADIENT_COLOR;
+    const styles = {
+        button:{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: '#f6004c',
+            background: 'linear-gradient(90deg, #E80A89 0%, #F15B2A 100%)',
+            padding: '0.8rem calc(5px + 1.7vw)',
+            color: '#fff',
+            fontWeight: 700,
+            fontSize: '0.6rem',
+            boxShadow: props.boxShadow ?'10px 10px 12px 0 rgb(0 0 0 / 22%)' : null,
+            letterSpacing: '.5px',
+            textTransform: 'uppercase',
+            transition: '250ms ease-out',
+            marginTop: '20px',
+            border: 'none',
+            cursor: 'pointer',
+            lineHeight: '1.6',
+            // minWidth: '120px',
+            margin: 'auto',
+            transition: 'all 250ms ease-out 0s',
+            float: props.position
+        }
+    }
+    return (
+        <button 
+            style={styles.button}
+            className={props.pulse? 'pulse-effect' : null}
+        >   
+            {props.href ?
+                <a href={props.link}>{props.title}</a> :
+                <Link to={props.link}>{props.title}</Link> 
+            }
+        </button>
+    )
+}
 
 export const HamburgerMenu = (props) => {
     const [ visible, setVisible ] = useState(false)

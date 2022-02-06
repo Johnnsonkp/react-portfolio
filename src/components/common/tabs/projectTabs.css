@@ -1,0 +1,46 @@
+#portfolio .ant-tabs-tab{
+    width: 300px;
+    height: 50px;
+    border: 1px solid red;
+    padding: 0px;
+    margin: 0px;
+}
+#portfolio .projects-container .ant-tabs-tab-btn{
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    /* border: 1px solid red; */
+}
+#portfolio .ant-tabs-tab-btn{
+    margin: auto;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#portfolio .ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: #fff !important;
+    /* border: 1px solid red; */
+    background: #1890ff;
+}
+#portfolio .ant-tabs-nav-list{
+    background-color: #F2F9FF !important;
+}
+#portfolio .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab{
+    background-color: #F2F9FF !important;
+    border: none;
+}
+#portfolio .ant-tabs-top > .ant-tabs-nav::before{
+    border-bottom: none;
+}
+#portfolio .ant-tabs-nav-wrap{
+    background: #F2F9FF !important;
+    border-radius: 20px;
+    border: 1px solid #d3d3d3;
+}
+#portfolio .ant-card-body{
+    background-color: #f4f4f4 !important;
+    padding: 30px;
+}

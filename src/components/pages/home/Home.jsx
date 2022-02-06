@@ -4,8 +4,10 @@ import './Home.css'
 import { Container, FlexedContainer } from '../../common/containers/container';
 
 import { CustomBanner } from '../../common/banner/Banner';
+import { CustomTitle } from '../../common/headers/headers';
 import { NavControl } from '../../utils/Index'
 import React from 'react';
+import { TextBoxContainer } from '../../common/containers/container';
 import {TrustBar} from '../../common/frame/Frame'
 import { useWindowSize } from '../../utils/utilFunctions';
 
@@ -26,13 +28,16 @@ const Home = ({mode, setMode, lightColor, darkColor}) => {
                         marginRight: 'auto', 
                         width: size.width > 960? '70%' : '100%', 
                         textAlign: 'center'   
-                    }}>
-                    <h1 style={{fontSize: size.width > 600? '2.5rem' : '1.5rem', color: mode? '#474747' : lightColor}}>Not Your Average Developer</h1>
-                    <div>
-                        <p style={{fontSize: size.width > 475? '1rem': '0.9rem', marginTop: '25px', color: mode? '#717171' : lightColor, width: '90%', marginLeft: 'auto', marginRight: 'auto', lineHeight: '2.4'}}>
-                            Professional experience in web design and development environments, well versed with multiple technologies.
-                        </p>
-                    </div>
+                    }}
+                >
+                    <CustomTitle size={size} mode={mode} lightColor={lightColor}>
+                           Not Your Average Developer 
+                        </CustomTitle>
+                    <TextBoxContainer size={size} mode={mode} lightColor={lightColor}>
+                        Professional experience in web design and development environments, well versed with multiple technologies.
+                        Professional experience in web design and development environments, well versed with multiple technologies.
+                        </TextBoxContainer>
+                    
                 </div>
                 <Container content={<FlexedContainer content={<TrustBar mode={mode} lightColor={lightColor} darkColor={darkColor}/>}/>}/>
             </div>
@@ -42,5 +47,3 @@ const Home = ({mode, setMode, lightColor, darkColor}) => {
         
 export default Home
 
-// #474747
-// color: mode? darkColor : lightColor

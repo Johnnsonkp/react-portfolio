@@ -35,11 +35,12 @@ const Navbar = ({mode, setMode, lightColor, darkColor}) => {
             </div>
         )
     }
+
     return (
         <>
             <header 
                 style={{
-                    background: mode ? lightColor : darkColor
+                    background: mode? lightColor : darkColor
                 }}
                 onScroll={(event) => onScrollEffect(event, 80, "onScrollNav")} 
                 id="home-header"
@@ -48,9 +49,9 @@ const Navbar = ({mode, setMode, lightColor, darkColor}) => {
                     <Link 
                         to="/#home-section" 
                         className="hero-text" 
-                        style={{color: mode ? darkColor : lightColor}}
+                        style={{color: mode? darkColor : lightColor}}
                     >
-                        <div style={{margin: '0px', fontSize: '1.3rem', fontWeight: 'bold'}}> Johnthewebguy</div>
+                        <div style={{color: mode? darkColor : lightColor, margin: '0px', fontSize: '1.3rem', fontWeight: 'bold'}}> Johnthewebguy</div>
                     </Link>
                     <ul className="right" id="mainMenu">
                         <Switch 

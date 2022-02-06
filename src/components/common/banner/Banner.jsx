@@ -58,7 +58,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
             <div 
                 style={{
                     position: 'relative', 
-                    right: size.width > 700? '-5%' : '0%', width: size.width > 1000? '800px' : size.width <= 700 ? '90vw' : '400px', color: '#111', 
+                    right: size.width > 700? '-5%' : '0%', width: size.width > 1000? '800px' : size.width <= 700 ? '90vw' : '400px', color: mode? process.env.REACT_APP_LIGHT_COLOR : process.env.REACT_APP_DARK_COLOR , 
                     alignItems: 'center', 
                     padding: size.width <= 500? '15px' : '10px', 
                     marginBottom: '20px', 
@@ -81,7 +81,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                         // border: '1px solid red'
                     }}
                 >
-                <h3 style={{fontWeight: 'bold', margin: '0px', color: lightColor}}>John Nkpolukwu - </h3>
+                <h3 style={{fontWeight: 'bold', margin: '0px', color: mode? lightColor : darkColor}}>John Nkpolukwu - </h3>
                     <span 
                         style={{
                             fontStyle: 'italic', 
