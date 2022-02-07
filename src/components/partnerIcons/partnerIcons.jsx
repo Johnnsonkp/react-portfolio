@@ -31,10 +31,11 @@ export const AllPartnerIconComponent = (props) => {
           cursor: "pointer",
         }}
       >
+        <a className="social-links" href="https://www.linkedin.com/in/john-nkpolukwu-521201138/">
         <i
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
           className="fab fa-linkedin-in fa-1x"
-        ></i>
+        ></i></a>
       </div>
       <div
         style={{
@@ -45,11 +46,12 @@ export const AllPartnerIconComponent = (props) => {
           borderRadius: "100px",
           cursor: "pointer",
         }}
-      >
+      > 
+        <a className="social-links" href="https://github.com/Johnnsonkp">
         <i
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
           className="fab fa-github fa-1x"
-        ></i>
+        ></i></a>
       </div>
       <div
         style={{
@@ -60,11 +62,12 @@ export const AllPartnerIconComponent = (props) => {
           borderRadius: "100px",
           cursor: "pointer",
         }}
-      >
+      > 
+        <a className="social-links" href="https://github.com/Johnnsonkp">
         <i
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
           className="fab fa-twitter fa-1x"
-        ></i>
+        ></i></a>
       </div>
       <div
         style={{
@@ -75,11 +78,12 @@ export const AllPartnerIconComponent = (props) => {
           borderRadius: "100px",
           cursor: "pointer",
         }}
-      >
+      > 
+        <a className="social-links" href="https://codepen.io/Johnnsonkp">
         <i
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
           className="fab fa-codepen fa-1x"
-        ></i>
+        ></i></a>
       </div>
       <div
         style={{
@@ -91,10 +95,11 @@ export const AllPartnerIconComponent = (props) => {
           cursor: "pointer",
         }}
       >
+         <a className="social-links" href="https://www.instagram.com/johnnsonkp/">
         <i
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
-          className="fab fa-google fa-1x"
-        ></i>
+          className="fab fa-instagram fa-1x"
+        ></i></a>
       </div>
     </div>
   );

@@ -20,7 +20,8 @@ const Navbar = ({mode, setMode, lightColor, darkColor}) => {
                 {
                     size.width <= 768 ? (<HamburgerMenu {...dataProps}/>) : 
                     (<PrimaryButton 
-                        title="GET IN TOUCH" 
+                        // title="GET IN TOUCH" 
+                        title="RESUME"
                         link="Resume-oct-2021(final border).pdf"
                         pulse={true}
                         href={true}
