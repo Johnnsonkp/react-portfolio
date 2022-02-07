@@ -202,7 +202,12 @@ export const DisplayBox = (props) => {
       >
         <h1 style={props.titleStyle}>{props.title !== false && props.title}</h1>
         {props.component1}
-        {props.component2}
+
+        {props.component2 ? (
+          <div style={{ marginTop: "30px", opacity: 0.8 }}>
+            {props.component2}
+          </div>
+        ) : null}
       </div>
       {props.innerCard ? (
         <div style={styles.pictureBox}>

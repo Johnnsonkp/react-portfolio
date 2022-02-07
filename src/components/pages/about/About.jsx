@@ -20,7 +20,7 @@ const About = ({mode, setMode, lightColor, darkColor}) => {
                     <DisplayBox 
                      innerCard={true}
                      component1={<Processes />}
-                     component2={<TechStackContainer />}
+                    //  component2={<TechStackContainer />}
                      width={size.width > 1150? '94%' : '100%'}
                      title={'Why choose me/my agency for your project?'}
                      titleStyle={{

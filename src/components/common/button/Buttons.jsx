@@ -77,10 +77,11 @@ export const SecondaryButton = (props) => {
             style={styles.button}
             className={props.pulse? 'pulse-effect' : null}
         >   
-            {props.href ?
+            {/* {props.href ?
                 <a href={props.link}>{props.title}</a> :
                 <Link to={props.link}>{props.title}</Link> 
-            }
+            } */}
+            <a href={props.link}>{props.title}</a>
         </button>
     )
 }

@@ -34,10 +34,11 @@ const Home = ({mode, setMode, lightColor, darkColor}) => {
                            Not Your Average Developer 
                         </CustomTitle>
                     <TextBoxContainer size={size} mode={mode} lightColor={lightColor}>
-                        Professional experience in web design and development environments, well versed with multiple technologies.
-                        Professional experience in web design and development environments, well versed with multiple technologies.
+                        {/* Professional experience in web design and web development environments, well versed with multiple technologies.
+                        Professional experience in web design and development environments, well versed with multiple technologies. */}
+                        Turning ideas into reality is my number #1 passion. This is achieved through my experience, having worked in various web development and web design environments, 
+                        plus adehering to a step by step process that goes through the different phases of the development journey.
                         </TextBoxContainer>
-                    
                 </div>
                 <Container content={<FlexedContainer content={<TrustBar mode={mode} lightColor={lightColor} darkColor={darkColor}/>}/>}/>
             </div>

@@ -1,7 +1,7 @@
 [   
     {
         "title": "Sprintasker",
-        "description": "Two sided marketplace for Tshirt enthusiasts",
+        "description": "Your favourite project management tool features combined into one",
         "img": "./taskSprinter.png", 
         "source_code": "https://github.com/Johnnsonkp/cozy_tees",
         "href": "https://tasksprinter.netlify.app/",
@@ -13,7 +13,7 @@
     },
     {
         "title": "It's A Vibe",
-        "description": "Two sided marketplace for Tshirt enthusiasts",
+        "description": "Spotify extension that makes you playlists based on your mood",
         "img": "./vibe.png", 
         "source_code": "https://github.com/its-a-vibe/vibe",
         "href": "https://its-a-vibe.netlify.app/",
@@ -25,7 +25,7 @@
     },
     {
         "title": "Flight Golf Club",
-        "description": "Two sided marketplace for Tshirt enthusiasts",
+        "description": "BESPOKE GIFTS FOR THE EVERYDAY GOLFER",
         "img": "./flight-club.png", 
         "source_code": "",
         "href": "https://flightclubgolf.com/",
@@ -36,8 +36,8 @@
         ]
     },
     {
-        "title": "Cozy Tees Marketplace",
-        "description": "Two sided marketplace for Tshirt enthusiasts",
+        "title": "The Bookgrocer",
+        "description": "Australians family-owned book business specialising in Bargain Book Boxes",
         "img": "./book-grocer.png", 
         "source_code": "",
         "href": "https://bookgrocer.com/",
@@ -61,7 +61,7 @@
     },
     {
         "title": "Bitflix",
-        "description": "Two sided marketplace for Tshirt enthusiasts",
+        "description": "A simple movie database application created using the fetch API.",
         "img": "./bitflix.png", 
         "source_code": "https://github.com/Johnnsonkp/ROR-movies",
         "href": "https://rails-moviedb.herokuapp.com/",

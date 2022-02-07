@@ -81,7 +81,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                         // border: '1px solid red'
                     }}
                 >
-                <h3 style={{fontWeight: 'bold', margin: '0px', color: mode? lightColor : darkColor}}>John Nkpolukwu - </h3>
+                <h3 style={{fontWeight: 'bold', margin: '0px', color: lightColor}}>John Nkpolukwu - </h3>
                     <span 
                         style={{
                             fontStyle: 'italic', 

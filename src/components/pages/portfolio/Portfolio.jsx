@@ -134,10 +134,11 @@ const Portfolio = ({mode, setMode, lightColor, darkColor, darkFontColor}) => {
                         size={size} 
                         mode={mode} 
                         lightColor={lightColor}
-                        content={'What we do.'}
+                        content={'Portfolio.'}
                     /> 
             <TextBoxContainer size={size} mode={mode} lightColor={lightColor}>
-                With every decision backed by data, our world-class team tailors services to a single overarching objective: evolving and growing your business. As experts in social, search, email and creative, we develop the recipe for your success.
+                {/* With every decision backed by data, our world-class team tailors services to a single overarching objective: evolving and growing your business. As experts in social, search, email and creative, we develop the recipe for your success. */}
+                Some of the various projects I have created or worked on, both professionally and personally.
             </TextBoxContainer>
             </div>
             

@@ -14,6 +14,7 @@ export const Processes = (props) => {
         boxShadow: "0 0 20px #78787820",
         fontWeight: "300",
         margin: "auto",
+        height: "400px",
       }}
     >
       <Card
