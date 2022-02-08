@@ -1,49 +1,46 @@
-import React from 'react';
-import pic from "../../../../src/pic-edit.png";
 // src/pic-edit.png
 import './Home.css'
-import {NavControl, JobTitle} from '../../utils/Index'
 
-const Home = () => {
-    const fadeScroll = () => {
-        const checkpoint = 800;
-        window.addEventListener("scroll", () => {
-            const currentScroll = window.pageYOffset;
-            const homeSection = document.getElementById("home-section");
+import { Container, FlexedContainer } from '../../common/containers/container';
 
-            if(currentScroll > 350 && window.innerWidth > 1000){
-                homeSection.classList.add('blur')
-            } else{
-                homeSection.classList.remove('blur')
-            }
-            
-            currentScroll <= checkpoint ? homeSection.style.opacity = 1.5 - currentScroll / checkpoint :
-                                          homeSection.style.opacity = 0;
-                              
-        });
-    }
+import { CustomBanner } from '../../common/banner/Banner';
+import { CustomTitle } from '../../common/headers/headers';
+import { NavControl } from '../../utils/Index'
+import React from 'react';
+import { TextBoxContainer } from '../../common/containers/container';
+import {TrustBar} from '../../common/frame/Frame'
+import { useWindowSize } from '../../utils/utilFunctions';
 
+const Home = ({mode, setMode, lightColor, darkColor}) => {
+    const size = useWindowSize()
     return (
-        <main id="home-section" onLoad={fadeScroll()}>
-            <div className="overlay-hidden">
-                <div className="block"></div>
-                    <a className="outer-circle" href="#about">
-                        <img className="profile-pic circle" src={pic} alt=""></img>
-                    </a>
-                    <div className="content">
-                        <div className="text-content">
-                            <h4>HI THERE !</h4>
-                            <div className="transition-title">
-                                <div className="text-wrap">I'm </div>
-                                <JobTitle/><div className="divider">|</div>
-                            </div>
-                            <p>I'm a Melbourne-based full-stack developer, with a passion for code and a love for technology. I specialise on the front-end and love turning design into code. </p>
-                            <a className="view-my-work-btn" href="#portfolio">View My Work</a>
-                        </div>
-                    </div>
-                    <div className="circles">
-                        <NavControl />
-                    </div>
+        <main id="home-section">
+            <div 
+                className="overlay-hidden"
+                style={{background: mode? lightColor : darkColor, height: '100%', marginBottom: '20px'}}
+            >
+                <CustomBanner mode={mode} darkColor={darkColor} lightColor={lightColor}/>
+                <div 
+                    style={{
+                        marginTop: '35px', 
+                        padding: '20px', 
+                        marginLeft: 'auto', 
+                        marginRight: 'auto', 
+                        width: size.width > 960? '70%' : '100%', 
+                        textAlign: 'center'   
+                    }}
+                >
+                    <CustomTitle size={size} mode={mode} lightColor={lightColor}>
+                           Not Your Average Developer 
+                        </CustomTitle>
+                    <TextBoxContainer size={size} mode={mode} lightColor={lightColor}>
+                        {/* Professional experience in web design and web development environments, well versed with multiple technologies.
+                        Professional experience in web design and development environments, well versed with multiple technologies. */}
+                        Turning ideas into reality is my number #1 passion. This is achieved through my experience, having worked in various web development and web design environments, 
+                        plus adehering to a step by step process that goes through the different phases of the development journey.
+                        </TextBoxContainer>
+                </div>
+                <Container content={<FlexedContainer content={<TrustBar mode={mode} lightColor={lightColor} darkColor={darkColor}/>}/>}/>
             </div>
         </main>
    )

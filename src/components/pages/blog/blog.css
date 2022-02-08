@@ -2,18 +2,9 @@
     height: 120vh;
     height: 750px;
     width: 100%;
-    /* background-color: rgb(33 35 41 / 80%); */
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-size: 20px;
     z-index: 1;
-    position: sticky;
-    top: 0px;
-    opacity: 1 !important;
-    transition: opacity 0.3s;
     padding-top: 50px;
-    overflow: hidden !important;
 }
 #blogSection .container{
     padding-top: 30px;
@@ -140,6 +131,11 @@
 
 
 /* Media queries  */
+/* @media only screen and (max-width: 1000px){
+    #blog-section{
+        height: 1500px !important;
+    }
+} */
 @media only screen and (max-width: 800px){
     #blog-section .titleBig{
         font-size: 4.5rem;
@@ -176,9 +172,9 @@
         max-width: 900px;
         height: 800px;
     }
-    #blogSection{
+    /* #blogSection{
         width: 110vw;
-    }
+    } */
     #blogSection .content{
         width: 100%;
     }
@@ -243,7 +239,7 @@
         margin: 10px;
     }
     .blog-wrapper{
-        width: 93% !important;
+        width: 100%;
     
     }
 }
@@ -259,13 +255,13 @@
         display: none;
     }
     .blog-wrapper{
-        width: 98%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 20px;
     }
     #blogSection .container{
-        width: 98%;
+        width: 100%;
     }
     #blogSection .blog-container{
         margin: 10px;

@@ -1,7 +1,7 @@
-import React from 'react'
 import './ContactForm.css'
 
-
+import { PrimaryButton } from '../../common/button/Buttons'
+import React from 'react'
 
 class ContactForm extends React.Component {
     constructor(props){
@@ -125,7 +125,21 @@ class ContactForm extends React.Component {
                     <label htmlFor="message">Message:</label>
                     <input type="text" name="message" id="message" value={message} onChange={this.onInputChange}/>
 
-                    <input type="submit" id="submit-btn" value="Submit"/>
+                    {/* <input type="submit" id="submit-btn" value="Submit"/> */}
+                    <div style={{marginTop: '35px'}}>
+                        <PrimaryButton 
+                            type="submit"
+                            id="submit-btn"
+                            value="Submit"
+                            title="Send"  
+                            pulse={false}
+                            href={true}
+                            link={'#contact'}
+                            position={'left'}
+                            marginTop={'150px'}
+                            minWidth={'200px'}
+                        />
+                    </div>
                 </form>
             </>
         )
