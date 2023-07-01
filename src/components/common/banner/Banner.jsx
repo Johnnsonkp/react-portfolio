@@ -71,8 +71,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                         alignItems: size.width > 700? 'center' : 'flex-start', 
                         justifyContent: 'space-between',
                         flexDirection: size.width > 700? 'row' : 'column',
-                        width: '455px',
-                        // border: '1px solid red'
+                        width: '500px'
                     }}
                 >
                 <h3 style={{fontWeight: 'bold', margin: '0px', color: lightColor}}>Chinonso John Nkpolukwu - </h3>
@@ -88,7 +87,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                 </div> 
             
                 <AllPartnerIconComponent socialIcons={socialIcons}/>
-                <div style={{width: size.width > 1000? '75%' : '100%', lineHeight: '1.2', marginBottom: '40px', marginTop: '15px'}}>
+                <div style={{width: size.width > 1000? '78%' : '100%', lineHeight: '1.2', marginBottom: '30px', marginTop: '15px'}}>
                     <p 
                         style={{
                             fontSize: size.width > 700? '1.2rem' : size.width <= 425? '0.9rem' : '9rem', 
