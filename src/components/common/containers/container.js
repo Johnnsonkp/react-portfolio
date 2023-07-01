@@ -10,6 +10,7 @@ export const Container = (props) => {
         color: props.color,
         marginTop: props.marginTop,
         marginBottom: props.marginBottom,
+        maxWidth: props.maxWidth,
       }}
     >
       {props.content}
@@ -38,6 +39,7 @@ export const TextBoxContainer = (props) => {
   const styles = {
     setStyles: {
       fontSize: props.size.width > 475 ? "1rem" : "0.9rem",
+      fontWeight: "300",
       marginTop: "25px",
       color: props.mode ? props.darkFontColor : props.lightColor,
       width: "90%",

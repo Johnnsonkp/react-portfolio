@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
+import { ArrowButton } from '../../common/button/Buttons'
 import BlogList from './BlogList'
 import { Container } from '../../common/containers/container'
 import { DisplayBox } from '../../common/frame/Frame'
@@ -60,7 +61,8 @@ export const SingleLargeBlog = (props) => {
 	}
 	
 	return(
-		<>
+		<div>	
+			<div>
 			<a href={url} className="" style={styles.cardContainer}>
 				<div style={styles.imgContainer} className="">
 					<img style={styles.imgStyle} className="" src={img} alt="" />
@@ -74,6 +76,10 @@ export const SingleLargeBlog = (props) => {
 					/> 
 				</div>
 			</a>
-		</>
+			</div>
+			<div style={{position: 'relative', top: '18%', left: '0%'}}>
+				<ArrowButton />
+			</div>
+		</div>
 	)
 }

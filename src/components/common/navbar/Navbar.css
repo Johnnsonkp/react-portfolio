@@ -9,8 +9,7 @@
     position: sticky;
     top: 0px;
     color: #111;
-    /* border-bottom: 1px solid rgba(105, 87, 175, 0.2); */
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+    box-sizing: border-box;
 }
 .onScrollNav{
   -webkit-animation: fadeIn 2s;
@@ -43,7 +42,7 @@
     margin-bottom: 0px;
   }
   ul#mainMenu{
-    z-index: 1;
+    /* z-index: 1; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -53,8 +52,8 @@
     margin-top: 0px;
   }
   .fa-1x {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     color: #111;
   }
   .fa-1x:hover{
@@ -91,7 +90,45 @@
   left: 1px;
 
 }
- 
+
+.navbarDesktop{
+  background: rgb(255, 255, 255);
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px;
+  height: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbarDesktop .innerNav{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 0px;
+}
+.navbarDesktop .innerNav li{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.navbarDesktop .innerNav li a{
+  color: #333;
+}
+.navbarDesktop .innerNav li a:hover{
+  color: red;
+}
+.navTagsHighlight{
+  color: red !important;
+}
+@media screen and (max-width: 768px){
+  .navbarDesktop{
+    display: none;
+  }
+}
 @media screen and (max-width: 800px){
   ul#mainMenu{
     display: none;
@@ -102,4 +139,8 @@
     width: 98%;
     max-width: 370px;
   }
+}
+
+.navTagsHighlight{
+  color: red !important;
 }

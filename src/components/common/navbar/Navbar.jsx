@@ -6,6 +6,7 @@ import { onScrollEffect, useWindowSize } from '../../utils/utilFunctions';
 
 import { HamburgerMenu } from '../button/Buttons';
 import {Link} from 'react-router-dom'
+import {NavbarDesktop} from './NavbarDesktop'
 import { PrimaryButton } from '../button/Buttons';
 import { Switch } from 'antd';
 import { gradientCapsule } from '../../utils/utilFunctions';
@@ -52,18 +53,15 @@ const Navbar = ({mode, setMode, lightColor, darkColor}) => {
                         className="hero-text" 
                         style={{color: mode? darkColor : lightColor}}
                     >
-                        <div style={{color: mode? darkColor : lightColor, margin: '0px', fontSize: '1.3rem', fontWeight: 'bold'}}> Johnthewebguy</div>
+                        <div style={{color: mode? darkColor : lightColor, margin: '0px', fontSize: '1.8rem', fontWeight: 'bolder', letterSpacing: '-2px'}}> Chinonso<span style={{color: '#ff0032', fontSize: '2rem'}}>.</span></div>
                     </Link>
+                    <NavbarDesktop />
                     <ul className="right" id="mainMenu">
                         <Switch 
                             style={{marginRight: '5px', marginLeft: '5px', border: '1px solid #fff'}} 
                             defaultChecked 
                             onClick={() => setMode(!mode)}
                         />
-                        {/* <a className="social-links" href="https://www.linkedin.com/in/john-nkpolukwu-521201138/"><i className="fab fa-linkedin-in fa-1x"></i></a>
-                        <a className="social-links" href="https://www.instagram.com/johnnsonkp/"><i className="fab fa-instagram fa-1x"></i></a>
-                        <a className="social-links" href="https://codepen.io/Johnnsonkp"><i className="fab fa-codepen fa-1x"></i></a>
-                        <a className="social-links" href="https://github.com/Johnnsonkp"><i className="fab fa-github fa-1x"></i></a> */}
                     </ul> 
                     <ButtonContainer />
                 </nav>

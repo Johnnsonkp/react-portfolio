@@ -1,8 +1,8 @@
 import './Button.css'
 
+import {ArrowRightOutlined, CaretLeftOutlined, CaretRightOutlined} from "@ant-design/icons"
 import { Button, Drawer, Radio, Space } from 'antd';
 
-import {ArrowRightOutlined} from "@ant-design/icons"
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
 
@@ -53,9 +53,9 @@ export const SecondaryButton = (props) => {
             alignItems: 'center',
             justifyContent: 'center',
             background: '#f6004c',
-            background: 'linear-gradient(90deg, #E80A89 0%, #F15B2A 100%)',
+            background: props.buttonBackgroundColor? props.buttonBackgroundColor : 'linear-gradient(90deg, #E80A89 0%, #F15B2A 100%)',
             padding: '0.8rem calc(5px + 1.7vw)',
-            color: '#fff',
+            color: props.buttonColor? props.buttonColor : '#fff',
             fontWeight: 700,
             fontSize: '0.6rem',
             boxShadow: props.boxShadow ?'10px 10px 12px 0 rgb(0 0 0 / 22%)' : null,
@@ -63,7 +63,7 @@ export const SecondaryButton = (props) => {
             textTransform: 'uppercase',
             transition: '250ms ease-out',
             marginTop: '20px',
-            border: 'none',
+            border: props.border? '1px solid lightGray' : 'none',
             cursor: 'pointer',
             lineHeight: '1.6',
             // minWidth: '120px',
@@ -81,7 +81,7 @@ export const SecondaryButton = (props) => {
                 <a href={props.link}>{props.title}</a> :
                 <Link to={props.link}>{props.title}</Link> 
             } */}
-            <a href={props.link}>{props.title}</a>
+            <a style={{color: props.buttonColor}}href={props.link}>{props.title}</a>
         </button>
     )
 }
@@ -154,6 +154,23 @@ export const NakedButtonLink = (props) => {
             onMouseOut={() => setToggle(false)}
             style={{transition: '3s easeOut', color: 'red', fontSize: '14px', fontWeight: '600', marginLeft: toggle? '10px' : '0px'}}>
             <a style={{color: 'red', marginRight: '10px'}} href={props.link}>{props.title}</a><ArrowRightOutlined />
+        </div>
+    )
+}
+
+export const ArrowButton = (props) => {
+    const [toggle, setToggle] = useState(false)
+    return (
+        <div style={{display: 'flex', justifyContent: 'space-between', width: '88px'}}>
+            <Button 
+                size={'large'}
+                icon={<CaretLeftOutlined />}
+                
+            ></Button>
+            <Button 
+                size={'large'}
+                icon={<CaretRightOutlined />}
+            ></Button>
         </div>
     )
 }

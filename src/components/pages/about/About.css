@@ -33,7 +33,8 @@
 
 }
 .about-pic{
-    background-image: url('https://johnnsonkp-dev.herokuapp.com/images/pic2.png');
+    /* background-image: url('https://johnnsonkp-dev.herokuapp.com/images/pic2.png'); */
+    /* background-image: url('/public/headshot-pic.jpg'); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

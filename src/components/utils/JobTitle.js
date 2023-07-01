@@ -31,7 +31,6 @@ class JobTitle extends Component {
   render() {
     const { title } = this.state;
     const spaceWithTitle = " " + title;
-    console.log("spaceWithTitle:", spaceWithTitle);
     return (
       <>
         {" "}

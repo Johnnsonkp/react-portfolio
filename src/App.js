@@ -37,17 +37,12 @@ function App() {
       <div className="App">
         <Navbar {...data} />
         <Home {...data} />
-        {/* <LightDark /> */}
         <About {...data} />
         <Portfolio {...data} />
         <TechStackFullWidthContainer size={size} />
         <Blog {...data} />
         <Contact {...data} />
         <Footer {...data} />
-        {/* <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes> */}
       </div>
     </Router>
   );

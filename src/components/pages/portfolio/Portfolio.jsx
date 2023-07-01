@@ -17,7 +17,6 @@ const Portfolio = ({mode, lightColor, darkColor, darkFontColor}) => {
     const initialProject = [
 
 	]
-
     const [project, generateProjects] = useState(initialProject)
     const [person, setPersonal] = useState([])
     const [professional, setProfessional] = useState([])
@@ -59,15 +58,12 @@ const Portfolio = ({mode, lightColor, darkColor, darkFontColor}) => {
                         content={'Portfolio.'}
                     /> 
             <TextBoxContainer size={size} mode={mode} lightColor={lightColor}>
-                {/* With every decision backed by data, our world-class team tailors services to a single overarching objective: evolving and growing your business. As experts in social, search, email and creative, we develop the recipe for your success. */}
                 Some of the various projects I have created or worked on, both professionally and personally.
             </TextBoxContainer>
             </div>
-            
-
-            
             <Container 
                 width={'80%'}
+                maxWidth={'1300px'}
                 content={
                     <TabSlider 
                         marginBottom={'100px'}

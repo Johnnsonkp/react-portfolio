@@ -1,5 +1,7 @@
 #portfolio{
     height: 1300px;
+    min-height: 100%;
+    height: 100%;
     width: 100%;
     /* background-color: #111111c7; */
     font-size: 20px;
@@ -165,14 +167,19 @@
 }
 @media only screen and (max-width: 500px){
     #portfolio-section .titleBig{
-        /* left: 0%;  */
         font-size: 4rem;
     }
     #portfolio-section .titleSmall{
-        /* left: 0%; */
         font-size: 2rem;
         top: 55px;
     }
+    .ant-col-14{
+        max-width: 100%;
+    }
+    .ant-card .ant-card-bordered .ant-card-hoverable{
+        height: 100%;
+    }
+
 }
 @media only screen and (max-width: 400px){
     #portfolio-section .titleBig{
@@ -201,18 +208,9 @@
     #portfolio .container{
         max-width: 1400px;
     }
-    /* .porfolio .titleSmall{
-        left: 41% !important;
-    }  */
     #portfolio .circles{
         top: 200px !important;
-        /* left: 78% !important;
-        margin-right: 10%; */
     }
-    /* #portfolio .projects-container{
-        max-width: 1400px;
-        margin: auto;
-    } */
 }   
 /* @media only screen and (max-width: 1200px){
    
@@ -232,7 +230,7 @@
 @media only screen and (max-width: 1000px) and (min-width: 801px){
     #portfolio{
         position: relative !important;
-        height: 900px !important;
+        /* height: 900px !important; */
         width: 100%;
         max-width: 1000px;
         position: relative !important;
@@ -253,10 +251,15 @@
         margin: auto;
     }
 }
+@media only screen and (max-width: 767px){
+    .ant-tabs > .ant-tabs-nav{
+        display: none;
+    }
+} 
 @media only screen and (max-width: 800px) and (min-width: 601px){
     #portfolio{
         position: relative !important;
-        height: 900px !important;
+        /* height: 900px !important; */
         width: 100%;
         max-width: 800px;
         position: relative !important;
@@ -287,17 +290,16 @@
     #portfolio{
         position: relative !important;
         height: 2500px;
+        height: 100%;
         width: 100%;
         max-width: 600px;
         margin-bottom: 0px;
-        /* border: 1px solid red; */
     }
     #portfolio .circles{
         display: none;
     }
     #portfolio .container{
         width: 100%;
-        /* border: 1px solid red; */
     }
     .project-wrapper{
         width: 100%;
@@ -309,8 +311,6 @@
         font-size: 0.5rem !important;
         margin: auto;
         margin-top: 15px;
-        /* max-width: 350px; */
-        /* border: 1px solid red; */
     }
     .project-wrapper img{
         height: 300px;

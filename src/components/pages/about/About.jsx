@@ -22,7 +22,7 @@ const About = ({mode, setMode, lightColor, darkColor}) => {
                      component1={<Processes />}
                     //  component2={<TechStackContainer />}
                      width={size.width > 1150? '94%' : '100%'}
-                     title={'Why choose me/my agency for your project?'}
+                     title={'Why choose me for your project?'}
                      titleStyle={{
                          marginLeft: '15px', 
                          marginBottom: '40px', 

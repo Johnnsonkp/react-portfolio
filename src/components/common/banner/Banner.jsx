@@ -1,3 +1,5 @@
+import './Banner.css'
+
 import { AllPartnerIconComponent } from "../../partnerIcons/partnerIcons"
 import { DisplayCircle } from "../frame/Frame"
 import JobTitle from "../../utils/JobTitle"
@@ -10,14 +12,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
     const size = useWindowSize()
     const Divider = () => {
         return (
-            <div style={{
-                border: '1px solid rgba(0, 0, 0, 0.125)', 
-                height: '80%', 
-                marginTop: 'auto', 
-                marginBottom: 'auto',
-                marginRight: '30px', 
-                marginLeft: '5px',
-            }}></div>
+            <div class="hr-style"></div>
         )
     }
     let socialIcons = [
@@ -41,7 +36,7 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                     justifyContent: 'space-around',
                 }}
             >   
-            <div style={{display: 'flex', flexDirection: 'column', padding: size.width <= 700 ? '0px' : '30px'}}>
+            <div style={{display: 'flex', flexDirection: 'column', padding: size.width <= 700 ? '0px' : '30px', backgroundBlendMode: 'darken'}}>
                 <DisplayCircle 
                     outlineClass={"outer-circle"} 
                     link={'#about'} 
@@ -58,14 +53,13 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
             <div 
                 style={{
                     position: 'relative', 
-                    right: size.width > 700? '-5%' : '0%', width: size.width > 1000? '800px' : size.width <= 700 ? '90vw' : '400px', color: mode? process.env.REACT_APP_LIGHT_COLOR : process.env.REACT_APP_DARK_COLOR , 
+                    right: size.width > 700? '0%' : '0%', width: size.width > 1000? '800px' : size.width <= 700 ? '90vw' : '400px', color: mode? process.env.REACT_APP_LIGHT_COLOR : process.env.REACT_APP_DARK_COLOR , 
                     alignItems: 'center', 
                     padding: size.width <= 500? '15px' : '10px', 
                     marginBottom: '20px', 
                     marginLeft: size.width > 1000? null : '0px', 
                     zIndex: size.width <= 700 && 1,
                     background: size.width <= 500 && 'rgba(111, 111, 111, 0.7)',
-                    // border: '1px solid red',
                  }}
                 >
                     <div className="transition-title">
@@ -77,14 +71,14 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                         alignItems: size.width > 700? 'center' : 'flex-start', 
                         justifyContent: 'space-between',
                         flexDirection: size.width > 700? 'row' : 'column',
-                        width: '410px',
+                        width: '455px',
                         // border: '1px solid red'
                     }}
                 >
-                <h3 style={{fontWeight: 'bold', margin: '0px', color: lightColor}}>John Nkpolukwu - </h3>
+                <h3 style={{fontWeight: 'bold', margin: '0px', color: lightColor}}>Chinonso John Nkpolukwu - </h3>
                     <span 
                         style={{
-                            fontStyle: 'italic', 
+                            // fontStyle: 'italic', 
                             fontSize: '0.8rem', 
                             height: '100%', 
                             margin: '0px',
@@ -94,16 +88,16 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                 </div> 
             
                 <AllPartnerIconComponent socialIcons={socialIcons}/>
-                <div style={{width: size.width > 1000? '80%' : '100%', lineHeight: '1.2', marginBottom: '40px', marginTop: '10px'}}>
+                <div style={{width: size.width > 1000? '75%' : '100%', lineHeight: '1.2', marginBottom: '40px', marginTop: '15px'}}>
                     <p 
                         style={{
-                            fontSize: size.width > 700? '1.2rem' : size.width <= 400? '0.9rem' : '1.1rem', 
+                            fontSize: size.width > 700? '1.2rem' : size.width <= 425? '0.9rem' : '9rem', 
                             marginTop: size.width > 700? '25px' : '25px', 
-                            fontWeight: size.width <= 400? 'bold' : '600',
+                            fontWeight: size.width <= 400? '600' : '300',
                             lineHeight: 1.8,
                             color: lightColor
                         }}>
-                            Melbourne based full stack developer, designer and freelancer specialising on the front-end. <span style={{fontStyle: 'italic', color: 'yellow'}}>Turning ideas into reality.</span></p>
+                            Melbourne based full stack developer, designer and freelancer specialising on the front-end. <span style={{fontStyle: 'italic', color: 'yellow', fontWeight: 'bold'}}>Turning ideas into reality.</span></p>
                 </div>
                 <PrimaryButton 
                     title={'VIEW MY WORK' } 

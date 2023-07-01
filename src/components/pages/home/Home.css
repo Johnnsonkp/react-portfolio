@@ -409,7 +409,7 @@ body a, head a {
   -webkit-transition: width 0.5s ease-out;
   transition: width 0.5s ease-out;
   white-space: nowrap;
-  font-size: 3rem !important;
+  font-size: 4.5rem !important;
 }
 
 .transition-title .title-flrkr {
@@ -482,6 +482,12 @@ body a, head a {
 .designProjects {
   background-color: #fff !important;
   color: #111 !important;
+}
+.hr-style{
+    margin: 30px 0;
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, black));
 }
 
 /* Fading animation */

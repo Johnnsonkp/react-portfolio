@@ -29,7 +29,7 @@ export const ProjectCard = (props) => {
         style={{
           width: "100%",
           margin: "auto",
-          height: "390px",
+          height: "100%",
           border: toggler ? "2px solid blue" : null,
         }}
         cover={
@@ -46,23 +46,22 @@ export const ProjectCard = (props) => {
         }
         onClick={() => locationRedirect(props.href)}
       >
-        <Meta
-          title={props.title}
-          description={props.description}
-          // style={{ width: "95%" }}
-        />
+        <Meta title={props.title} description={props.description} />
         <div
           style={{
             display: "flex",
             justifyContent: "space-between",
-            marginTop: "18px",
+            marginTop: "35px",
             marginBottom: "0px",
             position: "relative",
-            left: "-50px",
+            // left: "-40px",
             alignItems: "center",
           }}
         >
           <SecondaryButton
+            buttonBackgroundColor={"#1890ff"}
+            buttonColor={"#fff"}
+            border={true}
             pulse={false}
             link={props.source_code}
             title="Source Code"

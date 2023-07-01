@@ -1,7 +1,6 @@
 #portfolio .ant-tabs-tab{
-    width: 300px;
+    width: 20vw;
     height: 50px;
-    border: 1px solid red;
     padding: 0px;
     margin: 0px;
 }
@@ -9,7 +8,6 @@
     margin: auto;
     padding-left: 100px;
     padding-right: 100px;
-    /* border: 1px solid red; */
 }
 #portfolio .ant-tabs-tab-btn{
     margin: auto;
@@ -39,6 +37,7 @@
     background: #F2F9FF !important;
     border-radius: 20px;
     border: 1px solid #d3d3d3;
+    overflow: visible;
 }
 #portfolio .ant-card-body{
     background-color: #f4f4f4 !important;

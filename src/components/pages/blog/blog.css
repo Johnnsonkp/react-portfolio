@@ -153,6 +153,9 @@
         font-size: 2rem;
         top: 45px;
     }
+    .blog-wrapper a{
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 1500px){

@@ -1,4 +1,17 @@
 [   
+    
+    {
+        "title": "Ekoh",
+        "description": "At Ekoh Store, we stock numerous natural eco-friendly cleaning products.",
+        "img": "./ekoh.png", 
+        "source_code": "https://ekoh-store.com/",
+        "href": "https://ekoh-store.com/",
+        "alt": "Ekoh-store shopify",
+        "category": [
+            "all",
+            "professional"
+        ]
+    },
     {
         "title": "Sprintasker",
         "description": "Your favourite project management tool features combined into one",
@@ -58,18 +71,6 @@
         "all",
         "personal"
       ]
-    },
-    {
-        "title": "Bitflix",
-        "description": "A simple movie database application created using the fetch API.",
-        "img": "./bitflix.png", 
-        "source_code": "https://github.com/Johnnsonkp/ROR-movies",
-        "href": "https://rails-moviedb.herokuapp.com/",
-        "alt": "movie app database",
-        "category": [
-            "all",
-            "personal"
-        ]
     }
 
 ]

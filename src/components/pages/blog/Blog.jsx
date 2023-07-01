@@ -44,7 +44,6 @@ function Blog({mode, setMode, lightColor, darkColor}) {
             <div 
                 style={{
                     marginTop: '25px', 
-                    // height: size.width < 1000 && '2000px',
                     padding: '20px', 
                     marginLeft: 'auto', 
                     marginRight: 'auto', 

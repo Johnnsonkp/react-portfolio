@@ -107,7 +107,6 @@ export const TrustBar = (props) => {
 
   const trustIcons = [CodeIconVar, CustomiseVar, PixelPerfect, WithLove];
   let trustIconsList = trustIcons.map((Item, index) => {
-    console.log("index, Item:", index, Item);
     return (
       <CardContainers
         Icon={Item}
@@ -211,7 +210,10 @@ export const DisplayBox = (props) => {
       </div>
       {props.innerCard ? (
         <div style={styles.pictureBox}>
-          <div className="about-pic"></div>
+          {/* <div className="about-pic">
+            <img className="about-pic" src="/public/headshot-pic.jpg" />
+          </div> */}
+          <img className="about-pic" src="/headshot-pic.jpg" />
           <div style={{ width: "90%", margin: "auto" }}>
             <h2>John Nkpolukwu</h2>
             <p style={{ fontSize: size.width < 1230 ? "0.8em" : "12px" }}>
@@ -232,11 +234,6 @@ export const TechStackFullWidthContainer = (props) => {
   const styles = {
     fullWidthContainer: {
       width: "100%",
-      // height: "180px",
-      // paddingTop: "50px",
-      // paddingBottom: "50px",
-      // marginTop: props.marginTop ? props.marginTop : "auto",
-      // marginBottom: props.marginBottom ? props.marginBottom : "auto",
       marginLeft: "auto",
       marginRight: "auto",
       padding: "40px",
