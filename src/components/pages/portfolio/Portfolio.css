@@ -256,7 +256,7 @@
 @media only screen and (max-width: 800px) and (min-width: 601px){
     #portfolio{
         position: relative !important;
-        /* height: 900px !important; */
+        height: 100%;
         width: 100%;
         max-width: 800px;
         position: relative !important;
