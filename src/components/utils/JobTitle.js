@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+let titleIndexArr = [];
 class JobTitle extends Component {
   constructor(props) {
     super(props);
@@ -13,16 +13,24 @@ class JobTitle extends Component {
     clearInterval(this.intervalID);
     clearInterval(this.clearId);
   }
+
   randomTitle() {
-    let titles = [
-      "I'm a freelancer",
-      "I'm a developer",
-      "I'm a designer",
-      "I'm a creator",
-      "I'm a professional",
-    ];
+    let titles = ["I'm a developer", "I'm a designer", "I'm a creator"];
+    let titleIndex = Math.floor(Math.random() * titles.length);
+
+    titleIndexArr.unshift(titleIndex);
+    titleIndexArr.length > 3 && titleIndexArr.pop();
+
+    console.log("titleIndexArr", titleIndexArr);
     this.setState({
-      title: titles[Math.floor(Math.random() * titles.length)],
+      // title: titles[Math.floor(Math.random() * titles.length)],
+
+      title:
+        titles[
+          titleIndexArr[0] !== titleIndexArr[1]
+            ? titleIndexArr[0]
+            : Math.floor(Math.random() * titles.length)
+        ],
     });
   }
   clearTitle() {
