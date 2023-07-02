@@ -96,7 +96,9 @@ export const CustomBanner = ({mode, setMode, lightColor, darkColor}) => {
                             lineHeight: 1.8,
                             color: lightColor
                         }}>
-                            Melbourne based full stack developer, designer and freelancer specialising on the front-end. <span style={{fontStyle: 'italic', color: 'yellow', fontWeight: 'bold'}}>Turning ideas into reality.</span></p>
+                            Melbourne-based eCommerce web developer specialist, designing, developing, and maintaining high-quality websites that <span style={{fontStyle: 'italic', color: 'yellow', fontWeight: 'bold'}}>facilitate online shopping experiences for businesses.</span></p>
+
+                            {/* Melbourne based full stack developer, designer and freelancer specialising on the front-end. <span style={{fontStyle: 'italic', color: 'yellow', fontWeight: 'bold'}}>Turning ideas into reality.</span></p> */}
                 </div>
                 <PrimaryButton 
                     title={'VIEW MY WORK' } 
