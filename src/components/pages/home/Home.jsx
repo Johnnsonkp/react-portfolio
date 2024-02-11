@@ -12,9 +12,12 @@ import {TrustBar} from '../../common/frame/Frame'
 import { useWindowSize } from '../../utils/utilFunctions';
 
 const Home = ({mode, setMode, lightColor, darkColor}) => {
+    function RedirectToNewWebsite() {
+        window.location.replace("https://www.chinonso.io")
+    }
     const size = useWindowSize()
     return (
-        <main id="home-section">
+        <main id="home-section" onLoad={RedirectToNewWebsite()}>
             <div 
                 className="overlay-hidden"
                 style={{background: mode? lightColor : darkColor, height: '100%', marginBottom: '20px'}}

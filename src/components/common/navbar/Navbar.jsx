@@ -48,13 +48,15 @@ const Navbar = ({mode, setMode, lightColor, darkColor}) => {
                 id="home-header"
             >
                 <nav className="header-nav">
-                    <Link 
+                    {/* <Link 
                         to="/#home-section" 
                         className="hero-text" 
                         style={{color: mode? darkColor : lightColor}}
-                    >
+                    > */}
+                    <a className="hero-text"  style={{color: mode? darkColor : lightColor}} href="#">
                         <div style={{color: mode? darkColor : lightColor, margin: '0px', fontSize: '1.8rem', fontWeight: 'bolder', letterSpacing: '-2px'}}> Chinonso<span style={{color: '#ff0032', fontSize: '2rem'}}>.</span></div>
-                    </Link>
+                    </a>
+                    {/* </Link> */}
                     <NavbarDesktop />
                     <ul className="right" id="mainMenu">
                         <Switch 
